@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Favoritos - CPTM</title>
+  <link rel="stylesheet" href="./assets/css/tela-favoritos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="./assets/img/CPTM_icon.svg.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="top-row">
+      <a class="link-back" href="home.html"><button class="back-button">←</button></a>
+      <span class="title">CPTM</span>
+      <img src="./assets/img/Logo cptm.png" alt="Logo CPTM" class="logo">
+    </div>
+    <div class="minha-conta"><h3>Favoritos</h3></div>
+  </header>
+
+  <!-- MODAL DE ADIÇÃO -->
+  <div class="modal-busca-overlay" id="modal-busca" aria-hidden="true">
+    <div class="modal-busca">
+      <input id="modalSearchInput" type="text" placeholder="Buscar estação, linha ou trajeto">
+      <div id="modal-carrossel" class="modal-carrossel"></div>
+      <button class="fechar-modal" id="fecharModalBusca">Fechar</button>
+    </div>
+  </div>
+
+  <!-- MODAL DE REMOÇÃO -->
+  <div class="modal-remover-overlay" id="modal-remover" aria-hidden="true">
+    <div class="modal-remover">  
+      <h3 style="margin-bottom: 12px;">Remover favorito</h3>
+      <div id="modal-remover-carrossel" class="modal-carrossel"></div>
+      <button class="fechar-modal" id="fecharModalRemover">Fechar</button>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="busca-box">
+      <button id="btnAdd" type="button" class="btn-add">ADICIONAR FAVORITO</button>
+      <button id="btnRemove" type="button" class="btn-remove">×</button>
+    </section>
+
+    <!-- Lista fixa -->
+    <section id="favList" class="lista">
+      <article class="card">
+        <div class="esq">
+          <div class="pill mapa">
+            <img src="./assets/img/train.svg" alt="Mapa da rede">
+          </div>
+          <div class="info">
+            <h3>Mapa da rede</h3>
+            <p>Acesso rápido</p>
+          </div>
+        </div>
+        <button class="line-action mapa" title="Abrir" onclick="location.href='mapa.html'">
+          <img src="./assets/play_arrow.svg" alt="Abrir">
+        </button>
+      </article>
+
+      <article class="card">
+        <div class="esq">
+          <div class="pill rubi">
+            <img src="./assets/img/train.svg" alt="Linha 7 – Rubi">
+          </div>
+          <div class="info">
+            <h3>Linha 7 – Rubi</h3>
+            <p>Último acesso: ontem</p>
+          </div>
+        </div>
+        <button class="line-action rubi" title="Detalhes">
+          <img src="./assets/play_arrow.svg" alt="Detalhes">
+        </button>
+      </article>
+
+      <article class="card">
+        <div class="esq">
+          <div class="pill turquesa">
+            <img src="./assets/img/train.svg" alt="Linha 10 – Turquesa">
+          </div>
+          <div class="info">
+            <h3>Linha 10 – Turquesa</h3>
+            <p>Estação favorita: Utinga</p>
+          </div>
+        </div>
+        <button class="line-action turquesa" title="Detalhes">
+          <img src="./assets/play_arrow.svg" alt="Detalhes">
+        </button>
+      </article>
+    </section>
+
+    <!-- Lista dinâmica -->
+    <section id="favListDinamicos" class="lista"></section>
+
+    <div id="emptyState" class="empty" hidden>Nenhum favorito ainda.</div>
+  </main>
+
+  <script>
+    const API_BASE_URL = 'http://localhost:5501';
+    const btnAdd = document.getElementById('btnAdd');
+    const btnRemove = document.getElementById('btnRemove');
+    const modal = document.getElementById('modal-busca');
+    const modalRemover = document.getElementById('modal-remover');
+    const fecharModal = document.getElementById('fecharModalBusca');
+    const fecharModalRemover = document.getElementById('fecharModalRemover');
+    const modalInput = document.getElementById('modalSearchInput');
+    const modalCarrossel = document.getElementById('modal-carrossel');
+    const modalRemoverCarrossel = document.getElementById('modal-remover-carrossel');
+    const favListDinamicos = document.getElementById('favListDinamicos');
+    const emptyState = document.getElementById('emptyState');
+
+    let usuario = JSON.parse(localStorage.getItem('usuario'));
+
+    if (!usuario) {
+      alert('Nenhum usuário logado. Faça login novamente.');
+      window.location.href = 'login.html';
+    }
+
+    let favoritosAtuais = Array.isArray(usuario?.favoritos) ? usuario.favoritos : [];
+
+    function syncEmpty() {
+      emptyState.hidden = favListDinamicos.children.length > 0;
+    }
+
+    function obterCorLinha(linha) {
+      if (!linha) return '#9ca3af';
+      const texto = linha.toLowerCase();
+      if (texto.includes('rubi')) return '#8c2b61';
+      if (texto.includes('diamante')) return '#6e6e6e';
+      if (texto.includes('esmeralda')) return '#007e63';
+      if (texto.includes('turquesa')) return '#458797';
+      if (texto.includes('coral')) return '#bf4124';
+      if (texto.includes('safira')) return '#1c146b';
+      if (texto.includes('jade')) return '#038c3e';
+      return '#9ca3af';
+    }
+
+    function criarCardFavorito(favorito) {
+      const card = document.createElement('article');
+      card.className = 'card';
+      const cor = obterCorLinha(favorito.linha);
+      const subtitulo = favorito.linha || 'Favorito salvo no mapa';
+
+      card.innerHTML = `
+        <div class="esq">
+          <div class="pill" style="background-color: ${cor}">
+            <img src="./assets/img/train.svg" alt="${favorito.nome}">
+          </div>
+          <div class="info">
+            <h3>${favorito.nome}</h3>
+            <p>${subtitulo}</p>
+          </div>
+        </div>
+        <button class="line-action" style="background-color: ${cor}" title="Ver no mapa">
+          <img src="./assets/play_arrow.svg" alt="Abrir">
+        </button>
+      `;
+
+      card.querySelector('.line-action')?.addEventListener('click', () => {
+        window.location.href = 'mapa.html';
+      });
+
+      return card;
+    }
+
+    function renderizarFavoritos() {
+      favListDinamicos.innerHTML = '';
+      favoritosAtuais.forEach(favorito => {
+        favListDinamicos.appendChild(criarCardFavorito(favorito));
+      });
+      syncEmpty();
+    }
+
+    async function carregarFavoritos() {
+      if (!usuario) return;
+      try {
+        const resposta = await fetch(`/usuarios/${usuario.id}/favoritos`);
+        const dados = await resposta.json();
+
+        if (!resposta.ok) {
+          throw new Error(dados.message || 'Erro ao carregar favoritos.');
+        }
+
+        favoritosAtuais = Array.isArray(dados.favoritos) ? dados.favoritos : [];
+        usuario.favoritos = favoritosAtuais;
+        localStorage.setItem('usuario', JSON.stringify(usuario));
+        renderizarFavoritos();
+      } catch (erro) {
+        console.error('Erro ao carregar favoritos', erro);
+        favListDinamicos.innerHTML = '<p style="color:#d00; text-align:center;">Não foi possível carregar seus favoritos agora.</p>';
+        emptyState.hidden = true;
+      }
+    }
+
+    async function removerFavorito(idEstacao) {
+      if (!usuario) return;
+
+      try {
+        const resposta = await fetch(`/usuarios/${usuario.id}/favoritos/${encodeURIComponent(idEstacao)}`, {
+          method: 'DELETE'
+        });
+        const dados = await resposta.json().catch(() => ({}));
+
+        if (!resposta.ok) {
+          throw new Error(dados.message || 'Erro ao remover favorito.');
+        }
+
+        favoritosAtuais = Array.isArray(dados.favoritos) ? dados.favoritos : [];
+        usuario.favoritos = favoritosAtuais;
+        localStorage.setItem('usuario', JSON.stringify(usuario));
+        renderizarFavoritos();
+        modalRemover.style.display = 'none';
+        modalRemoverCarrossel.innerHTML = '';
+      } catch (erro) {
+        console.error('Erro ao remover favorito', erro);
+        alert('Não foi possível remover o favorito. Tente novamente.');
+      }
+    }
+
+    function montarCarrosselRemover() {
+      modalRemoverCarrossel.innerHTML = '';
+
+      if (!favoritosAtuais.length) {
+        modalRemoverCarrossel.innerHTML = '<p style="text-align:center; color:#444;">Nenhum favorito para remover.</p>';
+        return;
+      }
+
+      favoritosAtuais.forEach(favorito => {
+        const cor = obterCorLinha(favorito.linha);
+        const item = document.createElement('div');
+        item.className = 'linha-card';
+        item.innerHTML = `
+          <div class="cor-bolinha" style="background-color: ${cor}"></div>
+          <span>${favorito.nome}</span>
+        `;
+
+        item.addEventListener('click', () => removerFavorito(favorito.idEstacao));
+        modalRemoverCarrossel.appendChild(item);
+      });
+    }
+
+    btnAdd.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalInput.value = '';
+      modalInput.disabled = true;
+      modalCarrossel.innerHTML = '<p style="text-align:center; color:#444;">Adicione novos favoritos diretamente pelo mapa interativo.</p>';
+    });
+
+    btnRemove.addEventListener('click', () => {
+      modalRemover.style.display = 'flex';
+      montarCarrosselRemover();
+    });
+
+    fecharModal.addEventListener('click', () => {
+      modal.style.display = 'none';
+      modalInput.value = '';
+      modalCarrossel.innerHTML = '';
+    });
+
+    fecharModalRemover.addEventListener('click', () => {
+      modalRemover.style.display = 'none';
+      modalRemoverCarrossel.innerHTML = '';
+    });
+
+    window.addEventListener('DOMContentLoaded', carregarFavoritos);
+    renderizarFavoritos();
+  </script>
+</body>
+</html>

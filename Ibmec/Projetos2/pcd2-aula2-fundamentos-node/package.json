@@ -1,0 +1,16 @@
+{
+  "name": "pcd2-aula2-fundamentos-node",
+  "version": "1.0.0",
+  "description": "[Slides](https://docs.google.com/presentation/d/153n8hdimSG11h2YhNcIyJCTlLS2yJROCctL7BmpBqow/edit?usp=sharing)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

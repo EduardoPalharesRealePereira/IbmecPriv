@@ -1,0 +1,19 @@
+{
+  "name": "pcd2-simulado-ap1",
+  "version": "1.0.0",
+  "description": "[OPCIONAL] SIMULADO DA AP1: Baseado na prova aplicada em 2025/1",
+  "main": "questao2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch questao2.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}

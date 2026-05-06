@@ -1,0 +1,202 @@
+[
+    {
+      "id": 1,
+      "titulo": "The Dark Side of the Moon",
+      "artista": "Pink Floyd",
+      "ano": 1973,
+      "genero": "Rock Progressivo",
+      "faixas": 10,
+      "gravadora": "Harvest Records",
+      "destaques": ["Time", "Money"]
+    },
+    {
+      "id": 2,
+      "titulo": "Thriller",
+      "artista": "Michael Jackson",
+      "ano": 1982,
+      "genero": "Pop",
+      "faixas": 9,
+      "gravadora": "Epic Records",
+      "destaques": ["Thriller", "Beat It", "Billie Jean"]
+    },
+    {
+      "id": 3,
+      "titulo": "Back in Black",
+      "artista": "AC/DC",
+      "ano": 1980,
+      "genero": "Hard Rock",
+      "faixas": 10,
+      "gravadora": "Atlantic Records",
+      "destaques": ["Back in Black", "Hells Bells"]
+    },
+    {
+      "id": 4,
+      "titulo": "Nevermind",
+      "artista": "Nirvana",
+      "ano": 1991,
+      "genero": "Grunge",
+      "faixas": 12,
+      "gravadora": "DGC Records",
+      "destaques": ["Smells Like Teen Spirit", "Come As You Are"]
+    },
+    {
+      "id": 5,
+      "titulo": "Kind of Blue",
+      "artista": "Miles Davis",
+      "ano": 1959,
+      "genero": "Jazz",
+      "faixas": 5,
+      "gravadora": "Columbia Records",
+      "destaques": ["So What", "Freddie Freeloader"]
+    },
+    {
+      "id": 6,
+      "titulo": "Abbey Road",
+      "artista": "The Beatles",
+      "ano": 1969,
+      "genero": "Rock",
+      "faixas": 17,
+      "gravadora": "Apple Records",
+      "destaques": ["Come Together", "Here Comes the Sun"]
+    },
+    {
+      "id": 7,
+      "titulo": "A Love Supreme",
+      "artista": "John Coltrane",
+      "ano": 1965,
+      "genero": "Jazz",
+      "faixas": 4,
+      "gravadora": "Impulse! Records",
+      "destaques": ["Acknowledgement", "Resolution"]
+    },
+    {
+      "id": 8,
+      "titulo": "OK Computer",
+      "artista": "Radiohead",
+      "ano": 1997,
+      "genero": "Rock Alternativo",
+      "faixas": 12,
+      "gravadora": "Parlophone",
+      "destaques": ["Paranoid Android", "No Surprises"]
+    },
+    {
+      "id": 9,
+      "titulo": "The Eminem Show",
+      "artista": "Eminem",
+      "ano": 2002,
+      "genero": "Hip Hop",
+      "faixas": 20,
+      "gravadora": "Aftermath/Shady/Interscope",
+      "destaques": ["Without Me", "Sing for the Moment"]
+    },
+    {
+      "id": 10,
+      "titulo": "21",
+      "artista": "Adele",
+      "ano": 2011,
+      "genero": "Pop/Soul",
+      "faixas": 11,
+      "gravadora": "XL Recordings",
+      "destaques": ["Rolling in the Deep", "Someone Like You"]
+    },
+    {
+      "id": 11,
+      "titulo": "Master of Puppets",
+      "artista": "Metallica",
+      "ano": 1986,
+      "genero": "Heavy Metal",
+      "faixas": 8,
+      "gravadora": "Elektra Records",
+      "destaques": ["Master of Puppets", "Battery"]
+    },
+    {
+      "id": 12,
+      "titulo": "To Pimp a Butterfly",
+      "artista": "Kendrick Lamar",
+      "ano": 2015,
+      "genero": "Hip Hop",
+      "faixas": 16,
+      "gravadora": "Top Dawg/Aftermath/Interscope",
+      "destaques": ["Alright", "King Kunta"]
+    },
+    {
+      "id": 13,
+      "titulo": "Hotel California",
+      "artista": "Eagles",
+      "ano": 1976,
+      "genero": "Rock",
+      "faixas": 9,
+      "gravadora": "Asylum Records",
+      "destaques": ["Hotel California", "New Kid in Town"]
+    },
+    {
+      "id": 14,
+      "titulo": "Rumours",
+      "artista": "Fleetwood Mac",
+      "ano": 1977,
+      "genero": "Rock",
+      "faixas": 11,
+      "gravadora": "Warner Bros. Records",
+      "destaques": ["Dreams", "Go Your Own Way"]
+    },
+    {
+      "id": 15,
+      "titulo": "Born to Die",
+      "artista": "Lana Del Rey",
+      "ano": 2012,
+      "genero": "Indie Pop",
+      "faixas": 15,
+      "gravadora": "Interscope/Polydor",
+      "destaques": ["Born to Die", "Summertime Sadness"]
+    },
+    {
+      "id": 16,
+      "titulo": "Led Zeppelin IV",
+      "artista": "Led Zeppelin",
+      "ano": 1971,
+      "genero": "Hard Rock",
+      "faixas": 8,
+      "gravadora": "Atlantic Records",
+      "destaques": ["Stairway to Heaven", "Black Dog"]
+    },
+    {
+      "id": 17,
+      "titulo": "Appetite for Destruction",
+      "artista": "Guns N' Roses",
+      "ano": 1987,
+      "genero": "Hard Rock",
+      "faixas": 12,
+      "gravadora": "Geffen Records",
+      "destaques": ["Sweet Child O' Mine", "Welcome to the Jungle"]
+    },
+    {
+      "id": 18,
+      "titulo": "DAMN.",
+      "artista": "Kendrick Lamar",
+      "ano": 2017,
+      "genero": "Hip Hop",
+      "faixas": 14,
+      "gravadora": "Top Dawg/Aftermath/Interscope",
+      "destaques": ["HUMBLE.", "DNA."]
+    },
+    {
+      "id": 19,
+      "titulo": "Random Access Memories",
+      "artista": "Daft Punk",
+      "ano": 2013,
+      "genero": "Eletrônica/Disco",
+      "faixas": 13,
+      "gravadora": "Columbia Records",
+      "destaques": ["Get Lucky", "Instant Crush"]
+    },
+    {
+      "id": 20,
+      "titulo": "Astroworld",
+      "artista": "Travis Scott",
+      "ano": 2018,
+      "genero": "Hip Hop/Trap",
+      "faixas": 17,
+      "gravadora": "Cactus Jack/Epic",
+      "destaques": ["SICKO MODE", "Stargazing"]
+    }
+  ]

@@ -1,0 +1,16 @@
+{
+  "name": "pcd2-aula3-typescript",
+  "version": "1.0.0",
+  "description": "- [Link do TS Playground](https://www.typescriptlang.org/play) - [Exemplos da aula](https://www.typescriptlang.org/play/?#code/PTAEBUEsAcEMHMCmBbUiAe0A2BbgxpAC6wBQWihoyAngHKzKIBcoAzoQE6QB28JN9RqAC8oAETgGsDrDEkyFUNwCujDgHsWK5ACNEHEaADsARnkgAktwBm+gFfcCsUABNEEGOtYLKjVqwR3UTEAeUgAGlBCF1A9ZAB+ORIQD2h1UFhuahZnADdpSABD3MQsDLxEImcAR2VYLFr9UHysdQ4AOlAAVUJILEgAL2lQWsyXdO4AY-TCFFAKjlmh1xnPV3cXWHGMtiblXv6h8c6evsHhvHVUOA4CZAAX7khSckpofVZ1bh8MpBys8xgKBwJCoObSGTUVigAC0aEwuAIxFA6mUGW46mIAHPpusop4ftwGIhWCx2FxeABtAC6oBS-XYzjcbE4PHg3leSlUeg4pK5un0NMBqUCqGZENgULQqB4tg4DiceN6aR+gWhokpACZIgAWSIAVkiRkiJgADNThcDRdLQNZlNwsQBXkkkO2OXpfNiqAAUsC03P0kR0-oFHAAlCxcupIDEAN4kUCJ+ZfdigDgk5RYSiiZwAaliAG4E0n04RlBxuGmM1miwBfUDJMCjbjbVTON04ia40ttIlKLawSKsRBo5XpACXzWjLkbrkgeD9oFl+kgBjHK1AN2JnHS7lWaVc7ftnctMGtzPUOgAVhQvD9lMOOCxY0TGGTWbxIoEQzzIumsLAHrcKwAAWMDxO+FLwPWKTcCSszzLAnx-qUgGQCmYHQKAk7qNABBfPU8gPk0ojxkm-ZvuIkjINIsgkLWwpdC2iDWDwiAuCwzbbHkBTFKUSi4rMqCqM09RtBkrI6MoODjLOtCZlgnF1C26SNAYbisU8Bg8LMjjoUSWCMNwCHOLAD4Ks8eIiS0bSMU8nqENQ7wcoo6asGkwHMCyUGgAAPlyWBYKeaTQu8vIEYcWxeCweBcMMXibhwADP0BcAlwJ3rOVizBw1iwBU3g6foeUVKAAAKGguMoeCUGRSYxj+gbFomr5eeSbLhM1iXzl52g8vR8hujV+lKIgADuFXqFVNXeqlU3VYQLCTdNhBhqAdWJnNK3tDGhgmJ15FbQt7StYYYgWNAIFfO4JgAGxiAdSZHTV7SpT1e06pqpqmp1tZAA)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}

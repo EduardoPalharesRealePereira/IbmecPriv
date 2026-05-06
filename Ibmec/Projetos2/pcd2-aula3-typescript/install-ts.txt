@@ -1,0 +1,12 @@
+1) instalar TS global
+npm install -g typescript
+
+2) inicializar TS
+tsc -v
+
+3) preparar node
+npm init -y
+
+4) instalar ts-node no projeto em ambiente de desenvolvimento
+npm install typescript --save-dev
+

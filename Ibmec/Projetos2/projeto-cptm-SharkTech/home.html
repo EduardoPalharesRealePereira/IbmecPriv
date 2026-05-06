@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CPTM – Home</title>
+  <link rel="stylesheet" href="assets/css/style-home.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="./assets/img/CPTM_icon.svg.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="header">
+    <div class="top-row">
+      <div class="icon-button">
+        <img class="profile" src="assets/img/icons8-male-user-96.svg" alt="Ícone de usuário" />
+      </div>
+      <img class="CPTM-escrito" src="assets/img/cptmescrito.png" alt="CPTM ECRITO" />
+      <img class="logo" src="assets/img/Logo cptm.svg" alt="Logo da CPTM" />
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="boas-vindas"></p>
+
+    <div class="mapa-zoom-wrapper" id="mapaWrapper">
+      <div class="mapa" id="mapaHome"></div>
+    </div>
+
+    <div class="carousel">
+      <div class="carousel-inner">
+        <button class="icone-botao" onclick="window.location.href='linhas.html'">
+          <img src="assets/img/train.svg" alt="Linhas" />
+          <span>Linhas</span>
+        </button>
+        <button class="icone-botao" onclick="window.location.href='favoritos.html'">
+          <img src="assets/img/favorite-icon.svg" alt="Favoritos" />
+          <span>Favoritos</span>
+        </button>
+        <button class="icone-botao">
+          <img src="assets/img/qr_code-icon.svg" alt="QR Code" />
+          <span>QR Code</span>
+        </button>
+        <button class="icone-botao" onclick="abrirFaleConosco()">
+          <img src="assets/img/chat-icon.svg" alt="Fale conosco" />        
+          <span>Fale conosco</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔹 Cartão de saldo -->
+  <section class="saldo-card" id="link-saldo" onclick="window.location.href='tela-saldo.html'">
+    <p>Saldo:</p>
+    <div class="saldo">
+      <span id="valor-saldo" class="valor-saldo">Carregando...</span>
+      <button id="toggle-saldo" class="toggle-saldo" type="button" onclick="event.stopPropagation()">
+        <img id="icone-olho" class="icone-saldo" src="assets/img/eye-off.svg" alt="Mostrar saldo" />
+      </button>
+    </div>
+  </section>
+
+  <div id="mapa-transicao"></div>
+
+  <script>
+    const mapa = document.getElementById('mapaHome');
+
+mapa.addEventListener('click', () => {
+  window.location.href = 'mapa.html';
+});
+    const boasVindas = document.querySelector('.boas-vindas');
+    const valorSaldo = document.getElementById('valor-saldo');
+    const toggleBtn = document.getElementById('toggle-saldo');
+    const iconeOlho = document.getElementById('icone-olho');
+    let saldoVisivel = true;
+
+    // ✅ Pega o usuário logado
+    const usuario = JSON.parse(localStorage.getItem('usuario'));
+
+    if (!usuario) {
+      alert('Nenhum usuário logado. Faça login novamente.');
+      window.location.href = 'login.html';
+    } else {
+      boasVindas.textContent = `Bem-vindo, ${usuario.username}!`;
+    }
+
+    const idUsuario = usuario.id;
+
+    function formatarReal(valor) {
+      return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+
+    async function carregarSaldo() {
+      try {
+        const resposta = await fetch(`/usuarios/${idUsuario}`);
+        if (!resposta.ok) throw new Error('Erro ao buscar saldo');
+        const usuarioAtualizado = await resposta.json();
+
+        valorSaldo.textContent = formatarReal(usuarioAtualizado.saldo);
+        valorSaldo.dataset.valorReal = formatarReal(usuarioAtualizado.saldo);
+
+        // Atualiza localStorage com saldo novo
+        localStorage.setItem('usuario', JSON.stringify(usuarioAtualizado));
+      } catch (erro) {
+        console.error(erro);
+        valorSaldo.textContent = 'Erro';
+      }
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      saldoVisivel = !saldoVisivel;
+      valorSaldo.textContent = saldoVisivel ? valorSaldo.dataset.valorReal : '••••';
+      iconeOlho.src = saldoVisivel ? 'assets/img/eye-off.svg' : 'assets/img/eye.svg';
+    });
+
+    window.addEventListener('DOMContentLoaded', carregarSaldo);
+
+    function abrirFaleConosco() {
+      window.open('/fale-conosco', '_blank');}
+  </script>
+</body>
+</html>

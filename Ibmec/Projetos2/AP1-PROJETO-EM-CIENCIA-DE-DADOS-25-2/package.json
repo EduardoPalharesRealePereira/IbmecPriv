@@ -1,0 +1,19 @@
+{
+  "name": "ap1-projeto-em-ciencia-de-dados-25-2",
+  "version": "1.0.0",
+  "description": "> 🙂 Dica: **chegue mais cedo e prepare o seu ambiente!**",
+  "main": "questao_3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch questao_3.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}

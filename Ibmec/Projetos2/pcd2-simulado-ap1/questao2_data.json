@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "titulo": "O Poderoso Chefão",
+    "ano": 1972,
+    "diretor": "Francis Ford Coppola",
+    "genero": "Crime, Drama",
+    "avaliacao": 9.2
+  },
+  {
+    "id": 2,
+    "titulo": "Interestelar",
+    "ano": 2014,
+    "diretor": "Christopher Nolan",
+    "genero": "Ficção Científica, Drama",
+    "avaliacao": 8.7
+  },
+  {
+    "id": 3,
+    "titulo": "Pulp Fiction",
+    "ano": 1994,
+    "diretor": "Quentin Tarantino",
+    "genero": "Crime, Drama",
+    "avaliacao": 8.9
+  },
+  {
+    "id": 4,
+    "titulo": "Clube da Luta",
+    "ano": 1999,
+    "diretor": "David Fincher",
+    "genero": "Drama",
+    "avaliacao": 8.8
+  },
+  {
+    "id": 5,
+    "titulo": "A Origem",
+    "ano": 2010,
+    "diretor": "Christopher Nolan",
+    "genero": "Ação, Ficção Científica",
+    "avaliacao": 8.8
+  },
+  {
+    "id": 6,
+    "titulo": "Matrix",
+    "ano": 1999,
+    "diretor": "Lana Wachowski, Lilly Wachowski",
+    "genero": "Ação, Ficção Científica",
+    "avaliacao": 8.7
+  },
+  {
+    "id": 7,
+    "titulo": "Os Bons Companheiros",
+    "ano": 1990,
+    "diretor": "Martin Scorsese",
+    "genero": "Crime, Drama",
+    "avaliacao": 8.7
+  },
+  {
+    "id": 8,
+    "titulo": "O Senhor dos Anéis: O Retorno do Rei",
+    "ano": 2003,
+    "diretor": "Peter Jackson",
+    "genero": "Aventura, Fantasia",
+    "avaliacao": 9.0
+  },
+  {
+    "id": 9,
+    "titulo": "O Cavaleiro das Trevas",
+    "ano": 2008,
+    "diretor": "Christopher Nolan",
+    "genero": "Ação, Crime, Drama",
+    "avaliacao": 9.0
+  },
+  {
+    "id": 10,
+    "titulo": "Forrest Gump",
+    "ano": 1994,
+    "diretor": "Robert Zemeckis",
+    "genero": "Drama, Romance",
+    "avaliacao": 8.8
+  }
+]

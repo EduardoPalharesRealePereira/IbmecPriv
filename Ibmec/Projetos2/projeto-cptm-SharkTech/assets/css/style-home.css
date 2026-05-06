@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+}
+  
+body, html {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #d60000;
+    overscroll-behavior: contain;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #d60000;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 135px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    background: #E0E0E0;
+    padding: 100px 24px 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow-y: auto; /* permite rolar */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px; /* espaçamento entre filhos */
+}
+
+.top-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.icon-button {
+    width: 36px;
+    height: 36px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.profile {
+    width: 30px;
+}
+
+.CPTM-escrito {
+    height: 30px;
+}
+
+.logo {
+    height: 30px;
+}
+
+.title {
+    font-size: 16px;
+}
+  
+.saldo-card {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 340px;
+    height: 100px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border: none;
+}
+
+.saldo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4em;
+    margin-top: 4px;
+    
+}
+
+.link-saldo {
+    text-decoration: none;
+    color: #121212;
+}
+  
+.saldo button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    
+}
+  
+.saldo button:focus {
+    outline: none;
+}
+  
+.saldo button img {
+    width: 28px;
+    height: 28px;
+}
+  
+.boas-vindas {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: -10px;
+}
+  
+.mapa-zoom-wrapper {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.6s ease;
+  }
+  
+
+.mapa {
+    background-image: url("../img/mapaoficial.png");
+    background-size: 200%;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.8s ease;
+}
+
+#mapa-transicao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/mapaoficial.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform: scale(0.6);
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+  }
+
+.carousel {
+    overflow-x: auto;
+    height: 40%;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;     
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;             
+}
+
+
+.carousel-inner {
+    display: flex;
+    gap: 12px;
+    width: max-content;
+    padding-inline: 12px;
+}
+  
+.icone-botao {
+    background: #f5f5f5;
+    border-radius: 10px;
+    border: none;
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    -webkit-user-select: none;
+    user-select: none;
+}
+  
+.icone-botao img {
+    height: 40px;
+    margin-bottom: 6px;
+}
+  
+.icone-botao span {
+    font-size: 12px;
+    text-align: center;
+}
+
+.mapa-zoom-wrapper {
+  pointer-events: none; /* cliques passam por baixo */
+}
+
+.mapa {
+  pointer-events: auto; /* o mapa em si continua interativo */
+}
+
+
+
+
+  

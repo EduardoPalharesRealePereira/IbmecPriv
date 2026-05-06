@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa CPTM</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="icon" type="image/png" href="./assets/img/CPTM_icon.svg.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset geral */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    body.travar-scroll {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+    .leaflet-control-attribution {
+      display: none !important;
+    }
+
+    #map {
+      width: 100vw;
+      height: 100vh;
+
+    }
+
+    /* Melhorar a fonte do popup para mobile */
+    .leaflet-popup-content {
+      font-size: 18px;
+      text-align: center;
+      max-height: 110px;
+      overflow-y: auto;
+    }
+
+    /* Popup estilizado */
+    .popup-box {
+    font-family: "Inter", sans-serif;
+    padding: 8px;
+    }
+
+    .popup-titulo {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #222;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    margin-bottom: 20px;
+    }
+
+    .popup-titulo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background-color: currentColor;
+    border-radius: 2px;
+  }
+
+  /* .popup-titulo::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background-color: currentColor;
+    border-radius: 2px;
+  } */
+
+    .popup-linhas {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    .popup-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-weight: bold;
+    }
+
+    .popup-status.red .texto {
+        color: #b30000;
+        font-size: 20px;
+    }
+
+    .popup-status.green .texto {
+        color: #1a7f3c;
+        font-size: 20px;
+    }
+
+    .popup-status.orange .texto {
+        color: #ff9800;
+        font-size: 20px;
+    }
+
+    .bolinha {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    }
+
+    .bolinha.red {
+    background-color: #b30000;
+    }
+
+    .bolinha.orange {
+    background-color: #ff9800;
+    }
+
+    .bolinha.green {
+    background-color: #1a7f3c;
+    }
+
+    .popup-descricao {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+    text-align: left;
+    line-height: 1.3;
+    margin: 10px;
+    }
+
+    .linha-vermelha  { 
+        color: #8C2B61;
+        border-radius: 8px;
+        
+    }
+    .linha-turquesa   { 
+      color: #458797;
+      border-radius: 8px;
+     }
+    .linha-coral     { 
+      color: #BF4124;
+      border-radius: 8px;
+     }
+    .linha-safira    { 
+      color: #1C146B;
+      border-radius: 8px;
+     }
+
+     .linha-jade {
+      color: #038C3E;
+      border-radius: 8px;
+     }
+   
+
+    .modal {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        width: 100%;
+        max-width: 80vh;
+        background-color: #f5f5f5;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+        overflow-y: auto;
+        z-index: 1000;
+
+    }
+
+    .modal.active {
+    transform: translateY(0);
+    }
+
+    #map {
+        width: 100vw;
+        height: 100vh;
+        transition: 0.3s ease;
+    }
+
+    #map.reduzido {
+    height: 60vh !important;
+    }
+
+    .modal-content {
+    padding: 16px;
+    font-family: "Inter", sans-serif;
+    }
+
+    .modal-drag-handle {
+    width: 40px;
+    height: 5px;
+    background-color: #7e7e7e;
+    border-radius: 3px;
+    margin: -5px auto 12px auto;
+    touch-action: none;
+    }
+
+    #busca-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1500;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      font-family: "Inter", sans-serif;
+    }
+
+    #botao-lupa {
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      font-size: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.2s ease;
+    }
+
+    #campo-busca {
+    display: none;
+    width: 170px;
+    padding: 10px 12px;
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    /* box-shadow: 0 4px 0px #E30000; */
+    transition: all 0.3s ease;
+    border: 1px solid #D9D9D9;
+  }
+
+  #campo-busca:focus {
+  outline: none;
+  box-shadow: 2px 2px 0px #D9D9D9;
+}
+
+  #sugestoes-busca {
+  position: absolute;
+  top: 50px;
+  left: 55px;
+  background: white;
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1500;
+  width: 190px;
+  font-family: "Inter", sans-serif;
+  display: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.sugestao-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.sugestao-item:hover {
+  background-color: #f0f0f0;
+}
+
+#botao-fechar {
+  position: fixed;              /* Mantém fixo na tela */
+  top: 20px;                 /* Distância do fundo */
+  right: 20px;                  /* Distância da direita */
+  z-index: 1600;
+  width: auto;
+  height: 44px;
+  padding: 0 16px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* espaço entre texto e ícone */
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+#botao-fechar img {
+  width: 20px;
+  height: 20px;
+}
+
+.voltar-inicio {
+  display: flex;
+  align-items: center;
+  
+}
+
+/* Animação de zoom-out */
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+
+.saindo {
+  animation: zoomOut 0.4s ease forwards;
+}
+
+#trajeto-container {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  z-index: 1600;
+  font-family: "Inter", sans-serif;
+}
+
+#botao-trajeto {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#trajeto-opcoes {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  width: 180px;
+}
+
+#trajeto-opcoes select,
+#trajeto-opcoes button {
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+#trajeto-opcoes button {
+  background-color: #d60000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#trajeto-opcoes button:hover {
+  background-color: #a30000;
+}
+
+.toast {
+  text-align: center;
+  position: fixed;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(30, 30, 30, 0.9);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease, bottom 0.4s ease;
+  z-index: 9999;
+}
+.toast.show {
+  opacity: 1;
+  bottom: 80px;
+}
+
+.toast.success { background: #28a745; }
+.toast.error { background: #d60000; }
+.toast.warning { background: #ff9800; }
+
+.favorito-btn {
+  margin-bottom: 15px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.favorito-btn:hover {
+  transform: scale(1.1);
+}
+
+.heart-icon {
+  width: 26px;
+  height: 26px;
+  color: #bbb;
+  stroke: #bbb;
+  fill: none;
+  transition: all 0.3s ease;
+  vertical-align: middle;
+}
+
+.favorito-btn.favorito-ativo .heart-icon {
+  stroke: #d60000;
+  fill: #d60000;
+  color: #d60000;
+}
+  </style>
+</head>
+
+<body>
+
+<div id="map"></div>
+<div id="estacaoModal" class="modal">
+    <div class="modal-content" id="modalContent">
+        <button id="favorito-btn" class="favorito-btn" onclick="toggleFavorito()">
+        
+        </button>
+        <div class="modal-drag-handle" id="dragHandle"></div>
+        
+    </div>
+</div>
+<div id="busca-container">
+  <div id="botao-lupa" role="button" tabindex="0">
+    <img src="./assets/img/lupa.svg" alt="Ícone de busca">
+  </div>
+  <input type="text" id="campo-busca" placeholder="Buscar estação..." />
+  <div id="sugestoes-busca"></div>
+</div>
+<div id="botao-fechar" role="button" tabindex="0">
+  <div class="voltar-inicio">
+    <p>Início</p>
+    <img src="./assets/img/home.svg" alt="Fechar mapa">
+  </div>
+</div>
+<!-- BOTÃO E MENU DE TRAJETO -->
+<div id="trajeto-container">
+  <button id="botao-trajeto">🚆 Criar trajeto</button>
+
+  <div id="trajeto-opcoes">
+    <label>Origem:</label>
+    <select id="origem-select">
+      <option value="">Selecione...</option>
+    </select>
+
+    <label>Destino:</label>
+    <select id="destino-select">
+      <option value="">Selecione...</option>
+    </select>
+
+    <button id="gerar-rota">Gerar rota</button>
+    <button id="limpar-rota">Limpar rota</button>
+  </div>
+  <div id="toast" class="toast"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+  const API_BASE_URL = "http://localhost:5501";
+  let usuarioLogado = JSON.parse(localStorage.getItem("usuario"));
+
+  if (!usuarioLogado) {
+    window.location.href = "login.html";
+  }
+
+  let favoritosUsuario = Array.isArray(usuarioLogado?.favoritos)
+    ? usuarioLogado.favoritos
+    : [];
+  let estacoesDisponiveisCache = null;
+
+  function sincronizarFavoritosLocal(favoritos) {
+    favoritosUsuario = Array.isArray(favoritos) ? favoritos : [];
+    if (usuarioLogado) {
+      usuarioLogado.favoritos = favoritosUsuario;
+      localStorage.setItem("usuario", JSON.stringify(usuarioLogado));
+    }
+  }
+
+  sincronizarFavoritosLocal(favoritosUsuario);
+
+  async function carregarFavoritosDoUsuario() {
+    if (!usuarioLogado) {
+      return [];
+    }
+
+    try {
+      const resposta = await fetch(`/usuarios/${usuarioLogado.id}/favoritos`);
+      const dados = await resposta.json();
+
+      if (!resposta.ok) {
+        throw new Error(dados.message || "Erro ao carregar favoritos");
+      }
+
+      sincronizarFavoritosLocal(dados.favoritos);
+    } catch (erro) {
+      console.error("Não foi possível atualizar os favoritos do usuário.", erro);
+    }
+
+    return favoritosUsuario;
+  }
+
+  async function carregarEstacoesDisponiveis() {
+    if (estacoesDisponiveisCache) {
+      return estacoesDisponiveisCache;
+    }
+
+    try {
+      const resposta = await fetch("src/estacoes.json");
+      if (!resposta.ok) {
+        throw new Error("Falha ao carregar estacoes.json");
+      }
+      estacoesDisponiveisCache = await resposta.json();
+    } catch (erro) {
+      console.error("Erro ao carregar a lista de estações", erro);
+      estacoesDisponiveisCache = [];
+    }
+
+    return estacoesDisponiveisCache;
+  }
+
+  function atualizarEstadoBotaoFavorito(nome, botao) {
+    if (!botao) return;
+    const estaFavorito = favoritosUsuario.some(
+      (favorito) => favorito?.nome === nome || String(favorito?.idEstacao) === nome
+    );
+    botao.classList.toggle("favorito-ativo", estaFavorito);
+  }
+
+  carregarFavoritosDoUsuario();
+
+  // Criar o mapa
+  var map = L.map('map', {
+      crs: L.CRS.Simple,
+      minZoom: 0,
+      maxZoom: 1,
+      dragging: true,
+      maxBoundsViscosity: 1.0,
+      tapTolerance: 30, // tolerância para toque no mobile
+      zoomControl: false // opcional: remove os botões + e -
+  });
+
+  var bounds = [[0,0], [768,1189]]; // altura x largura da imagem
+  var image = L.imageOverlay('./assets/img/cptm-map.png', bounds).addTo(map);
+
+  map.fitBounds(bounds);
+  map.setMaxBounds(bounds);
+
+  // Função para determinar a demanda com base no horário atual
+  function obterStatusDemanda() {
+    const hora = new Date().getHours();
+
+    if ((hora >= 6 && hora < 9) || (hora >= 16 && hora < 20)) {
+      return { texto: "Alta demanda", cor: "red"};
+    } else if (hora >= 20 && hora < 22) {
+      return { texto: "Média demanda", cor: "orange"};
+    } else {
+      return { texto: "Baixa demanda", cor: "green"};
+    }
+  }
+
+  // Pega status atual da demanda
+  const demanda = obterStatusDemanda();
+  const estacoesMap = {};
+  function adicionarEstacao(lat, lng, nome, linhas, descricao, corClasse) {
+  const demanda = obterStatusDemanda();
+
+  const popupHtml = `
+    <div class="popup-box">
+      <div class="popup-titulo ${corClasse}">${nome}</div>
+      <div class="popup-linhas">${linhas}</div>
+      <div class="popup-status ${demanda.cor}">
+        <span class="texto ${demanda.cor}">${demanda.texto}</span>
+        <span class="bolinha ${demanda.cor}"></span>
+      </div>
+      <div class="popup-descricao">${descricao || ""}</div>
+    </div>
+  `;
+  
+  const marcador = L.circleMarker([lat, lng], {
+    radius: 10,
+    color: 'transparent',
+    fillColor: 'transparent',
+    fillOpacity: 0
+  }).addTo(map);
+
+  marcador.on('click', function () {
+    map.panTo([lat, lng], { animate: true });
+    mostrarModal(nome, linhas, descricao, corClasse, demanda);
+  });
+
+  // Armazena para a lupa funcionar
+  estacoesMap[nome.toLowerCase()] = { lat, lng, nome, linhas, descricao, corClasse, demanda };
+
+}
+
+const modal = document.getElementById("estacaoModal");
+const content = document.getElementById("modalContent");
+
+function mostrarModal(nome, linhas, descricao, corClasse, demanda) {
+  content.innerHTML = `
+    <div class="modal-drag-handle"></div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+      <div class="popup-titulo ${corClasse}" id="modal-nome">${nome}</div>
+      <button id="favorito-btn" class="favorito-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="popup-linhas">${linhas}</div>
+    <div class="popup-status ${demanda.cor}">
+      <span class="texto ${demanda.cor}">${demanda.texto}</span>
+      <span class="bolinha ${demanda.cor}"></span>
+    </div>
+    <div class="popup-descricao">${descricao || ""}</div>
+  `;
+
+  const botaoFavorito = document.getElementById("favorito-btn");
+  if (botaoFavorito) {
+    atualizarEstadoBotaoFavorito(nome, botaoFavorito);
+    botaoFavorito.addEventListener("click", () => toggleFavorito(nome, linhas));
+    carregarFavoritosDoUsuario().then(() => atualizarEstadoBotaoFavorito(nome, botaoFavorito));
+  }
+
+  modal.style.transform = "translateY(0)";
+  modal.classList.add("active");
+  document.getElementById("map").classList.add("reduzido");
+}
+
+// Eventos de toque para o modal inteiro
+let startY = 0;
+let currentY = 0;
+let dragging = false;
+
+modal.addEventListener("touchstart", function (e) {
+  if (e.touches.length !== 1) return;
+  startY = e.touches[0].clientY;
+  dragging = true;
+  modal.style.transition = "none";
+});
+
+modal.addEventListener("touchmove", function (e) {
+  if (!dragging) return;
+  currentY = e.touches[0].clientY;
+  const delta = currentY - startY;
+  if (delta > 0) {
+    modal.style.transform = `translateY(${delta}px)`;
+  }
+});
+
+modal.addEventListener("touchend", function () {
+  dragging = false;
+  modal.style.transition = "transform 0.3s ease";
+
+  if (currentY - startY > 10) {
+    fecharModal();
+  } else {
+    modal.style.transform = `translateY(0)`;
+  }
+
+  startY = 0;
+  currentY = 0;
+});
+
+function fecharModal() {
+  modal.classList.remove("active");
+  modal.style.transform = "translateY(100%)";
+  document.getElementById("map").classList.remove("reduzido");
+}
+
+// Fechar ao clicar fora do conteúdo
+modal.addEventListener("click", function (e) {
+  if (e.target === this) {
+    fecharModal();
+  }
+});
+
+// Linha 7 - Estações
+adicionarEstacao(414, 680, "Brás", "Linha 7 - Rubi", "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.", "linha-vermelha");
+adicionarEstacao(454, 606.5, "Luz", "Linha 7 - Rubi", "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.", "linha-vermelha");
+adicionarEstacao(454, 510, "Palmeiras • Barra Funda", "Linha 7 - Rubi", "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.", "linha-vermelha")
+adicionarEstacao(454.5, 481.5, "Água Branca", "Linha 7 - Rubi",  "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.", "linha-vermelha");
+adicionarEstacao(454, 452, "Lapa", "Linha 7 - Rubi",  "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.","linha-vermelha");
+adicionarEstacao(494.5, 395, "Piqueri", "Linha 7 - Rubi",  "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.","linha-vermelha");
+adicionarEstacao(508.5, 394.5, "Pirituba", "Linha 7 - Rubi",  "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.","linha-vermelha");
+adicionarEstacao(523.5, 395.5, "Vila Clarice", "Linha 7 - Rubi",  "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.","linha-vermelha");
+adicionarEstacao(538, 395, "Jaraguá", "Linha 7 - Rubi",  "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.","linha-vermelha");
+adicionarEstacao(553, 395, "Vila Aurora", "Linha 7 - Rubi",  "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.","linha-vermelha");
+adicionarEstacao(567, 394.5, "Perus", "Linha 7 - Rubi",  "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.","linha-vermelha");
+adicionarEstacao(582.5, 395, "Caieiras", "Linha 7 - Rubi",  "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.","linha-vermelha");
+adicionarEstacao(597.5, 394.5, "Franco da Rocha", "Linha 7 - Rubi", "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.","linha-vermelha");
+adicionarEstacao(611, 395, "Baltazar Fidelis", "Linha 7 - Rubi", "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.","linha-vermelha");
+adicionarEstacao(631, 373, "Francisco Morato", "Linha 7 - Rubi", "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.","linha-vermelha");
+adicionarEstacao(644.5, 354.5, "Botujuru", "Linha 7 - Rubi", "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.","linha-vermelha");
+adicionarEstacao(662, 333.5, "Campo Limpo Paulista", "Linha 7 - Rubi", "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.","linha-vermelha");
+adicionarEstacao(662, 278.5, "Várzea Paulista", "Linha 7 - Rubi", "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.","linha-vermelha");
+adicionarEstacao(662, 218, "Jundiaí", "Linha 7 - Rubi", "Nos horários de pico, os intervalos entre os trens são mais curtos, variando de 4 a 6 minutos. Fora do horário de pico, os intervalos podem ser de até 15 minutos.","linha-vermelha");
+
+//Linha 10 - Estações
+adicionarEstacao(405, 680.5 , "Brás", "Linha 10 - Turquesa" , "Durante o pico, os trens circulam com intervalos de 5 a 7 minutos, e fora do pico, os intervalos são de até 12 minutos.", "linha-turquesa");
+adicionarEstacao(370.5, 742, "Juventus • Mooca", "Linha 10 - Turquesa","Durante o pico, os trens circulam com intervalos de 5 a 7 minutos, e fora do pico, os intervalos são de até 12 minutos.", "linha-turquesa");
+adicionarEstacao(339, 780.5, "Ipiranga", "Linha 10 - Turquesa","Durante o pico, os trens circulam com intervalos de 5 a 7 minutos, e fora do pico, os intervalos são de até 12 minutos.", "linha-turquesa");
+adicionarEstacao(298, 829.5, "Tamanduateí", "Linha 10 - Turquesa","Durante o pico, os trens circulam com intervalos de 5 a 7 minutos, e fora do pico, os intervalos são de até 12 minutos.", "linha-turquesa");
+adicionarEstacao(299.5, 818, "Tamanduateí", "Linha 10 - Turquesa","Durante o pico, os trens circulam com intervalos de 5 a 7 minutos, e fora do pico, os intervalos são de até 12 minutos.", "linha-turquesa");
+adicionarEstacao(280, 855, "São Caetano do Sul", "Linha 10 - Turquesa","Durante o pico, os trens circulam com intervalos de 5 a 7 minutos, e fora do pico, os intervalos são de até 12 minutos.", "linha-turquesa");
+adicionarEstacao(261.5, 877.5, "Utinga", "Linha 10 - Turquesa","Durante o pico, os trens circulam com intervalos de 5 a 7 minutos, e fora do pico, os intervalos são de até 12 minutos.", "linha-turquesa");
+adicionarEstacao(244.5, 898.5 , "Prefeito Saladino", "Linha 10 - Turquesa","Durante o pico, os trens circulam com intervalos de 5 a 7 minutos, e fora do pico, os intervalos são de até 12 minutos.", "linha-turquesa");
+adicionarEstacao(223.5, 924.5, "Santo André", "Linha 10 - Turquesa","Durante o pico, os trens circulam com intervalos de 5 a 7 minutos, e fora do pico, os intervalos são de até 12 minutos.", "linha-turquesa");
+adicionarEstacao(201.5, 951.5, "Capuava", "Linha 10 - Turquesa","Durante o pico, os trens circulam com intervalos de 5 a 7 minutos, e fora do pico, os intervalos são de até 12 minutos.", "linha-turquesa");
+adicionarEstacao(188.5, 967.5, "Mauá", "Linha 10 - Turquesa","Durante o pico, os trens circulam com intervalos de 5 a 7 minutos, e fora do pico, os intervalos são de até 12 minutos.", "linha-turquesa");
+adicionarEstacao(174.5, 984 , "Guapituba", "Linha 10 - Turquesa","Durante o pico, os trens circulam com intervalos de 5 a 7 minutos, e fora do pico, os intervalos são de até 12 minutos.", "linha-turquesa");
+adicionarEstacao(162, 1000, "Ribeirão Pires", "Linha 10 - Turquesa","Durante o pico, os trens circulam com intervalos de 5 a 7 minutos, e fora do pico, os intervalos são de até 12 minutos.", "linha-turquesa");
+adicionarEstacao(143.5, 1024.5 , "Rio Grande da Serra", "Linha 10 - Turquesa","Durante o pico, os trens circulam com intervalos de 5 a 7 minutos, e fora do pico, os intervalos são de até 12 minutos.", "linha-turquesa");
+
+//Linha 11 - Estações
+adicionarEstacao(465, 604.5, "Luz", "Linha 11 - Coral", "Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.", "linha-coral");
+adicionarEstacao(424.5, 680.5, "Brás", "Linha 11 - Coral","Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.","linha-coral");
+adicionarEstacao(425, 755.5, "Tatuapé", "Linha 11 - Coral","Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.","linha-coral");
+adicionarEstacao(424, 916.5, "Corinthians • Itaquera", "Linha 11 - Coral","Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.","linha-coral");
+adicionarEstacao(424, 945.5, "Dom Bosco", "Linha 11 - Coral","Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.","linha-coral");
+adicionarEstacao(425, 964, "José Bonifácio", "Linha 11 - Coral","Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.","linha-coral");
+adicionarEstacao(424.5, 983.5, "Guaianases", "Linha 11 - Coral","Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.","linha-coral");
+adicionarEstacao(424.5, 1003, "Antonio Gianetti Neto", "Linha 11 - Coral","Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.","linha-coral");
+adicionarEstacao(434.5, 1016, "Ferraz de Vasconcelos", "Linha 11 - Coral","Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.","linha-coral");
+adicionarEstacao(446, 1029, "Poá", "Linha 11 - Coral","Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.","linha-coral");
+adicionarEstacao(454.5, 1043.5, "Calmon Viana", "Linha 11 - Coral","Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.","linha-coral");
+adicionarEstacao(454.5, 1063.5, "Suzano", "Linha 11 - Coral","Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.","linha-coral");
+adicionarEstacao(455.5, 1079.5, "Jundiapeba", "Linha 11 - Coral","Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.","linha-coral");
+adicionarEstacao(456, 1097, "Brás Cubas", "Linha 11 - Coral","Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.","linha-coral");
+adicionarEstacao(456, 1113, "Mogi das Cruzes", "Linha 11 - Coral","Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.","linha-coral");
+adicionarEstacao(455.5, 1129.5, "Estudantes", "Linha 11 - Coral","Nos horários de pico, o intervalo entre trens é de cerca de 4 minutos. Fora do pico, os intervalos variam de 8 a 12 minutos.","linha-coral");
+
+//Linha 12 - Estações
+adicionarEstacao(435, 680, "Brás", "Linha 12 - Safira","Os intervalos variam de 6 minutos no pico a até 15 minutos fora dos horários de maior movimento.","linha-safira");
+adicionarEstacao(435.5, 755, "Tatuapé", "Linha 12 - Safira","Os intervalos variam de 6 minutos no pico a até 15 minutos fora dos horários de maior movimento.","linha-safira");
+adicionarEstacao(462, 802.5, "Eng. Goulart", "Linha 12 - Safira","Os intervalos variam de 6 minutos no pico a até 15 minutos fora dos horários de maior movimento.","linha-safira");
+adicionarEstacao(488, 847, "USP Leste", "Linha 12 - Safira","Os intervalos variam de 6 minutos no pico a até 15 minutos fora dos horários de maior movimento.","linha-safira");
+adicionarEstacao(490.5, 870.5, "Comendador Ermelino", "Linha 12 - Safira","Os intervalos variam de 6 minutos no pico a até 15 minutos fora dos horários de maior movimento.","linha-safira");
+adicionarEstacao(489, 894.5, "São Miguel Paulista", "Linha 12 - Safira","Os intervalos variam de 6 minutos no pico a até 15 minutos fora dos horários de maior movimento.","linha-safira");
+adicionarEstacao(489, 918.5, "Jardim Helena–Vila Mara", "Linha 12 - Safira","Os intervalos variam de 6 minutos no pico a até 15 minutos fora dos horários de maior movimento.","linha-safira");
+adicionarEstacao(488.5, 966, "Jardim Romano", "Linha 12 - Safira","Os intervalos variam de 6 minutos no pico a até 15 minutos fora dos horários de maior movimento.","linha-safira");
+adicionarEstacao(489, 941, "Itaim Paulista","Linha 12 - Safira","Os intervalos variam de 6 minutos no pico a até 15 minutos fora dos horários de maior movimento.","linha-safira");
+adicionarEstacao(489, 990.5, "Eng. Manoel Feio", "Linha 12 - Safira","Os intervalos variam de 6 minutos no pico a até 15 minutos fora dos horários de maior movimento.","linha-safira");
+adicionarEstacao(466, 1042.5, "Calmon Viana", "Linha 12 - Safira","Os intervalos variam de 6 minutos no pico a até 15 minutos fora dos horários de maior movimento.","linha-safira");
+adicionarEstacao(482, 1008, "Itaquaquecetuba", "Linha 12 - Safira","Os intervalos variam de 6 minutos no pico a até 15 minutos fora dos horários de maior movimento.","linha-safira");
+adicionarEstacao(471.5, 1021, "Acararé", "Linha 12 - Safira","Os intervalos variam de 6 minutos no pico a até 15 minutos fora dos horários de maior movimento.","linha-safira");
+
+//Linha 13 - Estações
+adicionarEstacao(468.9114065752779, 795, "Eng. Goulart", "Linha 13 - Jade", "Essa linha tem intervalos maiores, de 20 a 30 minutos, uma vez que atende uma área mais específica, conectando a capital ao Aeroporto Internacional de Guarulhos.", "linha-jade")
+adicionarEstacao(652, 972.5, "Guarulhos • Cecap", "Linha 13 - Jade", "Essa linha tem intervalos maiores, de 20 a 30 minutos, uma vez que atende uma área mais específica, conectando a capital ao Aeroporto Internacional de Guarulhos.", "linha-jade")
+adicionarEstacao(687, 973, "Aeroporto • Guarulhos", "Linha 13 - Jade", "Essa linha tem intervalos maiores, de 20 a 30 minutos, uma vez que atende uma área mais específica, conectando a capital ao Aeroporto Internacional de Guarulhos.", "linha-jade")
+
+
+// Normaliza acentos e maiúsculas
+function normalizarTexto(texto) {
+  return texto
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
+const lupaBtn = document.getElementById("botao-lupa");
+const campoBusca = document.getElementById("campo-busca");
+const sugestoesDiv = document.getElementById("sugestoes-busca");
+
+lupaBtn.addEventListener("click", () => {
+  campoBusca.style.display = campoBusca.style.display === "block" ? "none" : "block";
+  campoBusca.focus();
+});
+
+campoBusca.addEventListener("input", () => {
+  const termo = normalizarTexto(campoBusca.value.trim());
+  sugestoesDiv.innerHTML = "";
+
+  if (termo === "") {
+    sugestoesDiv.style.display = "none";
+    return;
+  }
+
+  const resultados = Object.keys(estacoesMap).filter(nome =>
+    normalizarTexto(nome).includes(termo)
+  );
+
+  if (resultados.length === 0) {
+    sugestoesDiv.style.display = "none";
+    return;
+  }
+
+  resultados.forEach(nome => {
+    const item = document.createElement("div");
+    item.className = "sugestao-item";
+    item.textContent = estacoesMap[nome].nome;
+
+    item.addEventListener("click", () => {
+      const estacao = estacoesMap[nome];
+      map.panTo([estacao.lat, estacao.lng], { animate: true });
+      mostrarModal(estacao.nome, estacao.linhas, estacao.descricao, estacao.corClasse, estacao.demanda);
+      campoBusca.value = "";
+      sugestoesDiv.style.display = "none";
+      campoBusca.style.display = "none";
+    });
+
+    sugestoesDiv.appendChild(item);
+  });
+
+  sugestoesDiv.style.display = "block";
+});
+
+campoBusca.addEventListener("keydown", e => {
+  if (e.key === "Escape") {
+    sugestoesDiv.style.display = "none";
+  }
+});
+
+document.addEventListener("click", function (e) {
+  if (!campoBusca.contains(e.target) && !sugestoesDiv.contains(e.target) && e.target !== lupaBtn) {
+    sugestoesDiv.style.display = "none";
+  }
+});
+
+// fecharMapa = document.getElementById("botao-fechar")
+
+// fecharMapa.addEventListener("click", function(){
+//   window.location.href = 'home.html'
+// })
+
+  // map.on('click', function(e) {
+  //   alert("Coordenadas: " + e.latlng.lat + ", " + e.latlng.lng);
+  // });
+
+  const botaoFechar = document.getElementById("botao-fechar");
+
+botaoFechar.addEventListener("click", () => {
+  const body = document.body;
+
+  body.classList.add("saindo"); // aplica a animação
+  setTimeout(() => {
+    window.location.href = "home.html"; // redireciona após a animação
+  }, 400); // igual ao tempo do CSS
+});
+
+// =====================
+// 🧭 FUNÇÃO DE TRAJETO
+// =====================
+let rotaAtiva = null;
+
+// Preencher selects com nomes das estações
+function preencherSelectsEstacoes() {
+  const origemSelect = document.getElementById("origem-select");
+  const destinoSelect = document.getElementById("destino-select");
+  origemSelect.innerHTML = "<option value=''>Selecione...</option>";
+  destinoSelect.innerHTML = "<option value=''>Selecione...</option>";
+
+  Object.values(estacoesMap).forEach(estacao => {
+    const opt1 = document.createElement("option");
+    const opt2 = document.createElement("option");
+    opt1.value = estacao.nome;
+    opt1.textContent = estacao.nome;
+    opt2.value = estacao.nome;
+    opt2.textContent = estacao.nome;
+    origemSelect.appendChild(opt1);
+    destinoSelect.appendChild(opt2);
+  });
+}
+
+// Mostrar / ocultar painel
+const botaoTrajeto = document.getElementById("botao-trajeto");
+const trajetoOpcoes = document.getElementById("trajeto-opcoes");
+
+botaoTrajeto.addEventListener("click", () => {
+  const visivel = trajetoOpcoes.style.display === "flex";
+  trajetoOpcoes.style.display = visivel ? "none" : "flex";
+  if (!visivel) preencherSelectsEstacoes();
+});
+
+function mostrarToast(mensagem, tipo = "warning") {
+  const toast = document.getElementById("toast");
+  toast.textContent = mensagem;
+  toast.className = `toast show ${tipo}`;
+  setTimeout(() => {
+    toast.className = "toast";
+  }, 3000);
+}
+
+// Gerar rota
+document.getElementById("gerar-rota").addEventListener("click", async () => {
+  const origem = document.getElementById("origem-select").value;
+  const destino = document.getElementById("destino-select").value;
+
+  if (!origem || !destino) {
+    mostrarToast("⚠️ Selecione origem e destino", "warning");
+    return;
+  }
+
+  try {
+    const resp = await fetch(`/rota?orig=${origem}&dest=${destino}`);
+    const dados = await resp.json();
+
+    if (!dados.trajeto) {
+      mostrarToast("❌ Nenhum trajeto encontrado", "error");
+      return;
+    }
+
+    const pontos = dados.trajeto.map(e => [e.lat, e.lng]);
+    if (rotaAtiva) map.removeLayer(rotaAtiva);
+
+    // 🎨 Linha estilizada
+    const outline = L.polyline(pontos, {
+      color: "#444",
+      weight: 8,
+      opacity: 0.3,
+      smoothFactor: 1
+    }).addTo(map);
+
+    const mainLine = L.polyline(pontos, {
+  color: "#F9FF00",     
+  weight: 6,             
+  opacity: 0.75,
+  smoothFactor: 1,
+  className: "trajeto-linha" // adiciona classe para CSS opcional
+}).addTo(map);
+
+// Adiciona um leve brilho via CSS:
+const style = document.createElement("style");
+style.innerHTML = `
+  .trajeto-linha {
+    filter: drop-shadow(0 0 6px rgba(230, 0, 38, 0.5));
+  }
+`;
+document.head.appendChild(style);
+  
+
+    let offset = 0;
+    setInterval(() => {
+    offset = (offset + 1) % 20;
+    mainLine.setStyle({
+    dashArray: "10, 20",
+    dashOffset: offset
+    });
+    }, 150);
+
+    rotaAtiva = L.layerGroup([outline, mainLine]).addTo(map);
+    map.fitBounds(mainLine.getBounds());
+
+    // 👇 Fecha automaticamente o menu
+    trajetoOpcoes.style.display = "none";
+
+  } catch (err) {
+    console.error("Erro ao gerar rota:", err);
+  }
+});
+
+// Limpar rota
+document.getElementById("limpar-rota").addEventListener("click", () => {
+  if (rotaAtiva) {
+    map.removeLayer(rotaAtiva);
+    rotaAtiva = null;
+  }
+});
+
+async function toggleFavorito(nomeEstacao, linhaEstacao) {
+  if (!usuarioLogado) {
+    mostrarToast("Faça login para salvar favoritos.", "warning");
+    return;
+  }
+
+  const botao = document.getElementById("favorito-btn");
+  const favoritosAtuais = favoritosUsuario || [];
+  const favoritoExistente = favoritosAtuais.find(
+    (favorito) => favorito?.nome === nomeEstacao || String(favorito?.idEstacao) === nomeEstacao
+  );
+
+  const estacoes = await carregarEstacoesDisponiveis();
+  const estacaoEncontrada = estacoes.find((estacao) => estacao?.nome === nomeEstacao);
+  const idReferencia = favoritoExistente
+    ? favoritoExistente.idEstacao
+    : estacaoEncontrada
+    ? estacaoEncontrada.id
+    : nomeEstacao;
+  const idEstacao = String(idReferencia);
+
+  try {
+    let resposta;
+    if (favoritoExistente) {
+      resposta = await fetch(
+        `/usuarios/${usuarioLogado.id}/favoritos/${encodeURIComponent(idEstacao)}`,
+        { method: "DELETE" }
+      );
+    } else {
+      resposta = await fetch(`/usuarios/${usuarioLogado.id}/favoritos`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ idEstacao, nome: nomeEstacao, linha: linhaEstacao })
+      });
+    }
+
+    const dados = await resposta.json().catch(() => ({}));
+
+    if (!resposta.ok) {
+      throw new Error(dados.message || "Erro ao atualizar favoritos");
+    }
+
+    sincronizarFavoritosLocal(dados.favoritos);
+
+    if (botao) {
+      atualizarEstadoBotaoFavorito(nomeEstacao, botao);
+    }
+
+    if (favoritoExistente) {
+      mostrarToast("Favorito removido com sucesso!", "success");
+    } else {
+      mostrarToast("Estação adicionada aos favoritos!", "success");
+    }
+  } catch (erro) {
+    console.error("Erro ao atualizar favorito:", erro);
+    mostrarToast("Não foi possível atualizar os favoritos.", "error");
+  }
+}
+
+function abrirModalEstacao(nomeEstacao) {
+  const modal = document.getElementById("modal");
+  const nome = document.getElementById("modal-nome");
+  const botaoFavorito = document.getElementById("favorito-btn");
+
+  nome.textContent = nomeEstacao;
+  modal.classList.add("show");
+
+  if (botaoFavorito) {
+    atualizarEstadoBotaoFavorito(nomeEstacao, botaoFavorito);
+  }
+}
+
+</script>
+
+</body>
+</html>
