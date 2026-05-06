@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where pdftotext *)",
+      "Bash(python -c \"import PyPDF2; print\\('ok'\\)\")",
+      "Bash(python -c \"import pypdf; print\\('pypdf ok'\\)\")",
+      "Bash(python -c \"import pdfplumber; print\\('pdfplumber ok'\\)\")",
+      "Bash(C:\\\\Program Files\\\\Git\\\\mingw64\\\\bin\\\\pdftotext.exe *)",
+      "Bash(\"C:\\\\Program Files\\\\Git\\\\mingw64\\\\bin\\\\pdftotext.exe\" \"c:\\\\Users\\\\Dudu\\\\IbmecPriv\\\\Ibmec\\\\Modelagem\\\\AP2\\\\Aula_13_Interpola__o_Ajuste_de_Curva_-_Parte_1_Polinomio_Newton.pdf\" -)",
+      "Bash(findstr /N \"import polyfit numpy plt np matplotlib def print\")",
+      "Bash(findstr /N \"import\")",
+      "Bash(where magick *)",
+      "Bash(pip list *)",
+      "Bash(findstr /I \"pdf pillow image\")",
+      "Bash(pip install *)",
+      "Bash(python *)",
+      "Bash(rm *)"
+    ]
+  }
+}
