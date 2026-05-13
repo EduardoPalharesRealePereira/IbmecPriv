@@ -16,7 +16,16 @@ public class Locadora {
 		
 	}
 	
+	public void setlistaCarros(ArrayList<Carro> listaCarros) {
+		
+		this.listaCarros = listaCarros;
+		
+	}
 	
+	@Override
+	public String toString() {
+	    return "Locadora: " + nome + " | CNPJ: " + cnpj + " | Carros: " + listaCarros.toString();
+	}
 	
 	
 }

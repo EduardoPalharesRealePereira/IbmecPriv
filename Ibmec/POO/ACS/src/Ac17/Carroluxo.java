@@ -5,12 +5,19 @@ public class Carroluxo implements Carro  {
    private String descricao;
    private double valor;
    private double kilometragem;
+   private double diaria;
    
    
+   public Carroluxo(String descricao, double valor, double kilometragem) {
+	super();
+	this.descricao = descricao;
+	this.valor = valor;
+	this.kilometragem = kilometragem;
+}
+
    @Override
    public double calcularValorDiaria() {
 	   
-	private double diaria;
 	diaria = valor / 1000;
 	if(diaria >= 190) {
 		diaria = 190;
@@ -29,6 +36,9 @@ public class Carroluxo implements Carro  {
 	   
    }
    
-   
+   @Override
+   public String toString() {
+       return "Carro Luxo: " + descricao + " | Valor: " + valor + " | Km: " + kilometragem;
+   }
    
 }
