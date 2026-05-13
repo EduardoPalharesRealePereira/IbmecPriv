@@ -9,13 +9,16 @@ public class Carrobasico implements Carro {
 	   
 	   @Override
 	   public double calcularValorDiaria() {
-		// TODO Auto-generated method stub
-		return 0;
+		private double diaria;
+		diaria = valor / 2000;
+		return diaria;
 	   }
 	   @Override
 	   public String verificarKilometragem() {
-		// TODO Auto-generated method stub
-		return null;
+		if(kilometragem >= limiteMaxKm) {
+			return "Carro deve ser enviado pra revisão";
+		}
+		return "Carro basico OK para rodar";
 	   }
 	   
 

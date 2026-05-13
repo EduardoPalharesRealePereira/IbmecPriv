@@ -9,13 +9,24 @@ public class Carroluxo implements Carro  {
    
    @Override
    public double calcularValorDiaria() {
-	// TODO Auto-generated method stub
-	return 0;
+	   
+	private double diaria;
+	diaria = valor / 1000;
+	if(diaria >= 190) {
+		diaria = 190;
+		return diaria;
+	}
+	
+	return diaria;
    }
+   
    @Override
    public String verificarKilometragem() {
-	// TODO Auto-generated method stub
-	return null;
+	   if(kilometragem >= limiteMaxKm) {
+			return "Carro deve ser enviado pra concessionária do grupo";
+		}
+		return "Carro de luxo OK para rodar";
+	   
    }
    
    
