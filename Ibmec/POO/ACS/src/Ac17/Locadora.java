@@ -24,7 +24,7 @@ public class Locadora {
 	
 	@Override
 	public String toString() {
-	    return "Locadora: " + nome + " | CNPJ: " + cnpj + " | Carros: " + listaCarros.toString();
+	    return "Locadora: " + nome + " | CNPJ: " + cnpj + " | Carros: " + listaCarros.toString() + "\n ------------" ;
 	}
 	
 	
