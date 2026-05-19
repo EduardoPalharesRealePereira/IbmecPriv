@@ -16,6 +16,8 @@ public class Main {
 	LocalDate hoje = LocalDate.now();
 	System.out.println("Hoje: " + hoje);
 		
+	
+	// aprendemos isso e varios jeitos de manipular isso
 	}
 
 }
