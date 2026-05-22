@@ -34,5 +34,3 @@ public class Main {
 	        sc.close();
 	    }
 	}
-
-// ta feito completo
