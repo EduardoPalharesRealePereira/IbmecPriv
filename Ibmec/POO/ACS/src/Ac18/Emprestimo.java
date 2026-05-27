@@ -18,8 +18,8 @@ public class Emprestimo {
 		this.livro = livro;
 		this.dataEmprestimo = dataEmprestimo;
 		this.dataPrevistaDevolucao = dataPrevistaDevolucao;
-		this.dataRealDevolucao = dataRealDevolucao;
-		this.situacao = situacao;
+		this.dataRealDevolucao = null;
+		this.situacao = "EMPRESTADO";
 	}
 
 
@@ -77,15 +77,19 @@ public class Emprestimo {
 		return situacao;
 	}
 
- 
-	public void setSituacao(LocalDate dataEmprestimo, LocalDate dataPrevistaDevolucao, LocalDate dataRealDevolucao) {
-		// usar as funções do slide para comparar as datas e setar as situações, ai uso o getSituacaon na main
-		if(
-				return 
+	public String setSituacao(LocalDate dataEmprestimo, LocalDate dataPrevistaDevolucao, LocalDate dataRealDevolucao) {
+		if(LocalDate.now().isAfter(dataPrevistaDevolucao)){
+				return situacao = "ATRASADO";
 	}
-	
+		else if(dataPrevistaDevolucao.isAfter(dataRealDevolucao)) {
+			return "DEVOLVIDO NO PRAZO";
+		}
+		else if(dataRealDevolucao.isAfter(dataPrevistaDevolucao)) {
+			return "DEVOLVIDO COM ATRASO";
+		}
+	return situacao = "bretas";
 	
 			
 	
-
+	}
 }
