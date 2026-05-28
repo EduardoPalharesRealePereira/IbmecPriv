@@ -1,4 +1,5 @@
 package Ac18;
+import java.util.ArrayList;
 
 public class Livro {
 	
@@ -6,6 +7,16 @@ public class Livro {
 	private String autor;
 	private int codigo;
 	private String categoria;
+	ArrayList<Emprestimo> listaEmprestimos = new ArrayList<>();
+	
+	
+	public Livro(String titulo, String autor, int codigo, String categoria) {
+		super();
+		this.titulo = titulo;
+		this.autor = autor;
+		this.codigo = codigo;
+		this.categoria = categoria;
+	}
 	
 	
 		

@@ -17,7 +17,7 @@ public class Usuario {
 		this.emprestimos = emprestimos;
 	}
 	
-	
+		
 	@Override
 	public int hashCode() {
 		return Objects.hash(matricula);
