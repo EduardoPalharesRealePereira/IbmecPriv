@@ -1,5 +1,7 @@
 package Ac18;
 
+import java.time.LocalDate;                  // NOVO
+import java.time.format.DateTimeFormatter;   // NOVO
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -19,6 +21,7 @@ public class Main {
 			System.out.println("2 - Cadastrar livro");
 			System.out.println("3 - Registrar empréstimo");
 			System.out.println("4 - Gerar relatório de empréstimos");
+			System.out.println("5 - Registrar devolução");   // NOVO
 			System.out.println("0 - Sair");
 			System.out.print("Escolha uma opção: ");
 
@@ -90,16 +93,49 @@ public class Main {
 				uFinal.adicionarEmprestimo(emprestimo);
 				emprestimos.add(emprestimo);
 				
+				System.out.println("Empréstimo registrado com sucesso!");
 				
 				break;
 				
 			case 4:
-				System.out.println("===LISTA DE EMPRÉSTIMOS=== ");
+				System.out.println("===RELATÓRIO DE EMPRÉSTIMOS=== ");
 				for(Emprestimo e: emprestimos) {
-					System.out.println(e.toString()); // parei aqui letra j iv (tem q terminar o iv)
+					System.out.println(e.toString());
 				}
 				
 				break;
+
+			// ===== COMPLETADO: registrar devolução =====
+			case 5:
+				System.out.println("===LISTA DE EMPRÉSTIMOS===");
+				if (emprestimos.isEmpty()) {
+					System.out.println("Nenhum empréstimo registrado.");
+					break;
+				}
+				int counter3 = 0;
+				for (Emprestimo e : emprestimos) {
+					System.out.println(counter3 + " - " + e.getLivro().getTitulo()
+							+ " (Usuário: " + e.getUsuario().getNome() + ")");
+					counter3++;
+				}
+				System.out.println("Escolha o número do empréstimo para registrar a devolução: ");
+				int idEmp = sc.nextInt();
+				sc.nextLine();
+				Emprestimo empDevolver = emprestimos.get(idEmp);
+
+				System.out.print("Digite a data real de devolução (dd/MM/yyyy): ");
+				String dataTexto = sc.nextLine();
+				DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+				LocalDate dataReal = LocalDate.parse(dataTexto, fmt);
+
+				empDevolver.setDataRealDevolucao(dataReal);
+				empDevolver.setSituacao(empDevolver.getDataEmprestimo(),
+						empDevolver.getDataPrevistaDevolucao(), dataReal);
+
+				System.out.println("Devolução registrada com sucesso!");
+
+				break;
+
 			case 0:
 				System.out.println("Saindo...");
 				break;

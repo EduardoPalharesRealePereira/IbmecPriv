@@ -18,14 +18,28 @@ public class Livro {
 		this.categoria = categoria;
 	}
 
+	// ===== NOVO: getters necessários para montar o relatório =====
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public String getAutor() {
+		return autor;
+	}
+
+	public int getCodigo() {
+		return codigo;
+	}
+
+	public String getCategoria() {
+		return categoria;
+	}
+	// =============================================================
 
 	@Override
 	public String toString() {
 		return "Livro [titulo=" + titulo + ", autor=" + autor + ", codigo=" + codigo + ", categoria=" + categoria
 				+ ", listaEmprestimos=" + listaEmprestimos + "]";
 	}
-	
-	
-		
 
 }
