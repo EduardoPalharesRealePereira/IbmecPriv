@@ -11,6 +11,7 @@ public class Main {
 		int opcao;
 		ArrayList<Usuario> usuarios = new ArrayList<>();
 		ArrayList<Livro> livros = new ArrayList<>();
+		ArrayList<Emprestimo> emprestimos = new ArrayList<>();
 
 		do {
 			System.out.println("===== BIBLIOTECA - MENU =====");
@@ -53,18 +54,51 @@ public class Main {
 				
 				Livro livro = new Livro(titulo, autor, codigo, categoria);
 				livros.add(livro);
-				
 				System.out.println("Livro cadastrado com sucesso!");
 				
 				break;
 				
 			case 3:
 				System.out.println("---|Registrar empréstimo|---");
-				System.out.println("Selecione o usuário que deseja registrar o empréstimo: ");
-				System.out.println(usuarios.); // parei aqui, letra j case 3
+				System.out.println("===LISTA DE USUARIOS===");
+				int counter = 0;
+				for(Usuario u: usuarios) {
+					System.out.println(counter+ "-" + u.toString());
+					counter++;
+				}
+				System.out.println("Escreva o número do usuario que deseja registrar o empréstimo:");
+				int id = sc.nextInt();
+				sc.nextLine();
+				Usuario uFinal = usuarios.get(id);
+				
+				
+				System.out.println("===LISTA DE LIVROS===");
+				int counter2 = 0;
+				for(Livro l: livros) {
+					System.out.println(counter2+ "-" + l.toString()); 
+					counter2++;
+				}
+				System.out.println("Escreva o numero do livro: ");
+				int id2 = sc.nextInt();
+				sc.nextLine();
+				Livro lFinal = livros.get(id2);
+				System.out.println("Escreva o numero de dias do empréstimo: ");
+				int diasEmprestimo = sc.nextInt();
+				sc.nextLine();
+				
+				Emprestimo emprestimo = new Emprestimo(uFinal, lFinal, diasEmprestimo);
+				uFinal.adicionarEmprestimo(emprestimo);
+				emprestimos.add(emprestimo);
+				
+				
 				break;
+				
 			case 4:
-				System.out.println("Gerar relatório");
+				System.out.println("===LISTA DE EMPRÉSTIMOS=== ");
+				for(Emprestimo e: emprestimos) {
+					System.out.println(e.toString()); // parei aqui letra j iv (tem q terminar o iv)
+				}
+				
 				break;
 			case 0:
 				System.out.println("Saindo...");

@@ -10,14 +10,14 @@ public class Emprestimo {
 	private LocalDate dataPrevistaDevolucao;
 	private LocalDate dataRealDevolucao;
 	private String situacao;
-	//FALAR DO EDES DA NOTA ERRADA
-	// PERGUNTAR PRO EDES SE SO DE O USUARIO ESTAR NO CONSTRUTOR DE EMPRESTIMO, JA TORNA A LETRA H COMO FEITA OU PRECISA DE ALGUMA VALIDAÇÃO EXTRA
-	public Emprestimo(Usuario usuario, Livro livro, LocalDate dataEmprestimo, LocalDate dataPrevistaDevolucao, LocalDate dataRealDevolucao) {
+	private int diasEmprestimo;
+	
+	public Emprestimo(Usuario usuario, Livro livro, int diasEmprestimo) {
 		super();
 		this.usuario = usuario;
 		this.livro = livro;
-		this.dataEmprestimo = dataEmprestimo;
-		this.dataPrevistaDevolucao = dataPrevistaDevolucao;
+		this.dataEmprestimo = LocalDate.now();
+		this.dataPrevistaDevolucao = LocalDate.now().plusDays(diasEmprestimo);
 		this.dataRealDevolucao = null;
 		this.situacao = "EMPRESTADO";
 	}

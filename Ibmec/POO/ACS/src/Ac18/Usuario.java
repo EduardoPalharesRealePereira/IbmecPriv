@@ -14,7 +14,6 @@ public class Usuario {
 		super();
 		this.nome = nome;
 		this.matricula = matricula;
-		this.emprestimos = emprestimos;
 	}
 	
 		
@@ -33,9 +32,48 @@ public class Usuario {
 		Usuario other = (Usuario) obj;
 		return matricula == other.matricula;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Usuario [nome=" + nome + ", matricula=" + matricula + ", emprestimos=" + emprestimos + "]";
+	}
 	
 	
-	
+	public void adicionarEmprestimo(Emprestimo emprestimo) {
+		
+		emprestimos.add(emprestimo);
+	}
+
+
+	public String getNome() {
+		return nome;
+	}
+
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+
+	public int getMatricula() {
+		return matricula;
+	}
+
+
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
+
+
+	public ArrayList<Emprestimo> getEmprestimos() {
+		return emprestimos;
+	}
+
+
+	public void setEmprestimos(ArrayList<Emprestimo> emprestimos) {
+		this.emprestimos = emprestimos;
+	}
 	
 	
 	
