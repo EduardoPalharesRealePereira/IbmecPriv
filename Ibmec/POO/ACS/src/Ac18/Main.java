@@ -1,6 +1,8 @@
 package Ac18;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 
 public class Main {
@@ -9,7 +11,7 @@ public class Main {
 
 		Scanner sc = new Scanner(System.in);
 		int opcao;
-		ArrayList<Usuario> usuarios = new ArrayList<>();
+		LinkedHashSet<Usuario> usuarios = new LinkedHashSet<>();
 		ArrayList<Livro> livros = new ArrayList<>();
 		ArrayList<Emprestimo> emprestimos = new ArrayList<>();
 

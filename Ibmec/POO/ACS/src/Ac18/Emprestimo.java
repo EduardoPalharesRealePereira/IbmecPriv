@@ -92,4 +92,15 @@ public class Emprestimo {
 			
 	
 	}
+
+
+	@Override
+	public String toString() {
+		return "Emprestimo [usuario=" + usuario + ", livro=" + livro + ", dataEmprestimo=" + dataEmprestimo
+				+ ", dataPrevistaDevolucao=" + dataPrevistaDevolucao + ", dataRealDevolucao=" + dataRealDevolucao
+				+ ", situacao=" + situacao + ", diasEmprestimo=" + diasEmprestimo + "]";
+	}
+	
+	
+	
 }
