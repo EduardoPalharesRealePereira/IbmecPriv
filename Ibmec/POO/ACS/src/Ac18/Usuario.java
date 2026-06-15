@@ -17,10 +17,13 @@ public class Usuario {
 	}
 	
 		
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(matricula);
 	}
+
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -34,8 +37,9 @@ public class Usuario {
 	}
 
 
-	@Override
-	public String toString() {
+
+	@Override 
+	public String toString() { // a lista de emprestimos aqui ta retornando o valor ao inves dos valores do emprestimo
 		return "Usuario [nome=" + nome + ", matricula=" + matricula + ", emprestimos=" + emprestimos + "]";
 	}
 	

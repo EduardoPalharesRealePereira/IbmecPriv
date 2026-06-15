@@ -88,6 +88,7 @@ public class Emprestimo {
 		return this.situacao;
 	}
 
+<<<<<<< HEAD
 	// ===== NOVO: total de dias emprestado =====
 	// Se ainda não devolveu, conta até hoje; senão, até a data real de devolução.
 	public long getTotalDiasEmprestado() {
@@ -127,3 +128,16 @@ public class Emprestimo {
 				+ "----------------------------";
 	}
 }
+=======
+
+	@Override
+	public String toString() {
+		return "Emprestimo [usuario=" + usuario + ", livro=" + livro + ", dataEmprestimo=" + dataEmprestimo
+				+ ", dataPrevistaDevolucao=" + dataPrevistaDevolucao + ", dataRealDevolucao=" + dataRealDevolucao
+				+ ", situacao=" + situacao + ", diasEmprestimo=" + diasEmprestimo + "]";
+	}
+	
+	
+	
+}
+>>>>>>> 73436ce789e8e8af7c8a4dd3ece08387ad61539b
