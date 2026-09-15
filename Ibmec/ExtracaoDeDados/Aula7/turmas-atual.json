@@ -1,0 +1,407 @@
+[
+  {
+    "id": "ibmec_14736964",
+    "idExterno": null,
+    "marca": "IBMEC",
+    "codigoEntrega": "8001",
+    "formato": "presencial",
+    "campus": "BELO HORIZONTE - FUNCIONÁRIOS",
+    "tipoCurso": "GRADUAÇÃO",
+    "educadorResponsavel": {
+      "nome": "ANGELICA MATOS GUIMARAES DIAS",
+      "perfil": "professor"
+    },
+    "periodoAcademico": "2026.2",
+    "local": {
+      "blocos": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "salas": [
+        "308",
+        "308",
+        "308",
+        "308"
+      ]
+    },
+    "horarios": [
+      {
+        "diaSemana": "Qua",
+        "horaInicio": "12:50:00Z",
+        "horaFim": "13:45:00Z"
+      },
+      {
+        "diaSemana": "Qua",
+        "horaInicio": "13:45:00Z",
+        "horaFim": "14:40:00Z"
+      },
+      {
+        "diaSemana": "Qui",
+        "horaInicio": "12:50:00Z",
+        "horaFim": "13:45:00Z"
+      },
+      {
+        "diaSemana": "Qui",
+        "horaInicio": "13:45:00Z",
+        "horaFim": "14:40:00Z"
+      }
+    ],
+    "educadores": [
+      {
+        "nome": "ANGELICA MATOS GUIMARAES DIAS",
+        "perfil": "professor"
+      },
+      {
+        "nome": "ANGELICA MATOS GUIMARAES DIAS",
+        "perfil": "professor"
+      },
+      {
+        "nome": "ANGELICA MATOS GUIMARAES DIAS",
+        "perfil": "professor"
+      },
+      {
+        "nome": "ANGELICA MATOS GUIMARAES DIAS",
+        "perfil": "professor"
+      }
+    ],
+    "totalAlunosMatriculados": 8,
+    "codigoDisciplina": "IBM4028",
+    "dataAtualizacao": "2026-09-07T12:43:25.030-03:00",
+    "tipoTurma": "normal",
+    "teams": false,
+    "possuiExercicios": false,
+    "nome": "PROJETO EM CIÊNCIA DE DADOS IV",
+    "habilitarTutoriaZeroDuvidas": false,
+    "habilitarComunidadeZeroDuvidas": false,
+    "habilitarAtendimentoCoordenacaoZeroDuvidas": false,
+    "habilitarRedirecionamentoTeams": false,
+    "habilitarAgendamentoLaboratorio": false,
+    "sincroniaTurma": null
+  },
+  {
+    "id": "ibmec_14736977",
+    "idExterno": null,
+    "marca": "IBMEC",
+    "codigoEntrega": "8001",
+    "formato": "presencial",
+    "campus": "BELO HORIZONTE - FUNCIONÁRIOS",
+    "tipoCurso": "GRADUAÇÃO",
+    "educadorResponsavel": {
+      "nome": "PEDRO HENRIQUE CALAIS GUERRA",
+      "perfil": "professor"
+    },
+    "periodoAcademico": "2026.2",
+    "local": {
+      "blocos": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "salas": [
+        "108",
+        "108",
+        "108",
+        "108"
+      ]
+    },
+    "horarios": [
+      {
+        "diaSemana": "Ter",
+        "horaInicio": "12:50:00Z",
+        "horaFim": "13:45:00Z"
+      },
+      {
+        "diaSemana": "Ter",
+        "horaInicio": "13:45:00Z",
+        "horaFim": "14:40:00Z"
+      },
+      {
+        "diaSemana": "Qua",
+        "horaInicio": "10:30:00Z",
+        "horaFim": "11:25:00Z"
+      },
+      {
+        "diaSemana": "Qua",
+        "horaInicio": "11:25:00Z",
+        "horaFim": "12:20:00Z"
+      }
+    ],
+    "educadores": [
+      {
+        "nome": "PEDRO HENRIQUE CALAIS GUERRA",
+        "perfil": "professor"
+      },
+      {
+        "nome": "PEDRO HENRIQUE CALAIS GUERRA",
+        "perfil": "professor"
+      },
+      {
+        "nome": "PEDRO HENRIQUE CALAIS GUERRA",
+        "perfil": "professor"
+      },
+      {
+        "nome": "PEDRO HENRIQUE CALAIS GUERRA",
+        "perfil": "professor"
+      }
+    ],
+    "totalAlunosMatriculados": 16,
+    "codigoDisciplina": "IBM8915",
+    "dataAtualizacao": "2026-09-06T22:14:02.832-03:00",
+    "tipoTurma": "normal",
+    "teams": false,
+    "possuiExercicios": false,
+    "nome": "EXTRAÇÃO E PREPARAÇÃO DE DADOS",
+    "habilitarTutoriaZeroDuvidas": false,
+    "habilitarComunidadeZeroDuvidas": false,
+    "habilitarAtendimentoCoordenacaoZeroDuvidas": false,
+    "habilitarRedirecionamentoTeams": false,
+    "habilitarAgendamentoLaboratorio": false,
+    "sincroniaTurma": null
+  },
+  {
+    "id": "ibmec_14736680",
+    "idExterno": null,
+    "marca": "IBMEC",
+    "codigoEntrega": "8003",
+    "formato": "presencial",
+    "campus": "BELO HORIZONTE - FUNCIONÁRIOS",
+    "tipoCurso": "GRADUAÇÃO",
+    "educadorResponsavel": {
+      "nome": "FRANK MAGALHAES DE PINHO",
+      "perfil": "professor"
+    },
+    "periodoAcademico": "2026.2",
+    "local": {
+      "blocos": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "salas": [
+        "313",
+        "313",
+        "313",
+        "313"
+      ]
+    },
+    "horarios": [
+      {
+        "diaSemana": "Seg",
+        "horaInicio": "10:30:00Z",
+        "horaFim": "11:25:00Z"
+      },
+      {
+        "diaSemana": "Seg",
+        "horaInicio": "11:25:00Z",
+        "horaFim": "12:20:00Z"
+      },
+      {
+        "diaSemana": "Qui",
+        "horaInicio": "10:30:00Z",
+        "horaFim": "11:25:00Z"
+      },
+      {
+        "diaSemana": "Qui",
+        "horaInicio": "11:25:00Z",
+        "horaFim": "12:20:00Z"
+      }
+    ],
+    "educadores": [
+      {
+        "nome": "FRANK MAGALHAES DE PINHO",
+        "perfil": "professor"
+      },
+      {
+        "nome": "FRANK MAGALHAES DE PINHO",
+        "perfil": "professor"
+      },
+      {
+        "nome": "FRANK MAGALHAES DE PINHO",
+        "perfil": "professor"
+      },
+      {
+        "nome": "FRANK MAGALHAES DE PINHO",
+        "perfil": "professor"
+      }
+    ],
+    "totalAlunosMatriculados": 48,
+    "codigoDisciplina": "IBM0037",
+    "dataAtualizacao": "2026-09-07T17:54:06.290-03:00",
+    "tipoTurma": "normal",
+    "teams": false,
+    "possuiExercicios": false,
+    "nome": "INFERÊNCIA ESTATÍSTICA",
+    "habilitarTutoriaZeroDuvidas": false,
+    "habilitarComunidadeZeroDuvidas": false,
+    "habilitarAtendimentoCoordenacaoZeroDuvidas": false,
+    "habilitarRedirecionamentoTeams": false,
+    "habilitarAgendamentoLaboratorio": false,
+    "sincroniaTurma": null
+  },
+  {
+    "id": "ibmec_14736836",
+    "idExterno": null,
+    "marca": "IBMEC",
+    "codigoEntrega": "8001",
+    "formato": "presencial",
+    "campus": "BELO HORIZONTE - FUNCIONÁRIOS",
+    "tipoCurso": "GRADUAÇÃO",
+    "educadorResponsavel": {
+      "nome": "EDES GARCIA DA COSTA FILHO",
+      "perfil": "professor"
+    },
+    "periodoAcademico": "2026.2",
+    "local": {
+      "blocos": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "salas": [
+        "112",
+        "112",
+        "112",
+        "112"
+      ]
+    },
+    "horarios": [
+      {
+        "diaSemana": "Seg",
+        "horaInicio": "12:50:00Z",
+        "horaFim": "13:45:00Z"
+      },
+      {
+        "diaSemana": "Seg",
+        "horaInicio": "13:45:00Z",
+        "horaFim": "14:40:00Z"
+      },
+      {
+        "diaSemana": "Sex",
+        "horaInicio": "12:50:00Z",
+        "horaFim": "13:45:00Z"
+      },
+      {
+        "diaSemana": "Sex",
+        "horaInicio": "13:45:00Z",
+        "horaFim": "14:40:00Z"
+      }
+    ],
+    "educadores": [
+      {
+        "nome": "EDES GARCIA DA COSTA FILHO",
+        "perfil": "professor"
+      },
+      {
+        "nome": "EDES GARCIA DA COSTA FILHO",
+        "perfil": "professor"
+      },
+      {
+        "nome": "EDES GARCIA DA COSTA FILHO",
+        "perfil": "professor"
+      },
+      {
+        "nome": "EDES GARCIA DA COSTA FILHO",
+        "perfil": "professor"
+      }
+    ],
+    "totalAlunosMatriculados": 52,
+    "codigoDisciplina": "IBM0792",
+    "dataAtualizacao": "2026-09-07T11:45:15.036-03:00",
+    "tipoTurma": "normal",
+    "teams": false,
+    "possuiExercicios": false,
+    "nome": "MÉTODOS ÁGEIS DE DESENVOLVIMENTO DE SOFTWARE",
+    "habilitarTutoriaZeroDuvidas": false,
+    "habilitarComunidadeZeroDuvidas": false,
+    "habilitarAtendimentoCoordenacaoZeroDuvidas": false,
+    "habilitarRedirecionamentoTeams": false,
+    "habilitarAgendamentoLaboratorio": false,
+    "sincroniaTurma": null
+  },
+  {
+    "id": "ibmec_14736847",
+    "idExterno": null,
+    "marca": "IBMEC",
+    "codigoEntrega": "8001",
+    "formato": "presencial",
+    "campus": "BELO HORIZONTE - FUNCIONÁRIOS",
+    "tipoCurso": "GRADUAÇÃO",
+    "educadorResponsavel": {
+      "nome": "TADEU MOREIRA PERONA",
+      "perfil": "professor"
+    },
+    "periodoAcademico": "2026.2",
+    "local": {
+      "blocos": [
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "salas": [
+        "206",
+        "206",
+        "206",
+        "206"
+      ]
+    },
+    "horarios": [
+      {
+        "diaSemana": "Ter",
+        "horaInicio": "10:30:00Z",
+        "horaFim": "11:25:00Z"
+      },
+      {
+        "diaSemana": "Ter",
+        "horaInicio": "11:25:00Z",
+        "horaFim": "12:20:00Z"
+      },
+      {
+        "diaSemana": "Sex",
+        "horaInicio": "10:30:00Z",
+        "horaFim": "11:25:00Z"
+      },
+      {
+        "diaSemana": "Sex",
+        "horaInicio": "11:25:00Z",
+        "horaFim": "12:20:00Z"
+      }
+    ],
+    "educadores": [
+      {
+        "nome": "TADEU MOREIRA PERONA",
+        "perfil": "professor"
+      },
+      {
+        "nome": "TADEU MOREIRA PERONA",
+        "perfil": "professor"
+      },
+      {
+        "nome": "TADEU MOREIRA PERONA",
+        "perfil": "professor"
+      },
+      {
+        "nome": "TADEU MOREIRA PERONA",
+        "perfil": "professor"
+      }
+    ],
+    "totalAlunosMatriculados": 21,
+    "codigoDisciplina": "IBM1740",
+    "dataAtualizacao": "2026-09-07T14:10:23.657-03:00",
+    "tipoTurma": "normal",
+    "teams": false,
+    "possuiExercicios": false,
+    "nome": "INOVAÇÃO E DESIGN THINKING",
+    "habilitarTutoriaZeroDuvidas": false,
+    "habilitarComunidadeZeroDuvidas": false,
+    "habilitarAtendimentoCoordenacaoZeroDuvidas": false,
+    "habilitarRedirecionamentoTeams": false,
+    "habilitarAgendamentoLaboratorio": false,
+    "sincroniaTurma": null
+  }
+]

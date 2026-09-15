@@ -1,0 +1,347 @@
+[
+  {
+    "id": "6a86ee4fd21822eaa3824c08",
+    "entregas": [
+      "ibmec_14736964"
+    ],
+    "titulo": "ATIVIDADE —QUALIDADE DE SOFTWARE",
+    "enunciado": "Conforme anexo",
+    "tipoTrabalho": "GRUPO",
+    "modelo": "COMUM",
+    "obrigatorio": true,
+    "avaliacao": {
+      "tipo": "NENHUMA_CORRECAO"
+    },
+    "prazoEntrega": "2026-08-26T23:59:41.000Z",
+    "permitirEnvioForaPrazo": false,
+    "quantidadeMateriaisApoio": 1,
+    "temResposta": true,
+    "dataAtualizacao": "2026-08-21T14:04:31.818Z",
+    "dataCriacao": "2026-08-20T12:08:47.479Z",
+    "statusResposta": "RESPONDIDO",
+    "codigo_disciplina": "IBM4028",
+    "disciplina": "PROJETO EM CIÊNCIA DE DADOS IV"
+  },
+  {
+    "id": "6aa015e0f276740c1423cd5f",
+    "entregas": [
+      "ibmec_14736977"
+    ],
+    "titulo": "AC 12 - Extracao Sala de Aula API",
+    "enunciado": "CSV das ACs ",
+    "tipoTrabalho": "INDIVIDUAL",
+    "modelo": "COMUM",
+    "obrigatorio": true,
+    "avaliacao": {
+      "tipo": "NENHUMA_CORRECAO"
+    },
+    "prazoEntrega": "2026-09-15T23:59:00.000Z",
+    "permitirEnvioForaPrazo": false,
+    "quantidadeMateriaisApoio": 0,
+    "temResposta": true,
+    "dataAtualizacao": "2026-09-08T14:05:24.578Z",
+    "dataCriacao": "2026-09-08T14:04:16.375Z",
+    "statusResposta": "RESPONDIDO",
+    "codigo_disciplina": "IBM8915",
+    "disciplina": "EXTRAÇÃO E PREPARAÇÃO DE DADOS"
+  },
+  {
+    "id": "6a98026947e0f374f6f80909",
+    "entregas": [
+      "ibmec_14736977"
+    ],
+    "titulo": "AC 11 - Diagrama Sankey para uma categoria -> subcategoria",
+    "enunciado": "",
+    "tipoTrabalho": "INDIVIDUAL",
+    "modelo": "COMUM",
+    "obrigatorio": true,
+    "avaliacao": {
+      "tipo": "NENHUMA_CORRECAO"
+    },
+    "prazoEntrega": "2026-09-10T23:59:00.000Z",
+    "permitirEnvioForaPrazo": false,
+    "quantidadeMateriaisApoio": 0,
+    "temResposta": true,
+    "dataAtualizacao": "2026-09-08T12:22:55.579Z",
+    "dataCriacao": "2026-09-02T11:03:05.260Z",
+    "statusResposta": "RESPONDIDO",
+    "codigo_disciplina": "IBM8915",
+    "disciplina": "EXTRAÇÃO E PREPARAÇÃO DE DADOS"
+  },
+  {
+    "id": "6a9800ab47e0f374f6f7d9df",
+    "entregas": [
+      "ibmec_14736977"
+    ],
+    "titulo": "AC 9 - CSV com produtos da Araujo ou Raia",
+    "enunciado": "",
+    "tipoTrabalho": "INDIVIDUAL",
+    "modelo": "COMUM",
+    "obrigatorio": true,
+    "avaliacao": {
+      "tipo": "NENHUMA_CORRECAO"
+    },
+    "prazoEntrega": "2026-09-09T23:59:00.000Z",
+    "permitirEnvioForaPrazo": false,
+    "quantidadeMateriaisApoio": 0,
+    "temResposta": true,
+    "dataAtualizacao": "2026-09-02T10:58:18.542Z",
+    "dataCriacao": "2026-09-02T10:55:39.540Z",
+    "statusResposta": "RESPONDIDO",
+    "codigo_disciplina": "IBM8915",
+    "disciplina": "EXTRAÇÃO E PREPARAÇÃO DE DADOS"
+  },
+  {
+    "id": "6a98024cd3723b5c2ac35b79",
+    "entregas": [
+      "ibmec_14736977"
+    ],
+    "titulo": "AC 10 - Tree Map Categorias Araujo",
+    "enunciado": "",
+    "tipoTrabalho": "INDIVIDUAL",
+    "modelo": "COMUM",
+    "obrigatorio": true,
+    "avaliacao": {
+      "tipo": "NENHUMA_CORRECAO"
+    },
+    "prazoEntrega": "2026-09-09T23:59:00.000Z",
+    "permitirEnvioForaPrazo": false,
+    "quantidadeMateriaisApoio": 0,
+    "temResposta": true,
+    "dataAtualizacao": "2026-09-02T11:06:39.688Z",
+    "dataCriacao": "2026-09-02T11:02:36.425Z",
+    "statusResposta": "RESPONDIDO",
+    "codigo_disciplina": "IBM8915",
+    "disciplina": "EXTRAÇÃO E PREPARAÇÃO DE DADOS"
+  },
+  {
+    "id": "6a8ece70ee20edc455e3b76b",
+    "entregas": [
+      "ibmec_14736977"
+    ],
+    "titulo": "AC 7 - Nuvem de Palavras Frases Motivacionais",
+    "enunciado": "",
+    "tipoTrabalho": "INDIVIDUAL",
+    "modelo": "COMUM",
+    "obrigatorio": true,
+    "avaliacao": {
+      "tipo": "NENHUMA_CORRECAO"
+    },
+    "prazoEntrega": "2026-09-02T23:59:00.000Z",
+    "permitirEnvioForaPrazo": false,
+    "quantidadeMateriaisApoio": 0,
+    "temResposta": true,
+    "dataAtualizacao": "2026-08-26T11:31:21.471Z",
+    "dataCriacao": "2026-08-26T11:30:56.018Z",
+    "statusResposta": "RESPONDIDO",
+    "codigo_disciplina": "IBM8915",
+    "disciplina": "EXTRAÇÃO E PREPARAÇÃO DE DADOS"
+  },
+  {
+    "id": "6a8ed70fee20edc455e50cf0",
+    "entregas": [
+      "ibmec_14736977"
+    ],
+    "titulo": "AC 8 - Mapa de Calor books.toscrape.com",
+    "enunciado": "",
+    "tipoTrabalho": "INDIVIDUAL",
+    "modelo": "COMUM",
+    "obrigatorio": true,
+    "avaliacao": {
+      "tipo": "NENHUMA_CORRECAO"
+    },
+    "prazoEntrega": "2026-09-02T23:59:00.000Z",
+    "permitirEnvioForaPrazo": false,
+    "quantidadeMateriaisApoio": 0,
+    "temResposta": true,
+    "dataAtualizacao": "2026-08-26T12:08:06.830Z",
+    "dataCriacao": "2026-08-26T12:07:43.286Z",
+    "statusResposta": "RESPONDIDO",
+    "codigo_disciplina": "IBM8915",
+    "disciplina": "EXTRAÇÃO E PREPARAÇÃO DE DADOS"
+  },
+  {
+    "id": "6a8da24fee8cbe7e8e622896",
+    "entregas": [
+      "ibmec_14736977"
+    ],
+    "titulo": "AC 6 - Pontos vs Saldo com Escudo - Serie A Brasileirao",
+    "enunciado": "print do grafico",
+    "tipoTrabalho": "INDIVIDUAL",
+    "modelo": "COMUM",
+    "obrigatorio": true,
+    "avaliacao": {
+      "tipo": "NENHUMA_CORRECAO"
+    },
+    "prazoEntrega": "2026-09-01T23:59:59.000Z",
+    "permitirEnvioForaPrazo": false,
+    "quantidadeMateriaisApoio": 0,
+    "temResposta": true,
+    "dataAtualizacao": "2026-08-25T14:11:11.651Z",
+    "dataCriacao": "2026-08-25T14:10:23.840Z",
+    "statusResposta": "RESPONDIDO",
+    "codigo_disciplina": "IBM8915",
+    "disciplina": "EXTRAÇÃO E PREPARAÇÃO DE DADOS"
+  },
+  {
+    "id": "6a845b24648ed8d73d224271",
+    "entregas": [
+      "ibmec_14736977"
+    ],
+    "titulo": "AC 4 - Coleta Tabela McDonalds",
+    "enunciado": "Extraia a tabela de https://en.wikipedia.org/wiki/List_of_countries_with_McDonald%27s_restaurants e entregue um mapa coropletico do numero de mc donalds por pais",
+    "tipoTrabalho": "INDIVIDUAL",
+    "modelo": "COMUM",
+    "obrigatorio": true,
+    "avaliacao": {
+      "tipo": "NENHUMA_CORRECAO"
+    },
+    "prazoEntrega": "2026-08-25T23:59:47.000Z",
+    "permitirEnvioForaPrazo": false,
+    "quantidadeMateriaisApoio": 0,
+    "temResposta": true,
+    "dataAtualizacao": "2026-08-18T14:02:03.001Z",
+    "dataCriacao": "2026-08-18T13:16:20.405Z",
+    "statusResposta": "RESPONDIDO",
+    "codigo_disciplina": "IBM8915",
+    "disciplina": "EXTRAÇÃO E PREPARAÇÃO DE DADOS"
+  },
+  {
+    "id": "6a85871e5f61f5c1fe27fa7d",
+    "entregas": [
+      "ibmec_14736977"
+    ],
+    "titulo": "AC Pensamento Critico",
+    "enunciado": "Entregue um PRINT da tela final, que tem a msg \"obrigado\"",
+    "tipoTrabalho": "INDIVIDUAL",
+    "modelo": "COMUM",
+    "obrigatorio": true,
+    "avaliacao": {
+      "tipo": "NENHUMA_CORRECAO"
+    },
+    "prazoEntrega": "2026-08-20T23:59:45.000Z",
+    "permitirEnvioForaPrazo": false,
+    "quantidadeMateriaisApoio": 0,
+    "temResposta": true,
+    "dataAtualizacao": "2026-08-19T11:48:18.772Z",
+    "dataCriacao": "2026-08-19T10:36:14.972Z",
+    "statusResposta": "RESPONDIDO",
+    "codigo_disciplina": "IBM8915",
+    "disciplina": "EXTRAÇÃO E PREPARAÇÃO DE DADOS"
+  },
+  {
+    "id": "6a7c55d7e25b87de22c16637",
+    "entregas": [
+      "ibmec_14736977"
+    ],
+    "titulo": "AC 3 - Tabela Guns",
+    "enunciado": "",
+    "tipoTrabalho": "INDIVIDUAL",
+    "modelo": "COMUM",
+    "obrigatorio": true,
+    "avaliacao": {
+      "tipo": "NENHUMA_CORRECAO"
+    },
+    "prazoEntrega": "2026-08-19T23:59:18.000Z",
+    "permitirEnvioForaPrazo": false,
+    "quantidadeMateriaisApoio": 0,
+    "temResposta": true,
+    "dataAtualizacao": "2026-08-12T11:16:09.834Z",
+    "dataCriacao": "2026-08-12T11:15:35.897Z",
+    "statusResposta": "RESPONDIDO",
+    "codigo_disciplina": "IBM8915",
+    "disciplina": "EXTRAÇÃO E PREPARAÇÃO DE DADOS"
+  },
+  {
+    "id": "6a7b31c449b3b4549ee87f6c",
+    "entregas": [
+      "ibmec_14736977"
+    ],
+    "titulo": "AC 2 - Camelot",
+    "enunciado": "",
+    "tipoTrabalho": "INDIVIDUAL",
+    "modelo": "COMUM",
+    "obrigatorio": true,
+    "avaliacao": {
+      "tipo": "NENHUMA_CORRECAO"
+    },
+    "prazoEntrega": "2026-08-18T23:59:58.000Z",
+    "permitirEnvioForaPrazo": false,
+    "quantidadeMateriaisApoio": 0,
+    "temResposta": true,
+    "dataAtualizacao": "2026-08-11T14:29:55.955Z",
+    "dataCriacao": "2026-08-11T14:29:24.985Z",
+    "statusResposta": "RESPONDIDO",
+    "codigo_disciplina": "IBM8915",
+    "disciplina": "EXTRAÇÃO E PREPARAÇÃO DE DADOS"
+  },
+  {
+    "id": "6a73228b0919ba4b5f7d722d",
+    "entregas": [
+      "ibmec_14736977"
+    ],
+    "titulo": "AC 1 - Extracao Tabela Tabula",
+    "enunciado": "Entregue o arquivo CSV extraido de https://www.ime.unicamp.br/~cnaber/tabela_normal.pdf",
+    "tipoTrabalho": "INDIVIDUAL",
+    "modelo": "COMUM",
+    "obrigatorio": true,
+    "avaliacao": {
+      "tipo": "NENHUMA_CORRECAO"
+    },
+    "prazoEntrega": "2026-08-12T23:59:33.000Z",
+    "permitirEnvioForaPrazo": false,
+    "quantidadeMateriaisApoio": 0,
+    "temResposta": true,
+    "dataAtualizacao": "2026-08-05T11:46:58.350Z",
+    "dataCriacao": "2026-08-05T11:46:19.950Z",
+    "statusResposta": "RESPONDIDO",
+    "codigo_disciplina": "IBM8915",
+    "disciplina": "EXTRAÇÃO E PREPARAÇÃO DE DADOS"
+  },
+  {
+    "id": "6a844238648ed8d73d1e5395",
+    "entregas": [
+      "ibmec_14736847"
+    ],
+    "titulo": "Formulário ",
+    "enunciado": "Preencher Formulário para ser discutido na próxima aula com o professor. ",
+    "tipoTrabalho": "INDIVIDUAL",
+    "modelo": "COMUM",
+    "obrigatorio": false,
+    "avaliacao": {
+      "tipo": "NENHUMA_CORRECAO"
+    },
+    "prazoEntrega": "2026-08-25T23:59:52.000Z",
+    "permitirEnvioForaPrazo": true,
+    "quantidadeMateriaisApoio": 1,
+    "temResposta": true,
+    "dataAtualizacao": "2026-08-18T12:00:00.625Z",
+    "dataCriacao": "2026-08-18T11:30:00.570Z",
+    "statusResposta": "RESPONDIDO",
+    "codigo_disciplina": "IBM1740",
+    "disciplina": "INOVAÇÃO E DESIGN THINKING"
+  },
+  {
+    "id": "6a7f013726e53b3166e8a955",
+    "entregas": [
+      "ibmec_14736847"
+    ],
+    "titulo": "Roda da inovação ",
+    "enunciado": "Roda da inçao ",
+    "tipoTrabalho": "INDIVIDUAL",
+    "modelo": "COMUM",
+    "obrigatorio": false,
+    "avaliacao": {
+      "tipo": "NENHUMA_CORRECAO"
+    },
+    "prazoEntrega": "2026-08-24T23:59:37.000Z",
+    "permitirEnvioForaPrazo": true,
+    "quantidadeMateriaisApoio": 0,
+    "temResposta": true,
+    "dataAtualizacao": "2026-08-18T12:02:13.052Z",
+    "dataCriacao": "2026-08-14T11:51:19.783Z",
+    "statusResposta": "RESPONDIDO",
+    "codigo_disciplina": "IBM1740",
+    "disciplina": "INOVAÇÃO E DESIGN THINKING"
+  }
+]

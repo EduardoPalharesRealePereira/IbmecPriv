@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Long Guns por Estado — NICS, novembro de 2015</title>
+</head>
+<body>
+<style>
+  :root {
+    color-scheme: light;
+    --ground:      #f4f6f7;
+    --surface:     #ffffff;
+    --ink:         #12161b;
+    --ink-2:       #5c656e;
+    --ink-3:       #8b939b;
+    --hairline:    #e2e6ea;
+    --hairline-2:  #eef1f3;
+    --series:      #2a78d6;
+    --series-soft: #dbe8f9;
+    --focus:       #2a78d6;
+    --shadow:      0 1px 2px rgba(18,22,27,.06), 0 8px 24px rgba(18,22,27,.05);
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ground:      #131619;
+      --surface:     #1a1e22;
+      --ink:         #eef1f4;
+      --ink-2:       #a4acb4;
+      --ink-3:       #79828b;
+      --hairline:    #2a3037;
+      --hairline-2:  #22272c;
+      --series:      #3987e5;
+      --series-soft: #23374e;
+      --focus:       #6da7ec;
+      --shadow:      0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.32);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ground:      #131619;
+    --surface:     #1a1e22;
+    --ink:         #eef1f4;
+    --ink-2:       #a4acb4;
+    --ink-3:       #79828b;
+    --hairline:    #2a3037;
+    --hairline-2:  #22272c;
+    --series:      #3987e5;
+    --series-soft: #23374e;
+    --focus:       #6da7ec;
+    --shadow:      0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.32);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 48px 24px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  /* ---------- header ---------- */
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-size: clamp(28px, 4.4vw, 42px);
+    line-height: 1.1;
+    letter-spacing: -.022em;
+    font-weight: 660;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .standfirst {
+    margin: 12px 0 0;
+    max-width: 62ch;
+    color: var(--ink-2);
+  }
+
+  /* ---------- stat strip ---------- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1px;
+    background: var(--hairline);
+    border: 1px solid var(--hairline);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .stat {
+    background: var(--surface);
+    padding: 16px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .stat .k {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .stat .v {
+    font-family: var(--mono);
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -.02em;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat .n { font-size: 13px; color: var(--ink-2); }
+
+  /* ---------- controls ---------- */
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    align-items: center;
+  }
+  .group { display: flex; align-items: center; gap: 8px; }
+  .group > .lbl {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .seg {
+    display: flex;
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 8px;
+    padding: 2px;
+    gap: 2px;
+  }
+  .seg button {
+    font: inherit;
+    font-size: 13px;
+    color: var(--ink-2);
+    background: transparent;
+    border: 0;
+    border-radius: 6px;
+    padding: 5px 12px;
+    cursor: pointer;
+  }
+  .seg button:hover { color: var(--ink); }
+  .seg button[aria-pressed="true"] {
+    background: var(--series-soft);
+    color: var(--ink);
+    font-weight: 560;
+  }
+  .seg button:focus-visible,
+  .row:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 1px;
+  }
+
+  /* ---------- panel ---------- */
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .panel-head {
+    display: grid;
+    grid-template-columns: var(--cols);
+    align-items: end;
+    padding: 14px 20px 8px;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .panel-head .h-l,
+  .panel-head .h-r {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .panel-head .h-l { text-align: right; padding-right: 12px; }
+  .panel-head .h-r { text-align: right; }
+  .axis {
+    position: relative;
+    height: 16px;
+    margin-right: 14px;
+  }
+  .axis span {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    font-family: var(--mono);
+    font-size: 10.5px;
+    color: var(--ink-3);
+    font-variant-numeric: tabular-nums;
+  }
+  .axis span:first-child { transform: none; }
+
+  /* ---------- chart ---------- */
+  :root { --cols: 150px 1fr 72px; }
+  .chart { padding: 10px 20px 18px; }
+  .row {
+    display: grid;
+    grid-template-columns: var(--cols);
+    align-items: center;
+    gap: 0;
+    height: 23px;
+    border-radius: 5px;
+    cursor: default;
+  }
+  .row:hover, .row:focus-visible { background: var(--hairline-2); }
+  .name {
+    font-size: 12.5px;
+    color: var(--ink-2);
+    padding-right: 12px;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .row:hover .name { color: var(--ink); }
+  .track {
+    position: relative;
+    height: 100%;
+    margin-right: 14px;
+    background-image: repeating-linear-gradient(
+      to right,
+      var(--hairline) 0 1px,
+      transparent 1px var(--tick)
+    );
+  }
+  .bar {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 13px;
+    background: var(--series);
+    border-radius: 0 4px 4px 0;
+    min-width: 1px;
+  }
+  .val {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    color: var(--ink-2);
+  }
+  .row:hover .val { color: var(--ink); }
+  .row.zero .val { color: var(--ink-3); }
+
+  /* ---------- table ---------- */
+  .tablewrap { overflow-x: auto; padding: 4px 8px 8px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { padding: 7px 12px; text-align: right; white-space: nowrap; }
+  th {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 500;
+    border-bottom: 1px solid var(--hairline);
+    position: sticky;
+    top: 0;
+    background: var(--surface);
+  }
+  th:first-child, td:first-child { text-align: left; }
+  td { font-family: var(--mono); font-variant-numeric: tabular-nums; color: var(--ink-2); border-bottom: 1px solid var(--hairline-2); }
+  td:first-child { font-family: var(--sans); color: var(--ink); }
+  td.lead { color: var(--ink); font-weight: 600; }
+  tbody tr:hover td { background: var(--hairline-2); }
+  tfoot td { border-bottom: 0; border-top: 1px solid var(--hairline); color: var(--ink); font-weight: 600; }
+
+  /* ---------- tooltip ---------- */
+  #tip {
+    position: fixed;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .1s linear;
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 10px 12px;
+    min-width: 168px;
+  }
+  #tip.on { opacity: 1; }
+  #tip .t-name { font-size: 13px; font-weight: 620; margin-bottom: 6px; }
+  #tip dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2px 16px;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    font-variant-numeric: tabular-nums;
+  }
+  #tip dt { color: var(--ink-3); }
+  #tip dd { margin: 0; text-align: right; color: var(--ink); }
+  #tip dd.lead { color: var(--series); font-weight: 600; }
+
+  /* ---------- notes ---------- */
+  .notes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12.5px;
+    color: var(--ink-3);
+    max-width: 78ch;
+  }
+  .notes b { color: var(--ink-2); font-weight: 600; }
+  .rule { height: 1px; background: var(--hairline); border: 0; margin: 0; }
+
+  @media (max-width: 560px) {
+    :root { --cols: 108px 1fr 64px; }
+    .name { font-size: 11.5px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">FBI NICS · Novembro de 2015</p>
+    <h1>Verificações de long guns por estado</h1>
+    <p class="standfirst">
+      Coluna <b>Long Gun</b> da tabela mensal do NICS — rifles e espingardas — extraída do
+      relatório em PDF do FBI. Um registro é uma <em>verificação de antecedentes</em> solicitada,
+      não uma arma vendida.
+    </p>
+  </header>
+
+  <section class="stats" id="stats"></section>
+
+  <div class="controls">
+    <div class="group">
+      <span class="lbl">Visão</span>
+      <div class="seg" role="group" aria-label="Visão">
+        <button type="button" id="b-chart" aria-pressed="true">Gráfico</button>
+        <button type="button" id="b-table" aria-pressed="false">Tabela</button>
+      </div>
+    </div>
+    <div class="group">
+      <span class="lbl">Escopo</span>
+      <div class="seg" role="group" aria-label="Escopo">
+        <button type="button" id="b-all" aria-pressed="true">Tudo (55)</button>
+        <button type="button" id="b-states" aria-pressed="false">50 estados</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="panel" id="panel-chart">
+    <div class="panel-head">
+      <span class="h-l">Estado</span>
+      <div class="axis" id="axis"></div>
+      <span class="h-r">Long gun</span>
+    </div>
+    <div class="chart" id="chart"></div>
+  </section>
+
+  <section class="panel" id="panel-table" hidden>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Estado / Território</th>
+            <th scope="col">Long gun</th>
+            <th scope="col">Handgun</th>
+            <th scope="col">Permit</th>
+            <th scope="col">Total de checks</th>
+            <th scope="col">% do long gun nac.</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+        <tfoot id="tfoot"></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <div class="notes">
+    <p style="margin:0"><b>Fonte:</b> <em>NICS Firearm Background Checks</em>, novembro de 2015 — arquivo <code>background-checks.pdf</code>, 1 página, 55 linhas (50 estados + Distrito de Columbia + 4 territórios).</p>
+    <p style="margin:0"><b>Conferência:</b> a soma das 55 linhas da coluna Long Gun dá <b>636.903</b>, idêntica ao total impresso no PDF; as 24 colunas e as 55 linhas fecham com seus respectivos totais.</p>
+    <p style="margin:0"><b>Ressalva do FBI:</b> os números representam verificações iniciadas no NICS, não armas vendidas — não há correspondência de um para um entre verificação e venda. Havaí e Ilhas Marianas aparecem com zero; alguns estados têm contagens baixas porque a checagem é feita via <em>permit</em> estadual.</p>
+    <p style="margin:0">† Distrito de Columbia e territórios (Guam, Porto Rico, Ilhas Virgens, Ilhas Marianas) — excluídos no escopo “50 estados”.</p>
+  </div>
+</div>
+
+<div id="tip" role="status" aria-live="off"></div>
+
+<script>
+const DATA=[
+["Texas",51670,56941,21550,146982,1],
+["California",35007,41181,98452,180116,1],
+["Ohio",31817,34878,9338,81616,1],
+["Florida",28981,50796,15907,103532,1],
+["Tennessee",24023,28815,9509,63670,1],
+["New York",23519,8650,2906,36421,1],
+["Missouri",22852,21135,5884,55031,1],
+["Alabama",22650,23022,18870,71137,1],
+["Virginia",22348,24052,622,48010,1],
+["Indiana",20227,25519,81935,130333,1],
+["North Carolina",20107,1370,22469,49217,1],
+["Wisconsin",17759,13700,5867,38541,1],
+["Michigan",17604,13634,16786,50278,1],
+["Louisiana",17368,14708,1945,37752,1],
+["Illinois",17227,24412,87190,129861,1],
+["Pennsylvania",16297,62752,24136,103836,1],
+["Colorado",16082,19784,4144,42271,1],
+["Georgia",15227,16635,14111,50795,1],
+["Kentucky",14847,12155,264140,295891,1],
+["Oklahoma",14753,15005,0,35457,1],
+["Minnesota",14173,9373,18939,44023,1],
+["Mississippi",13191,9785,618,27504,1],
+["Washington",12425,15822,10314,43989,1],
+["Oregon",11832,13586,35,25453,1],
+["Arkansas",11611,6359,3298,25048,1],
+["West Virginia",11561,6953,2217,25063,1],
+["South Carolina",10393,11452,7284,32064,1],
+["Arizona",9041,12382,2303,27087,1],
+["Kansas",8702,7086,894,18433,1],
+["Maryland",8310,3220,1512,13463,1],
+["Utah",5857,4314,10429,21772,1],
+["South Dakota",5484,2765,819,9727,1],
+["Idaho",5227,3609,1944,11925,1],
+["Montana",5170,2848,852,10415,1],
+["Connecticut",5072,11594,9631,26438,1],
+["New Mexico",4974,5247,829,12721,1],
+["New Jersey",4704,3462,0,8313,1],
+["Iowa",4596,267,8785,13794,1],
+["Maine",4387,4048,299,9297,1],
+["New Hampshire",4165,4847,3630,12850,1],
+["Massachusetts",3931,6083,5214,15885,1],
+["North Dakota",3744,1720,453,6288,1],
+["Nebraska",3724,173,4258,8299,1],
+["Nevada",3272,4889,1543,10632,1],
+["Alaska",3209,3062,209,7095,1],
+["Delaware",2424,2152,204,5040,1],
+["Wyoming",2372,1745,383,5017,1],
+["Vermont",1826,1189,0,3136,1],
+["Rhode Island",932,954,0,2101,1],
+["Puerto Rico",170,1033,0,1242,0],
+["Guam",55,100,0,171,0],
+["District of Columbia",2,54,8,64,0],
+["Virgin Islands",2,13,93,109,0],
+["Hawaii",0,0,1248,1252,1],
+["Mariana Islands",0,0,0,0,0]
+];
+
+const PT = {
+  "Texas":"Texas","California":"Califórnia","Ohio":"Ohio","Florida":"Flórida","Tennessee":"Tennessee",
+  "New York":"Nova York","Missouri":"Missouri","Alabama":"Alabama","Virginia":"Virgínia","Indiana":"Indiana",
+  "North Carolina":"Carolina do Norte","Wisconsin":"Wisconsin","Michigan":"Michigan","Louisiana":"Luisiana",
+  "Illinois":"Illinois","Pennsylvania":"Pensilvânia","Colorado":"Colorado","Georgia":"Geórgia","Kentucky":"Kentucky",
+  "Oklahoma":"Oklahoma","Minnesota":"Minnesota","Mississippi":"Mississippi","Washington":"Washington",
+  "Oregon":"Oregon","Arkansas":"Arkansas","West Virginia":"Virgínia Ocidental","South Carolina":"Carolina do Sul",
+  "Arizona":"Arizona","Kansas":"Kansas","Maryland":"Maryland","Utah":"Utah","South Dakota":"Dakota do Sul",
+  "Idaho":"Idaho","Montana":"Montana","Connecticut":"Connecticut","New Mexico":"Novo México",
+  "New Jersey":"Nova Jersey","Iowa":"Iowa","Maine":"Maine","New Hampshire":"Nova Hampshire",
+  "Massachusetts":"Massachusetts","North Dakota":"Dakota do Norte","Nebraska":"Nebraska","Nevada":"Nevada",
+  "Alaska":"Alasca","Delaware":"Delaware","Wyoming":"Wyoming","Vermont":"Vermont","Rhode Island":"Rhode Island",
+  "Puerto Rico":"Porto Rico","Guam":"Guam","District of Columbia":"Distrito de Columbia",
+  "Virgin Islands":"Ilhas Virgens","Hawaii":"Havaí","Mariana Islands":"Ilhas Marianas"
+};
+
+const NAT_LONG = 636903;
+const DOMAIN = 55000, TICK = 10000;
+const fmt = n => n.toLocaleString("pt-BR");
+const label = r => (PT[r[0]] || r[0]) + (r[5] ? "" : " †");
+
+let scope = "all";
+const rowsFor = () => scope === "all" ? DATA : DATA.filter(r => r[5]);
+
+function renderAxis() {
+  const ax = document.getElementById("axis");
+  ax.innerHTML = "";
+  for (let v = 0; v <= DOMAIN - TICK/2; v += TICK) {
+    const s = document.createElement("span");
+    s.style.left = (v / DOMAIN * 100) + "%";
+    s.textContent = v === 0 ? "0" : (v / 1000) + "k";
+    ax.appendChild(s);
+  }
+}
+
+function renderStats() {
+  const rows = rowsFor();
+  const sum = rows.reduce((a, r) => a + r[1], 0);
+  const checks = rows.reduce((a, r) => a + r[4], 0);
+  const top = rows[0];
+  document.getElementById("stats").innerHTML = `
+    <div class="stat">
+      <span class="k">Long guns no escopo</span>
+      <span class="v">${fmt(sum)}</span>
+      <span class="n">${rows.length} linhas · ${(sum / NAT_LONG * 100).toFixed(1)}% do total nacional</span>
+    </div>
+    <div class="stat">
+      <span class="k">Maior contagem</span>
+      <span class="v">${fmt(top[1])}</span>
+      <span class="n">${PT[top[0]]} · ${(top[1] / sum * 100).toFixed(1)}% do escopo</span>
+    </div>
+    <div class="stat">
+      <span class="k">Share nas verificações</span>
+      <span class="v">${(sum / checks * 100).toFixed(1)}%</span>
+      <span class="n">de ${fmt(checks)} verificações no total</span>
+    </div>`;
+}
+
+function renderChart() {
+  const chart = document.getElementById("chart");
+  chart.style.setProperty("--tick", (TICK / DOMAIN * 100) + "%");
+  chart.innerHTML = rowsFor().map((r, i) => `
+    <div class="row${r[1] === 0 ? " zero" : ""}" tabindex="0" data-i="${i}"
+         aria-label="${label(r)}: ${fmt(r[1])} long guns">
+      <span class="name">${label(r)}</span>
+      <span class="track" style="--tick:${(TICK / DOMAIN * 100)}%">
+        ${r[1] ? `<span class="bar" style="width:${(r[1] / DOMAIN * 100).toFixed(3)}%"></span>` : ""}
+      </span>
+      <span class="val">${r[1] ? fmt(r[1]) : "—"}</span>
+    </div>`).join("");
+}
+
+function renderTable() {
+  const rows = rowsFor();
+  document.getElementById("tbody").innerHTML = rows.map(r => `
+    <tr>
+      <td>${label(r)}</td>
+      <td class="lead">${fmt(r[1])}</td>
+      <td>${fmt(r[2])}</td>
+      <td>${fmt(r[3])}</td>
+      <td>${fmt(r[4])}</td>
+      <td>${(r[1] / NAT_LONG * 100).toFixed(2)}%</td>
+    </tr>`).join("");
+  const s = k => rows.reduce((a, r) => a + r[k], 0);
+  document.getElementById("tfoot").innerHTML = `
+    <tr>
+      <td>Total (${rows.length})</td>
+      <td>${fmt(s(1))}</td><td>${fmt(s(2))}</td><td>${fmt(s(3))}</td><td>${fmt(s(4))}</td>
+      <td>${(s(1) / NAT_LONG * 100).toFixed(2)}%</td>
+    </tr>`;
+}
+
+function renderAll() { renderStats(); renderChart(); renderTable(); }
+
+/* view + scope toggles */
+function press(on, off) { on.setAttribute("aria-pressed", "true"); off.setAttribute("aria-pressed", "false"); }
+const bChart = document.getElementById("b-chart"), bTable = document.getElementById("b-table");
+const bAll = document.getElementById("b-all"), bStates = document.getElementById("b-states");
+const pChart = document.getElementById("panel-chart"), pTable = document.getElementById("panel-table");
+
+bChart.onclick = () => { press(bChart, bTable); pChart.hidden = false; pTable.hidden = true; };
+bTable.onclick = () => { press(bTable, bChart); pTable.hidden = false; pChart.hidden = true; };
+bAll.onclick = () => { press(bAll, bStates); scope = "all"; renderAll(); };
+bStates.onclick = () => { press(bStates, bAll); scope = "states"; renderAll(); };
+
+/* tooltip */
+const tip = document.getElementById("tip");
+function showTip(r, x, y) {
+  tip.innerHTML = `
+    <div class="t-name">${label(r)}</div>
+    <dl>
+      <dt>Long gun</dt><dd class="lead">${fmt(r[1])}</dd>
+      <dt>Handgun</dt><dd>${fmt(r[2])}</dd>
+      <dt>Permit</dt><dd>${fmt(r[3])}</dd>
+      <dt>Total checks</dt><dd>${fmt(r[4])}</dd>
+      <dt>% nacional</dt><dd>${(r[1] / NAT_LONG * 100).toFixed(2)}%</dd>
+    </dl>`;
+  tip.classList.add("on");
+  const w = tip.offsetWidth, h = tip.offsetHeight;
+  tip.style.left = Math.min(x + 16, innerWidth - w - 8) + "px";
+  tip.style.top = Math.max(8, Math.min(y - h / 2, innerHeight - h - 8)) + "px";
+}
+function hideTip() { tip.classList.remove("on"); }
+
+document.getElementById("chart").addEventListener("mousemove", e => {
+  const row = e.target.closest(".row");
+  if (!row) return hideTip();
+  showTip(rowsFor()[+row.dataset.i], e.clientX, e.clientY);
+});
+document.getElementById("chart").addEventListener("mouseleave", hideTip);
+document.getElementById("chart").addEventListener("focusin", e => {
+  const row = e.target.closest(".row");
+  if (!row) return;
+  const b = row.getBoundingClientRect();
+  showTip(rowsFor()[+row.dataset.i], b.right - 220, b.top + b.height / 2);
+});
+document.getElementById("chart").addEventListener("focusout", hideTip);
+
+renderAxis();
+renderAll();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,751 @@
+﻿nivel,categoria,categoria_pai,caminho,url,slug
+1,Medicamentos,,Medicamentos,https://www.araujo.com.br/medicamentos,medicamentos
+2,Remédio para Diabetes,Medicamentos,Medicamentos > Remédio para Diabetes,https://www.araujo.com.br/medicamentos/diabetes,diabetes
+3,Insulina,Remédio para Diabetes,Medicamentos > Remédio para Diabetes > Insulina,https://www.araujo.com.br/medicamentos/insulina,insulina
+2,Remédios Cardiológicos,Medicamentos,Medicamentos > Remédios Cardiológicos,https://www.araujo.com.br/medicamentos/cardiologicos,cardiologicos
+3,Remédio para Arritmia Cardíaca,Remédios Cardiológicos,Medicamentos > Remédios Cardiológicos > Remédio para Arritmia Cardíaca,https://www.araujo.com.br/medicamentos/arritmia-cardiaca,arritmia-cardiaca
+3,Remédio para Insuficiência Cardíaca,Remédios Cardiológicos,Medicamentos > Remédios Cardiológicos > Remédio para Insuficiência Cardíaca,https://www.araujo.com.br/medicamentos/insuficiencia-cardiaca,insuficiencia-cardiaca
+3,Remédio para Colesterol,Remédios Cardiológicos,Medicamentos > Remédios Cardiológicos > Remédio para Colesterol,https://www.araujo.com.br/medicamentos/colesterol,colesterol
+3,Remédio para Pressão Alta,Remédios Cardiológicos,Medicamentos > Remédios Cardiológicos > Remédio para Pressão Alta,https://www.araujo.com.br/medicamentos/hipertensao,hipertensao
+2,Mais Medicamentos,Medicamentos,Medicamentos > Mais Medicamentos,https://www.araujo.com.br/medicamentos/mais-medicamentos,mais-medicamentos
+2,Antigripais,Medicamentos,Medicamentos > Antigripais,https://www.araujo.com.br/medicamentos/antigripal,antigripal
+2,Saúde dos Olhos,Medicamentos,Medicamentos > Saúde dos Olhos,https://www.araujo.com.br/medicamentos/saude-dos-olhos,saude-dos-olhos
+3,Colírio Antialérgico,Saúde dos Olhos,Medicamentos > Saúde dos Olhos > Colírio Antialérgico,https://www.araujo.com.br/medicamentos/colirio-antialergico,colirio-antialergico
+3,Colírio Lubrificante,Saúde dos Olhos,Medicamentos > Saúde dos Olhos > Colírio Lubrificante,https://www.araujo.com.br/medicamentos/colirio-lubrificante,colirio-lubrificante
+3,Colírio para Dor e Anti-inflamatório,Saúde dos Olhos,Medicamentos > Saúde dos Olhos > Colírio para Dor e Anti-inflamatório,https://www.araujo.com.br/medicamentos/colirio-antiinflamatorio,colirio-antiinflamatorio
+3,Colírio para Infecções e Irritações,Saúde dos Olhos,Medicamentos > Saúde dos Olhos > Colírio para Infecções e Irritações,https://www.araujo.com.br/medicamentos/colirio-infeccoes-irritacoes,colirio-infeccoes-irritacoes
+3,Remédio para Glaucoma,Saúde dos Olhos,Medicamentos > Saúde dos Olhos > Remédio para Glaucoma,https://www.araujo.com.br/medicamentos/glaucoma,glaucoma
+3,Produtos para Lente de Contato,Saúde dos Olhos,Medicamentos > Saúde dos Olhos > Produtos para Lente de Contato,https://www.araujo.com.br/medicamentos/lentes-de-contato,lentes-de-contato
+2,Saúde dos Ossos,Medicamentos,Medicamentos > Saúde dos Ossos,https://www.araujo.com.br/medicamentos/saude-dos-ossos,saude-dos-ossos
+3,Remédio para Artrite,Saúde dos Ossos,Medicamentos > Saúde dos Ossos > Remédio para Artrite,https://www.araujo.com.br/medicamentos/artrite,artrite
+3,Remédio para Gota,Saúde dos Ossos,Medicamentos > Saúde dos Ossos > Remédio para Gota,https://www.araujo.com.br/medicamentos/gota,gota
+3,Remédio para Osteoporose,Saúde dos Ossos,Medicamentos > Saúde dos Ossos > Remédio para Osteoporose,https://www.araujo.com.br/medicamentos/osteoporose,osteoporose
+2,Remédio para Vermes e Parasitas,Medicamentos,Medicamentos > Remédio para Vermes e Parasitas,https://www.araujo.com.br/medicamentos/vermes-e-parasitas,vermes-e-parasitas
+3,Remédio Antifúngico,Remédio para Vermes e Parasitas,Medicamentos > Remédio para Vermes e Parasitas > Remédio Antifúngico,https://www.araujo.com.br/medicamentos/remedio-antifungico,remedio-antifungico
+3,Remédio para Piolho,Remédio para Vermes e Parasitas,Medicamentos > Remédio para Vermes e Parasitas > Remédio para Piolho,https://www.araujo.com.br/medicamentos/remedio-para-piolho,remedio-para-piolho
+2,Remédio para Pele e Mucosa,Medicamentos,Medicamentos > Remédio para Pele e Mucosa,https://www.araujo.com.br/medicamentos/pele-e-mucosa,pele-e-mucosa
+3,Remédio para Queloide,Remédio para Pele e Mucosa,Medicamentos > Remédio para Pele e Mucosa > Remédio para Queloide,https://www.araujo.com.br/medicamentos/queloide,queloide
+3,Removedor de Calos e Verrugas,Remédio para Pele e Mucosa,Medicamentos > Remédio para Pele e Mucosa > Removedor de Calos e Verrugas,https://www.araujo.com.br/medicamentos/removedor-calos-e-verrugas,removedor-calos-e-verrugas
+3,Remédio para Assadura,Remédio para Pele e Mucosa,Medicamentos > Remédio para Pele e Mucosa > Remédio para Assadura,https://www.araujo.com.br/medicamentos/remedio-para-assadura,remedio-para-assadura
+3,Remédio para Afta,Remédio para Pele e Mucosa,Medicamentos > Remédio para Pele e Mucosa > Remédio para Afta,https://www.araujo.com.br/medicamentos/remedio-para-afta,remedio-para-afta
+3,Remédio para Herpes,Remédio para Pele e Mucosa,Medicamentos > Remédio para Pele e Mucosa > Remédio para Herpes,https://www.araujo.com.br/medicamentos/remedio-para-herpes,remedio-para-herpes
+3,Clareador de Pele,Remédio para Pele e Mucosa,Medicamentos > Remédio para Pele e Mucosa > Clareador de Pele,https://www.araujo.com.br/medicamentos/clareador-de-pele,clareador-de-pele
+3,Remédio para Acne e Espinhas,Remédio para Pele e Mucosa,Medicamentos > Remédio para Pele e Mucosa > Remédio para Acne e Espinhas,https://www.araujo.com.br/medicamentos/tratamento-acne,tratamento-acne
+3,Remédio para Micose,Remédio para Pele e Mucosa,Medicamentos > Remédio para Pele e Mucosa > Remédio para Micose,https://www.araujo.com.br/medicamentos/micose,micose
+2,Saúde da Mulher,Medicamentos,Medicamentos > Saúde da Mulher,https://www.araujo.com.br/medicamentos/saude-da-mulher,saude-da-mulher
+3,Remédio para Cólica,Saúde da Mulher,Medicamentos > Saúde da Mulher > Remédio para Cólica,https://www.araujo.com.br/medicamentos/remedio-para-colica,remedio-para-colica
+3,Remédio para Menopausa,Saúde da Mulher,Medicamentos > Saúde da Mulher > Remédio para Menopausa,https://www.araujo.com.br/medicamentos/menopausa,menopausa
+3,Remédios Ginecológicos,Saúde da Mulher,Medicamentos > Saúde da Mulher > Remédios Ginecológicos,https://www.araujo.com.br/medicamentos/ginecologicos,ginecologicos
+3,Anticoncepcional,Saúde da Mulher,Medicamentos > Saúde da Mulher > Anticoncepcional,https://www.araujo.com.br/medicamentos/anticoncepcional,anticoncepcional
+2,Saúde do Homem,Medicamentos,Medicamentos > Saúde do Homem,https://www.araujo.com.br/medicamentos/saude-do-homem,saude-do-homem
+3,Remédio para Calvície,Saúde do Homem,Medicamentos > Saúde do Homem > Remédio para Calvície,https://www.araujo.com.br/medicamentos/remedio-para-calvicie,remedio-para-calvicie
+3,Remédio para Fimose,Saúde do Homem,Medicamentos > Saúde do Homem > Remédio para Fimose,https://www.araujo.com.br/medicamentos/remedio-para-fimose,remedio-para-fimose
+3,Remédio para Próstata,Saúde do Homem,Medicamentos > Saúde do Homem > Remédio para Próstata,https://www.araujo.com.br/medicamentos/remedio-para-prostata,remedio-para-prostata
+3,Remédio para Disfunção Erétil,Saúde do Homem,Medicamentos > Saúde do Homem > Remédio para Disfunção Erétil,https://www.araujo.com.br/medicamentos/disfuncao-eretil,disfuncao-eretil
+2,Remédios para Alergias e Infecções,Medicamentos,Medicamentos > Remédios para Alergias e Infecções,https://www.araujo.com.br/medicamentos/alergias-e-infeccoes,alergias-e-infeccoes
+3,Corticoide,Remédios para Alergias e Infecções,Medicamentos > Remédios para Alergias e Infecções > Corticoide,https://www.araujo.com.br/medicamentos/corticoide,corticoide
+3,Remédio para Infecção,Remédios para Alergias e Infecções,Medicamentos > Remédios para Alergias e Infecções > Remédio para Infecção,https://www.araujo.com.br/medicamentos/remedio-para-infeccoes,remedio-para-infeccoes
+3,Remédio para Rinite e Sinusite,Remédios para Alergias e Infecções,Medicamentos > Remédios para Alergias e Infecções > Remédio para Rinite e Sinusite,https://www.araujo.com.br/medicamentos/rinite-e-sinusite,rinite-e-sinusite
+3,Bombinha para Asma e Bronquite,Remédios para Alergias e Infecções,Medicamentos > Remédios para Alergias e Infecções > Bombinha para Asma e Bronquite,https://www.araujo.com.br/medicamentos/bombinha-asma-e-bronquite,bombinha-asma-e-bronquite
+3,Remédio para Otite,Remédios para Alergias e Infecções,Medicamentos > Remédios para Alergias e Infecções > Remédio para Otite,https://www.araujo.com.br/medicamentos/remedio-para-otite,remedio-para-otite
+3,Remédio para Asma e Bronquite,Remédios para Alergias e Infecções,Medicamentos > Remédios para Alergias e Infecções > Remédio para Asma e Bronquite,https://www.araujo.com.br/medicamentos/asma,asma
+3,Anti-Inflamatório,Remédios para Alergias e Infecções,Medicamentos > Remédios para Alergias e Infecções > Anti-Inflamatório,https://www.araujo.com.br/medicamentos/antiinflamatorio,antiinflamatorio
+3,Antialérgico,Remédios para Alergias e Infecções,Medicamentos > Remédios para Alergias e Infecções > Antialérgico,https://www.araujo.com.br/medicamentos/alergia,alergia
+2,Remédio para Gripe e Resfriado,Medicamentos,Medicamentos > Remédio para Gripe e Resfriado,https://www.araujo.com.br/medicamentos/gripe-e-resfriado,gripe-e-resfriado
+3,Remédio para Desentupir Nariz,Remédio para Gripe e Resfriado,Medicamentos > Remédio para Gripe e Resfriado > Remédio para Desentupir Nariz,https://www.araujo.com.br/medicamentos/desentupir-nariz,desentupir-nariz
+3,Xarope para Tosse Seca,Remédio para Gripe e Resfriado,Medicamentos > Remédio para Gripe e Resfriado > Xarope para Tosse Seca,https://www.araujo.com.br/medicamentos/tosse-seca,tosse-seca
+3,Xarope para Tosse Produtiva,Remédio para Gripe e Resfriado,Medicamentos > Remédio para Gripe e Resfriado > Xarope para Tosse Produtiva,https://www.araujo.com.br/medicamentos/tosse-produtiva,tosse-produtiva
+3,Remédio para Tosse,Remédio para Gripe e Resfriado,Medicamentos > Remédio para Gripe e Resfriado > Remédio para Tosse,https://www.araujo.com.br/medicamentos/tosse,tosse
+2,Remédio para Sistema Nervoso Central,Medicamentos,Medicamentos > Remédio para Sistema Nervoso Central,https://www.araujo.com.br/medicamentos/sistema-nervoso,sistema-nervoso
+3,Remédio para Parar de Beber,Remédio para Sistema Nervoso Central,Medicamentos > Remédio para Sistema Nervoso Central > Remédio para Parar de Beber,https://www.araujo.com.br/medicamentos/parar-de-beber,parar-de-beber
+3,Remédio para Alzheimer,Remédio para Sistema Nervoso Central,Medicamentos > Remédio para Sistema Nervoso Central > Remédio para Alzheimer,https://www.araujo.com.br/medicamentos/alzheimer,alzheimer
+3,Remédio para Ansiedade,Remédio para Sistema Nervoso Central,Medicamentos > Remédio para Sistema Nervoso Central > Remédio para Ansiedade,https://www.araujo.com.br/medicamentos/ansiedade,ansiedade
+3,Remédio para Depressão,Remédio para Sistema Nervoso Central,Medicamentos > Remédio para Sistema Nervoso Central > Remédio para Depressão,https://www.araujo.com.br/medicamentos/depressao,depressao
+3,Remédio para Distúrbios Cognitivos,Remédio para Sistema Nervoso Central,Medicamentos > Remédio para Sistema Nervoso Central > Remédio para Distúrbios Cognitivos,https://www.araujo.com.br/medicamentos/disturbios-cognitivos,disturbios-cognitivos
+3,Remédio para Epilepsia,Remédio para Sistema Nervoso Central,Medicamentos > Remédio para Sistema Nervoso Central > Remédio para Epilepsia,https://www.araujo.com.br/medicamentos/epilepsia,epilepsia
+3,Remédio para Parkinson,Remédio para Sistema Nervoso Central,Medicamentos > Remédio para Sistema Nervoso Central > Remédio para Parkinson,https://www.araujo.com.br/medicamentos/parkinson,parkinson
+3,Remédio para TDAH,Remédio para Sistema Nervoso Central,Medicamentos > Remédio para Sistema Nervoso Central > Remédio para TDAH,https://www.araujo.com.br/medicamentos/tdah,tdah
+3,Remédio para Vertigem,Remédio para Sistema Nervoso Central,Medicamentos > Remédio para Sistema Nervoso Central > Remédio para Vertigem,https://www.araujo.com.br/medicamentos/vertigem,vertigem
+3,Remédios Antipsicóticos,Remédio para Sistema Nervoso Central,Medicamentos > Remédio para Sistema Nervoso Central > Remédios Antipsicóticos,https://www.araujo.com.br/medicamentos/antipsicoticos,antipsicoticos
+3,Remédio para Parar de Fumar,Remédio para Sistema Nervoso Central,Medicamentos > Remédio para Sistema Nervoso Central > Remédio para Parar de Fumar,https://www.araujo.com.br/medicamentos/parar-de-fumar,parar-de-fumar
+2,Remédio para o Estômago e Gastrointestinais,Medicamentos,Medicamentos > Remédio para o Estômago e Gastrointestinais,https://www.araujo.com.br/medicamentos/estomago-e-gastrointestinais,estomago-e-gastrointestinais
+3,Remédio para Gases,Remédio para o Estômago e Gastrointestinais,Medicamentos > Remédio para o Estômago e Gastrointestinais > Remédio para Gases,https://www.araujo.com.br/medicamentos/gases,gases
+3,Laxante,Remédio para o Estômago e Gastrointestinais,Medicamentos > Remédio para o Estômago e Gastrointestinais > Laxante,https://www.araujo.com.br/medicamentos/laxante,laxante
+3,Remédio para Diarreia,Remédio para o Estômago e Gastrointestinais,Medicamentos > Remédio para o Estômago e Gastrointestinais > Remédio para Diarreia,https://www.araujo.com.br/medicamentos/diarreia,diarreia
+3,Remédio para Dor no Estômago,Remédio para o Estômago e Gastrointestinais,Medicamentos > Remédio para o Estômago e Gastrointestinais > Remédio para Dor no Estômago,https://www.araujo.com.br/medicamentos/dor-no-estomago,dor-no-estomago
+3,Enzima Lactase,Remédio para o Estômago e Gastrointestinais,Medicamentos > Remédio para o Estômago e Gastrointestinais > Enzima Lactase,https://www.araujo.com.br/medicamentos/enzima-lactase,enzima-lactase
+3,Remédio para Vômito,Remédio para o Estômago e Gastrointestinais,Medicamentos > Remédio para o Estômago e Gastrointestinais > Remédio para Vômito,https://www.araujo.com.br/medicamentos/vomito,vomito
+3,Remédio para Intestino,Remédio para o Estômago e Gastrointestinais,Medicamentos > Remédio para o Estômago e Gastrointestinais > Remédio para Intestino,https://www.araujo.com.br/medicamentos/intestino,intestino
+3,Remédio para Dor no Fígado,Remédio para o Estômago e Gastrointestinais,Medicamentos > Remédio para o Estômago e Gastrointestinais > Remédio para Dor no Fígado,https://www.araujo.com.br/medicamentos/dor-no-figado,dor-no-figado
+3,Remédio para Gastrite e Úlcera,Remédio para o Estômago e Gastrointestinais,Medicamentos > Remédio para o Estômago e Gastrointestinais > Remédio para Gastrite e Úlcera,https://www.araujo.com.br/medicamentos/gastrite,gastrite
+3,Remédio para Má Digestão,Remédio para o Estômago e Gastrointestinais,Medicamentos > Remédio para o Estômago e Gastrointestinais > Remédio para Má Digestão,https://www.araujo.com.br/medicamentos/digestivo,digestivo
+3,Remédio para Prisão de Ventre,Remédio para o Estômago e Gastrointestinais,Medicamentos > Remédio para o Estômago e Gastrointestinais > Remédio para Prisão de Ventre,https://www.araujo.com.br/medicamentos/prisao-de-ventre,prisao-de-ventre
+2,Imunossupressores,Medicamentos,Medicamentos > Imunossupressores,https://www.araujo.com.br/medicamentos/imunossupressores,imunossupressores
+2,Remédio para Problemas Renais,Medicamentos,Medicamentos > Remédio para Problemas Renais,https://www.araujo.com.br/medicamentos/problemas-renais,problemas-renais
+2,Remédio para Dormir,Medicamentos,Medicamentos > Remédio para Dormir,https://www.araujo.com.br/medicamentos/remedio-para-dormir,remedio-para-dormir
+2,Remédio para Emagrecer,Medicamentos,Medicamentos > Remédio para Emagrecer,https://www.araujo.com.br/medicamentos/remedio-para-emagrecer,remedio-para-emagrecer
+2,Cortador e Porta Comprimidos,Medicamentos,Medicamentos > Cortador e Porta Comprimidos,https://www.araujo.com.br/medicamentos/porta-comprimidos,porta-comprimidos
+2,Remédios Hormonais,Medicamentos,Medicamentos > Remédios Hormonais,https://www.araujo.com.br/medicamentos/hormonais,hormonais
+3,Remédio para Tireoide,Remédios Hormonais,Medicamentos > Remédios Hormonais > Remédio para Tireoide,https://www.araujo.com.br/medicamentos/remedio-para-tireoide,remedio-para-tireoide
+3,Remédio para Distúrbios Hormonais,Remédios Hormonais,Medicamentos > Remédios Hormonais > Remédio para Distúrbios Hormonais,https://www.araujo.com.br/medicamentos/disturbios-hormonais,disturbios-hormonais
+2,Remédio para o Sistema Circulatório,Medicamentos,Medicamentos > Remédio para o Sistema Circulatório,https://www.araujo.com.br/medicamentos/sistema-circulatorio,sistema-circulatorio
+3,Remédio para Trombose,Remédio para o Sistema Circulatório,Medicamentos > Remédio para o Sistema Circulatório > Remédio para Trombose,https://www.araujo.com.br/medicamentos/remedio-para-trombose,remedio-para-trombose
+3,Anticoagulante,Remédio para o Sistema Circulatório,Medicamentos > Remédio para o Sistema Circulatório > Anticoagulante,https://www.araujo.com.br/medicamentos/anticoagulante,anticoagulante
+3,Remédio para Distúrbios Circulatórios,Remédio para o Sistema Circulatório,Medicamentos > Remédio para o Sistema Circulatório > Remédio para Distúrbios Circulatórios,https://www.araujo.com.br/medicamentos/disturbios-circulatorios,disturbios-circulatorios
+3,Remédio para Hemorragia,Remédio para o Sistema Circulatório,Medicamentos > Remédio para o Sistema Circulatório > Remédio para Hemorragia,https://www.araujo.com.br/medicamentos/remedio-para-hemorragia,remedio-para-hemorragia
+3,Remédio para Varizes e Hemorroidas,Remédio para o Sistema Circulatório,Medicamentos > Remédio para o Sistema Circulatório > Remédio para Varizes e Hemorroidas,https://www.araujo.com.br/medicamentos/varizes-e-hemorroidas,varizes-e-hemorroidas
+2,Medicamentos Especiais,Medicamentos,Medicamentos > Medicamentos Especiais,https://www.araujo.com.br/medicamentos/medicamentos-especiais,medicamentos-especiais
+3,Infectologia,Medicamentos Especiais,Medicamentos > Medicamentos Especiais > Infectologia,https://www.araujo.com.br/medicamentos/infectologia-especiais,infectologia-especiais
+3,Oncologia,Medicamentos Especiais,Medicamentos > Medicamentos Especiais > Oncologia,https://www.araujo.com.br/medicamentos/oncologia-especiais,oncologia-especiais
+2,Vacinas,Medicamentos,Medicamentos > Vacinas,https://www.araujo.com.br/medicamentos/vacinas,vacinas
+3,Araujo Saúde,Vacinas,Medicamentos > Vacinas > Araujo Saúde,https://www.araujo.com.br/medicamentos/vacina-gripe,vacina-gripe
+3,Vacina de Hepatite,Vacinas,Medicamentos > Vacinas > Vacina de Hepatite,https://www.araujo.com.br/medicamentos/vacina-hepatite,vacina-hepatite
+3,Vacina para Herpes,Vacinas,Medicamentos > Vacinas > Vacina para Herpes,https://www.araujo.com.br/medicamentos/vacina-herpes,vacina-herpes
+3,Vacina para Meningite,Vacinas,Medicamentos > Vacinas > Vacina para Meningite,https://www.araujo.com.br/medicamentos/vacina-meningite,vacina-meningite
+3,Vacina de Febre Amarela,Vacinas,Medicamentos > Vacinas > Vacina de Febre Amarela,https://www.araujo.com.br/medicamentos/vacina-febre-amarela,vacina-febre-amarela
+3,Vacina Sincicial,Vacinas,Medicamentos > Vacinas > Vacina Sincicial,https://www.araujo.com.br/medicamentos/vacina-sincicial,vacina-sincicial
+2,Remédios para Dor,Medicamentos,Medicamentos > Remédios para Dor,https://www.araujo.com.br/medicamentos/remedios-para-dor,remedios-para-dor
+3,Remédio para Enxaqueca,Remédios para Dor,Medicamentos > Remédios para Dor > Remédio para Enxaqueca,https://www.araujo.com.br/medicamentos/remedio-para-enxaqueca,remedio-para-enxaqueca
+3,Remédio para Dor de Cabeça,Remédios para Dor,Medicamentos > Remédios para Dor > Remédio para Dor de Cabeça,https://www.araujo.com.br/medicamentos/remedio-para-dor-de-cabeca,remedio-para-dor-de-cabeca
+3,Remédio para Dor de Dente,Remédios para Dor,Medicamentos > Remédios para Dor > Remédio para Dor de Dente,https://www.araujo.com.br/medicamentos/remedio-para-dor-de-dente,remedio-para-dor-de-dente
+3,Remédio para Dor de Garganta,Remédios para Dor,Medicamentos > Remédios para Dor > Remédio para Dor de Garganta,https://www.araujo.com.br/medicamentos/remedio-para-dor-de-garganta,remedio-para-dor-de-garganta
+3,Remédio para Dor e Febre,Remédios para Dor,Medicamentos > Remédios para Dor > Remédio para Dor e Febre,https://www.araujo.com.br/medicamentos/remedio-para-dor-e-febre,remedio-para-dor-e-febre
+3,Remédio para Dor Muscular,Remédios para Dor,Medicamentos > Remédios para Dor > Remédio para Dor Muscular,https://www.araujo.com.br/medicamentos/remedio-para-dor-muscular,remedio-para-dor-muscular
+1,Infantil,,Infantil,https://www.araujo.com.br/infantil,infantil
+2,Alimentação Infantil,Infantil,Infantil > Alimentação Infantil,https://www.araujo.com.br/infantil/alimentacao-infantil,alimentacao-infantil
+3,Papinha,Alimentação Infantil,Infantil > Alimentação Infantil > Papinha,https://www.araujo.com.br/infantil/papinha,papinha
+3,Suplemento Alimentar Infantil,Alimentação Infantil,Infantil > Alimentação Infantil > Suplemento Alimentar Infantil,https://www.araujo.com.br/infantil/suplemento-alimentar-infantil,suplemento-alimentar-infantil
+3,Fórmula Infantil,Alimentação Infantil,Infantil > Alimentação Infantil > Fórmula Infantil,https://www.araujo.com.br/infantil/formula-infantil,formula-infantil
+3,Leite Infantil,Alimentação Infantil,Infantil > Alimentação Infantil > Leite Infantil,https://www.araujo.com.br/infantil/leite-infantil,leite-infantil
+3,Cereal Infantil,Alimentação Infantil,Infantil > Alimentação Infantil > Cereal Infantil,https://www.araujo.com.br/infantil/cereal-infantil,cereal-infantil
+3,Biscoito Infantil,Alimentação Infantil,Infantil > Alimentação Infantil > Biscoito Infantil,https://www.araujo.com.br/infantil/biscoito-infantil,biscoito-infantil
+2,Troca de Fraldas,Infantil,Infantil > Troca de Fraldas,https://www.araujo.com.br/infantil/troca-de-fraldas,troca-de-fraldas
+3,Pomada para Assaduras,Troca de Fraldas,Infantil > Troca de Fraldas > Pomada para Assaduras,https://www.araujo.com.br/infantil/pomadas-para-assaduras,pomadas-para-assaduras
+3,Lenços Umedecidos,Troca de Fraldas,Infantil > Troca de Fraldas > Lenços Umedecidos,https://www.araujo.com.br/infantil/lencos-umedecidos,lencos-umedecidos
+3,Fraldas Infantis,Troca de Fraldas,Infantil > Troca de Fraldas > Fraldas Infantis,https://www.araujo.com.br/infantil/fraldas-infantis,fraldas-infantis
+3,Talco de Bebê,Troca de Fraldas,Infantil > Troca de Fraldas > Talco de Bebê,https://www.araujo.com.br/infantil/talco-de-bebe,talco-de-bebe
+2,Cuidados para as Mamães,Infantil,Infantil > Cuidados para as Mamães,https://www.araujo.com.br/infantil/cuidados-para-as-mamaes,cuidados-para-as-mamaes
+3,Absorvente para os Seios,Cuidados para as Mamães,Infantil > Cuidados para as Mamães > Absorvente para os Seios,https://www.araujo.com.br/infantil/absorvente-seios,absorvente-seios
+3,Protetores para os Seios e Mamilos,Cuidados para as Mamães,Infantil > Cuidados para as Mamães > Protetores para os Seios e Mamilos,https://www.araujo.com.br/infantil/protetores-para-mamilos,protetores-para-mamilos
+3,Cremes e Pomadas para os Seios,Cuidados para as Mamães,Infantil > Cuidados para as Mamães > Cremes e Pomadas para os Seios,https://www.araujo.com.br/infantil/pomadas-para-os-seios,pomadas-para-os-seios
+3,Sutiã de Sustentação,Cuidados para as Mamães,Infantil > Cuidados para as Mamães > Sutiã de Sustentação,https://www.araujo.com.br/infantil/sutia-de-sustentacao,sutia-de-sustentacao
+3,Concha para os Seios,Cuidados para as Mamães,Infantil > Cuidados para as Mamães > Concha para os Seios,https://www.araujo.com.br/infantil/concha-para-os-seios,concha-para-os-seios
+2,Banho Infantil,Infantil,Infantil > Banho Infantil,https://www.araujo.com.br/infantil/banho-infantil,banho-infantil
+3,Sabonete Infantil,Banho Infantil,Infantil > Banho Infantil > Sabonete Infantil,https://www.araujo.com.br/infantil/sabonete-infantil,sabonete-infantil
+3,Shampoo Infantil,Banho Infantil,Infantil > Banho Infantil > Shampoo Infantil,https://www.araujo.com.br/infantil/shampoo-infantil,shampoo-infantil
+3,Condicionador Infantil,Banho Infantil,Infantil > Banho Infantil > Condicionador Infantil,https://www.araujo.com.br/infantil/condicionador-infantil,condicionador-infantil
+3,Gel e Creme para Cabelo Infantil,Banho Infantil,Infantil > Banho Infantil > Gel e Creme para Cabelo Infantil,https://www.araujo.com.br/infantil/gel-cabelo-infantil,gel-cabelo-infantil
+3,Perfumes e Colônias Infantis,Banho Infantil,Infantil > Banho Infantil > Perfumes e Colônias Infantis,https://www.araujo.com.br/infantil/perfumes-infantis,perfumes-infantis
+3,Esponja de Banho Infantil,Banho Infantil,Infantil > Banho Infantil > Esponja de Banho Infantil,https://www.araujo.com.br/infantil/esponja-de-banho-infantil,esponja-de-banho-infantil
+3,Toalha de Banho Infantil,Banho Infantil,Infantil > Banho Infantil > Toalha de Banho Infantil,https://www.araujo.com.br/infantil/toalha-de-banho-infantil,toalha-de-banho-infantil
+3,Algodão para Bebê,Banho Infantil,Infantil > Banho Infantil > Algodão para Bebê,https://www.araujo.com.br/infantil/algodao-para-bebe,algodao-para-bebe
+2,Acessórios para Alimentação Infantil,Infantil,Infantil > Acessórios para Alimentação Infantil,https://www.araujo.com.br/infantil/acessorios-para-alimentacao-infantil,acessorios-para-alimentacao-infantil
+3,Babador,Acessórios para Alimentação Infantil,Infantil > Acessórios para Alimentação Infantil > Babador,https://www.araujo.com.br/infantil/babador,babador
+3,Caneca Infantil,Acessórios para Alimentação Infantil,Infantil > Acessórios para Alimentação Infantil > Caneca Infantil,https://www.araujo.com.br/infantil/caneca-infantil,caneca-infantil
+3,Copo Infantil,Acessórios para Alimentação Infantil,Infantil > Acessórios para Alimentação Infantil > Copo Infantil,https://www.araujo.com.br/infantil/copo-infantil,copo-infantil
+3,Copo Infantil com Canudo,Acessórios para Alimentação Infantil,Infantil > Acessórios para Alimentação Infantil > Copo Infantil com Canudo,https://www.araujo.com.br/infantil/copo-infantil-com-canudo,copo-infantil-com-canudo
+3,Copo Antivazamento Infantil,Acessórios para Alimentação Infantil,Infantil > Acessórios para Alimentação Infantil > Copo Antivazamento Infantil,https://www.araujo.com.br/infantil/copo-antivazamento-infantil,copo-antivazamento-infantil
+3,Garrafa Infantil,Acessórios para Alimentação Infantil,Infantil > Acessórios para Alimentação Infantil > Garrafa Infantil,https://www.araujo.com.br/infantil/garrafa-infantil,garrafa-infantil
+3,Garrafa Térmica Infantil,Acessórios para Alimentação Infantil,Infantil > Acessórios para Alimentação Infantil > Garrafa Térmica Infantil,https://www.araujo.com.br/infantil/garrafa-termica-infantil,garrafa-termica-infantil
+3,Colher Infantil,Acessórios para Alimentação Infantil,Infantil > Acessórios para Alimentação Infantil > Colher Infantil,https://www.araujo.com.br/infantil/colher-infantil,colher-infantil
+3,Talher Infantil,Acessórios para Alimentação Infantil,Infantil > Acessórios para Alimentação Infantil > Talher Infantil,https://www.araujo.com.br/infantil/talher-infantil,talher-infantil
+3,Prato Infantil,Acessórios para Alimentação Infantil,Infantil > Acessórios para Alimentação Infantil > Prato Infantil,https://www.araujo.com.br/infantil/prato-infantil,prato-infantil
+3,Potes e Porta Alimentos,Acessórios para Alimentação Infantil,Infantil > Acessórios para Alimentação Infantil > Potes e Porta Alimentos,https://www.araujo.com.br/infantil/porta-alimentos-infantil,porta-alimentos-infantil
+3,Kit Alimentação Infantil,Acessórios para Alimentação Infantil,Infantil > Acessórios para Alimentação Infantil > Kit Alimentação Infantil,https://www.araujo.com.br/infantil/kit-alimentacao-infantil,kit-alimentacao-infantil
+3,Alimentador Infantil,Acessórios para Alimentação Infantil,Infantil > Acessórios para Alimentação Infantil > Alimentador Infantil,https://www.araujo.com.br/infantil/alimentador-infantil,alimentador-infantil
+3,Bolsa Térmica e Porta Mamadeira,Acessórios para Alimentação Infantil,Infantil > Acessórios para Alimentação Infantil > Bolsa Térmica e Porta Mamadeira,https://www.araujo.com.br/infantil/porta-mamadeira,porta-mamadeira
+3,Cadeira de Alimentação,Acessórios para Alimentação Infantil,Infantil > Acessórios para Alimentação Infantil > Cadeira de Alimentação,https://www.araujo.com.br/infantil/cadeira-de-alimentacao,cadeira-de-alimentacao
+2,Brinquedos Infantis,Infantil,Infantil > Brinquedos Infantis,https://www.araujo.com.br/infantil/brinquedos,brinquedos
+2,Amamentação,Infantil,Infantil > Amamentação,https://www.araujo.com.br/infantil/acessorios-para-amamentacao,acessorios-para-amamentacao
+3,Bico de Mamadeira,Amamentação,Infantil > Amamentação > Bico de Mamadeira,https://www.araujo.com.br/infantil/bico-de-mamadeira,bico-de-mamadeira
+3,Bombinha de Tirar Leite,Amamentação,Infantil > Amamentação > Bombinha de Tirar Leite,https://www.araujo.com.br/infantil/bombinha-de-tirar-leite,bombinha-de-tirar-leite
+3,Mamadeira,Amamentação,Infantil > Amamentação > Mamadeira,https://www.araujo.com.br/infantil/mamadeira,mamadeira
+3,Kit de Mamadeira,Amamentação,Infantil > Amamentação > Kit de Mamadeira,https://www.araujo.com.br/infantil/kit-de-mamadeira,kit-de-mamadeira
+2,Cuidados com as Mãos,Infantil,Infantil > Cuidados com as Mãos,https://www.araujo.com.br/infantil/cuidados-com-as-maos,cuidados-com-as-maos
+3,Cortador de Unha Infantil,Cuidados com as Mãos,Infantil > Cuidados com as Mãos > Cortador de Unha Infantil,https://www.araujo.com.br/infantil/cortador-de-unha-infantil,cortador-de-unha-infantil
+3,Kit Cortador de Unha Infantil,Cuidados com as Mãos,Infantil > Cuidados com as Mãos > Kit Cortador de Unha Infantil,https://www.araujo.com.br/infantil/kit-cortador-de-unha-infantil,kit-cortador-de-unha-infantil
+3,Tesoura para Unha Infantil,Cuidados com as Mãos,Infantil > Cuidados com as Mãos > Tesoura para Unha Infantil,https://www.araujo.com.br/infantil/tesoura-para-unha-infantil,tesoura-para-unha-infantil
+2,Acessórios Infantis,Infantil,Infantil > Acessórios Infantis,https://www.araujo.com.br/infantil/acessorios-infantis,acessorios-infantis
+3,Chupeta,Acessórios Infantis,Infantil > Acessórios Infantis > Chupeta,https://www.araujo.com.br/infantil/chupeta,chupeta
+3,Mordedor para Bebê,Acessórios Infantis,Infantil > Acessórios Infantis > Mordedor para Bebê,https://www.araujo.com.br/infantil/mordedor-para-bebe,mordedor-para-bebe
+3,Porta Chupeta,Acessórios Infantis,Infantil > Acessórios Infantis > Porta Chupeta,https://www.araujo.com.br/infantil/porta-chupeta,porta-chupeta
+3,Escova para Cabelo Infantil,Acessórios Infantis,Infantil > Acessórios Infantis > Escova para Cabelo Infantil,https://www.araujo.com.br/infantil/escova-para-cabelo-infantil,escova-para-cabelo-infantil
+3,Aspirador Nasal para Bebê,Acessórios Infantis,Infantil > Acessórios Infantis > Aspirador Nasal para Bebê,https://www.araujo.com.br/infantil/aspirador-nasal-para-bebe,aspirador-nasal-para-bebe
+3,Prendedor de Cabelo Infantil,Acessórios Infantis,Infantil > Acessórios Infantis > Prendedor de Cabelo Infantil,https://www.araujo.com.br/infantil/prendedor-de-cabelo-infantil,prendedor-de-cabelo-infantil
+3,Adaptador Sanitário,Acessórios Infantis,Infantil > Acessórios Infantis > Adaptador Sanitário,https://www.araujo.com.br/infantil/adaptador-sanitario,adaptador-sanitario
+3,Chocalho para Bebê,Acessórios Infantis,Infantil > Acessórios Infantis > Chocalho para Bebê,https://www.araujo.com.br/infantil/chocalho-para-bebe,chocalho-para-bebe
+2,Cuidados com a Pele Infantil,Infantil,Infantil > Cuidados com a Pele Infantil,https://www.araujo.com.br/infantil/cuidados-com-a-pele-infantil,cuidados-com-a-pele-infantil
+3,Hidratante Infantil,Cuidados com a Pele Infantil,Infantil > Cuidados com a Pele Infantil > Hidratante Infantil,https://www.araujo.com.br/infantil/hidratante-infantil,hidratante-infantil
+3,Óleo para Bebês,Cuidados com a Pele Infantil,Infantil > Cuidados com a Pele Infantil > Óleo para Bebês,https://www.araujo.com.br/infantil/oleo-para-bebes,oleo-para-bebes
+2,Beleza Infantil,Infantil,Infantil > Beleza Infantil,https://www.araujo.com.br/infantil/beleza-infantil,beleza-infantil
+3,Kit de Maquiagem Infantil,Beleza Infantil,Infantil > Beleza Infantil > Kit de Maquiagem Infantil,https://www.araujo.com.br/infantil/kit-de-maquiagem-infantil,kit-de-maquiagem-infantil
+3,Maquiagem Infantil,Beleza Infantil,Infantil > Beleza Infantil > Maquiagem Infantil,https://www.araujo.com.br/infantil/maquiagem-infantil,maquiagem-infantil
+3,Unha Postiça Infantil,Beleza Infantil,Infantil > Beleza Infantil > Unha Postiça Infantil,https://www.araujo.com.br/infantil/unha-postica-infantil,unha-postica-infantil
+3,Batom e Gloss Infantil,Beleza Infantil,Infantil > Beleza Infantil > Batom e Gloss Infantil,https://www.araujo.com.br/infantil/batom-e-gloss-infantil,batom-e-gloss-infantil
+3,Esmalte Infantil,Beleza Infantil,Infantil > Beleza Infantil > Esmalte Infantil,https://www.araujo.com.br/infantil/esmalte-infantil,esmalte-infantil
+2,Higiene Bucal Infantil,Infantil,Infantil > Higiene Bucal Infantil,https://www.araujo.com.br/infantil/higiene-bucal-infantil,higiene-bucal-infantil
+3,Escova de Dente Infantil,Higiene Bucal Infantil,Infantil > Higiene Bucal Infantil > Escova de Dente Infantil,https://www.araujo.com.br/infantil/escova-de-dente,escova-de-dente
+3,Creme Dental Infantil,Higiene Bucal Infantil,Infantil > Higiene Bucal Infantil > Creme Dental Infantil,https://www.araujo.com.br/infantil/creme-dental-infantil,creme-dental-infantil
+3,Massageador de Gengiva,Higiene Bucal Infantil,Infantil > Higiene Bucal Infantil > Massageador de Gengiva,https://www.araujo.com.br/infantil/massageador-de-gengiva,massageador-de-gengiva
+3,Enxaguante Bucal Infantil,Higiene Bucal Infantil,Infantil > Higiene Bucal Infantil > Enxaguante Bucal Infantil,https://www.araujo.com.br/infantil/enxaguante-bucal-infantil,enxaguante-bucal-infantil
+3,Escova de Dente Infantil Elétrica,Higiene Bucal Infantil,Infantil > Higiene Bucal Infantil > Escova de Dente Infantil Elétrica,https://www.araujo.com.br/infantil/escova-de-dente-infantil-eletrica,escova-de-dente-infantil-eletrica
+1,Dermocosméticos,,Dermocosméticos,https://www.araujo.com.br/dermocosmeticos,dermocosmeticos
+2,Dermocosméticos para o Rosto,Dermocosméticos,Dermocosméticos > Dermocosméticos para o Rosto,https://www.araujo.com.br/dermocosmeticos/rosto,rosto
+3,Água Termal,Dermocosméticos para o Rosto,Dermocosméticos > Dermocosméticos para o Rosto > Água Termal,https://www.araujo.com.br/dermocosmeticos/agua-termal,agua-termal
+3,Sérum e Anti-Idade,Dermocosméticos para o Rosto,Dermocosméticos > Dermocosméticos para o Rosto > Sérum e Anti-Idade,https://www.araujo.com.br/dermocosmeticos/serum-anti-idade,serum-anti-idade
+3,Tratamento contra Acne,Dermocosméticos para o Rosto,Dermocosméticos > Dermocosméticos para o Rosto > Tratamento contra Acne,https://www.araujo.com.br/dermocosmeticos/tratamento-contra-acne,tratamento-contra-acne
+3,Hidratante Facial,Dermocosméticos para o Rosto,Dermocosméticos > Dermocosméticos para o Rosto > Hidratante Facial,https://www.araujo.com.br/dermocosmeticos/hidratante-facial,hidratante-facial
+3,Limpeza Facial,Dermocosméticos para o Rosto,Dermocosméticos > Dermocosméticos para o Rosto > Limpeza Facial,https://www.araujo.com.br/dermocosmeticos/limpeza-facial,limpeza-facial
+3,Clareador de Olheiras,Dermocosméticos para o Rosto,Dermocosméticos > Dermocosméticos para o Rosto > Clareador de Olheiras,https://www.araujo.com.br/dermocosmeticos/clareador-olheiras,clareador-olheiras
+3,Tônico e Adstringente,Dermocosméticos para o Rosto,Dermocosméticos > Dermocosméticos para o Rosto > Tônico e Adstringente,https://www.araujo.com.br/dermocosmeticos/tonico-e-adstringente,tonico-e-adstringente
+2,Cuidados com o Sol,Dermocosméticos,Dermocosméticos > Cuidados com o Sol,https://www.araujo.com.br/dermocosmeticos/cuidados-com-o-sol,cuidados-com-o-sol
+3,Autobronzeadores,Cuidados com o Sol,Dermocosméticos > Cuidados com o Sol > Autobronzeadores,https://www.araujo.com.br/dermocosmeticos/autobronzeador,autobronzeador
+3,Bronzeadores,Cuidados com o Sol,Dermocosméticos > Cuidados com o Sol > Bronzeadores,https://www.araujo.com.br/dermocosmeticos/bronzeador,bronzeador
+3,Protetor Labial,Cuidados com o Sol,Dermocosméticos > Cuidados com o Sol > Protetor Labial,https://www.araujo.com.br/dermocosmeticos/protetor-labial,protetor-labial
+3,Protetor Solar,Cuidados com o Sol,Dermocosméticos > Cuidados com o Sol > Protetor Solar,https://www.araujo.com.br/dermocosmeticos/protetor-solar,protetor-solar
+2,Dermocosméticos para o Corpo,Dermocosméticos,Dermocosméticos > Dermocosméticos para o Corpo,https://www.araujo.com.br/dermocosmeticos/corpo,corpo
+3,Cicatrizantes,Dermocosméticos para o Corpo,Dermocosméticos > Dermocosméticos para o Corpo > Cicatrizantes,https://www.araujo.com.br/dermocosmeticos/cicatrizantes,cicatrizantes
+3,Hidratante Corporal,Dermocosméticos para o Corpo,Dermocosméticos > Dermocosméticos para o Corpo > Hidratante Corporal,https://www.araujo.com.br/dermocosmeticos/hidratante-corporal,hidratante-corporal
+3,Limpeza Corporal,Dermocosméticos para o Corpo,Dermocosméticos > Dermocosméticos para o Corpo > Limpeza Corporal,https://www.araujo.com.br/dermocosmeticos/limpeza-corporal,limpeza-corporal
+3,Tratamento para Celulite,Dermocosméticos para o Corpo,Dermocosméticos > Dermocosméticos para o Corpo > Tratamento para Celulite,https://www.araujo.com.br/dermocosmeticos/tratamento-para-celulite,tratamento-para-celulite
+3,Tratamento para Estrias,Dermocosméticos para o Corpo,Dermocosméticos > Dermocosméticos para o Corpo > Tratamento para Estrias,https://www.araujo.com.br/dermocosmeticos/tratamento-para-estrias,tratamento-para-estrias
+3,Anti-idade e Firmador,Dermocosméticos para o Corpo,Dermocosméticos > Dermocosméticos para o Corpo > Anti-idade e Firmador,https://www.araujo.com.br/dermocosmeticos/anti-idade-e-firmador,anti-idade-e-firmador
+2,Nutricosméticos,Dermocosméticos,Dermocosméticos > Nutricosméticos,https://www.araujo.com.br/dermocosmeticos/nutricosmeticos,nutricosmeticos
+2,Dermocosméticos para os Cabelos,Dermocosméticos,Dermocosméticos > Dermocosméticos para os Cabelos,https://www.araujo.com.br/dermocosmeticos/cabelo,cabelo
+3,Condicionadores Dermocosméticos,Dermocosméticos para os Cabelos,Dermocosméticos > Dermocosméticos para os Cabelos > Condicionadores Dermocosméticos,https://www.araujo.com.br/dermocosmeticos/condicionadores,condicionadores
+3,Shampoos Dermocosméticos,Dermocosméticos para os Cabelos,Dermocosméticos > Dermocosméticos para os Cabelos > Shampoos Dermocosméticos,https://www.araujo.com.br/dermocosmeticos/shampoos,shampoos
+3,Loção Capilar,Dermocosméticos para os Cabelos,Dermocosméticos > Dermocosméticos para os Cabelos > Loção Capilar,https://www.araujo.com.br/dermocosmeticos/locao-capilar,locao-capilar
+2,Dermocosméticos para as Mãos e Pés,Dermocosméticos,Dermocosméticos > Dermocosméticos para as Mãos e Pés,https://www.araujo.com.br/dermocosmeticos/maos-e-pes,maos-e-pes
+3,Hidratante para as Mãos,Dermocosméticos para as Mãos e Pés,Dermocosméticos > Dermocosméticos para as Mãos e Pés > Hidratante para as Mãos,https://www.araujo.com.br/dermocosmeticos/hidratante-para-as-maos,hidratante-para-as-maos
+3,Hidratante para os Pés,Dermocosméticos para as Mãos e Pés,Dermocosméticos > Dermocosméticos para as Mãos e Pés > Hidratante para os Pés,https://www.araujo.com.br/dermocosmeticos/hidratante-para-os-pes,hidratante-para-os-pes
+1,Saúde e Bem Estar,,Saúde e Bem Estar,https://www.araujo.com.br/saude,saude
+2,Aparelhos de Respiração,Saúde e Bem Estar,Saúde e Bem Estar > Aparelhos de Respiração,https://www.araujo.com.br/saude/aparelhos-de-respiracao,aparelhos-de-respiracao
+3,Dilatador Nasal,Aparelhos de Respiração,Saúde e Bem Estar > Aparelhos de Respiração > Dilatador Nasal,https://www.araujo.com.br/saude/dilatador-nasal,dilatador-nasal
+3,Inaladores e Nebulizadores,Aparelhos de Respiração,Saúde e Bem Estar > Aparelhos de Respiração > Inaladores e Nebulizadores,https://www.araujo.com.br/saude/inaladores,inaladores
+3,Umidificadores e Vaporizadores,Aparelhos de Respiração,Saúde e Bem Estar > Aparelhos de Respiração > Umidificadores e Vaporizadores,https://www.araujo.com.br/saude/umidificadores,umidificadores
+3,Aparelho para Exercício Pulmonar,Aparelhos de Respiração,Saúde e Bem Estar > Aparelhos de Respiração > Aparelho para Exercício Pulmonar,https://www.araujo.com.br/saude/exercicio-pulmonar,exercicio-pulmonar
+3,Espaçador Nasal,Aparelhos de Respiração,Saúde e Bem Estar > Aparelhos de Respiração > Espaçador Nasal,https://www.araujo.com.br/saude/espacador-nasal,espacador-nasal
+2,Monitores e Medidores de Pressão,Saúde e Bem Estar,Saúde e Bem Estar > Monitores e Medidores de Pressão,https://www.araujo.com.br/saude/monitores,monitores
+3,Oxímetro,Monitores e Medidores de Pressão,Saúde e Bem Estar > Monitores e Medidores de Pressão > Oxímetro,https://www.araujo.com.br/saude/oximetro,oximetro
+3,Medidores de Pressão,Monitores e Medidores de Pressão,Saúde e Bem Estar > Monitores e Medidores de Pressão > Medidores de Pressão,https://www.araujo.com.br/saude/medidores-de-pressao,medidores-de-pressao
+3,Termômetro,Monitores e Medidores de Pressão,Saúde e Bem Estar > Monitores e Medidores de Pressão > Termômetro,https://www.araujo.com.br/saude/termometro,termometro
+2,Acessórios para Diabetes,Saúde e Bem Estar,Saúde e Bem Estar > Acessórios para Diabetes,https://www.araujo.com.br/saude/diabetes,diabetes
+3,Agulha para Caneta de Insulina,Acessórios para Diabetes,Saúde e Bem Estar > Acessórios para Diabetes > Agulha para Caneta de Insulina,https://www.araujo.com.br/saude/agulha-caneta-de-insulina,agulha-caneta-de-insulina
+3,Caneta de Insulina,Acessórios para Diabetes,Saúde e Bem Estar > Acessórios para Diabetes > Caneta de Insulina,https://www.araujo.com.br/saude/caneta-de-insulina,caneta-de-insulina
+3,Lancetas e Lancetador,Acessórios para Diabetes,Saúde e Bem Estar > Acessórios para Diabetes > Lancetas e Lancetador,https://www.araujo.com.br/saude/lancetas-e-lancetador,lancetas-e-lancetador
+3,Medidor de Glicemia,Acessórios para Diabetes,Saúde e Bem Estar > Acessórios para Diabetes > Medidor de Glicemia,https://www.araujo.com.br/saude/medidor-de-glicemia,medidor-de-glicemia
+3,Seringa para Insulina,Acessórios para Diabetes,Saúde e Bem Estar > Acessórios para Diabetes > Seringa para Insulina,https://www.araujo.com.br/saude/seringa-para-insulina,seringa-para-insulina
+3,Tiras de Glicemia,Acessórios para Diabetes,Saúde e Bem Estar > Acessórios para Diabetes > Tiras de Glicemia,https://www.araujo.com.br/saude/tiras-de-glicemia,tiras-de-glicemia
+2,Acessibilidade e Mobilidade,Saúde e Bem Estar,Saúde e Bem Estar > Acessibilidade e Mobilidade,https://www.araujo.com.br/saude/acessibilidade-e-mobilidade,acessibilidade-e-mobilidade
+3,Muletas,Acessibilidade e Mobilidade,Saúde e Bem Estar > Acessibilidade e Mobilidade > Muletas,https://www.araujo.com.br/saude/muletas,muletas
+3,Bengalas,Acessibilidade e Mobilidade,Saúde e Bem Estar > Acessibilidade e Mobilidade > Bengalas,https://www.araujo.com.br/saude/bengalas,bengalas
+3,Acessórios para Banheiros,Acessibilidade e Mobilidade,Saúde e Bem Estar > Acessibilidade e Mobilidade > Acessórios para Banheiros,https://www.araujo.com.br/saude/acessorios-banheiros,acessorios-banheiros
+3,Andadores,Acessibilidade e Mobilidade,Saúde e Bem Estar > Acessibilidade e Mobilidade > Andadores,https://www.araujo.com.br/saude/andadores,andadores
+3,Cadeira de Rodas,Acessibilidade e Mobilidade,Saúde e Bem Estar > Acessibilidade e Mobilidade > Cadeira de Rodas,https://www.araujo.com.br/saude/cadeira-de-rodas,cadeira-de-rodas
+2,Equipamentos e Instrumentos Hospitalares,Saúde e Bem Estar,Saúde e Bem Estar > Equipamentos e Instrumentos Hospitalares,https://www.araujo.com.br/saude/equipamentos-hospitalares,equipamentos-hospitalares
+3,Soro Fisiológico,Equipamentos e Instrumentos Hospitalares,Saúde e Bem Estar > Equipamentos e Instrumentos Hospitalares > Soro Fisiológico,https://www.araujo.com.br/saude/soro-fisiologico,soro-fisiologico
+3,Abaixador de Lingua,Equipamentos e Instrumentos Hospitalares,Saúde e Bem Estar > Equipamentos e Instrumentos Hospitalares > Abaixador de Lingua,https://www.araujo.com.br/saude/abaixador-de-lingua,abaixador-de-lingua
+3,Aspirador e Canula Ginecologica,Equipamentos e Instrumentos Hospitalares,Saúde e Bem Estar > Equipamentos e Instrumentos Hospitalares > Aspirador e Canula Ginecologica,https://www.araujo.com.br/saude/canula-ginecologica,canula-ginecologica
+3,Sondas,Equipamentos e Instrumentos Hospitalares,Saúde e Bem Estar > Equipamentos e Instrumentos Hospitalares > Sondas,https://www.araujo.com.br/saude/sondas,sondas
+3,Cateter,Equipamentos e Instrumentos Hospitalares,Saúde e Bem Estar > Equipamentos e Instrumentos Hospitalares > Cateter,https://www.araujo.com.br/saude/cateter,cateter
+3,Conector Cirúrgico,Equipamentos e Instrumentos Hospitalares,Saúde e Bem Estar > Equipamentos e Instrumentos Hospitalares > Conector Cirúrgico,https://www.araujo.com.br/saude/conector-cirurgico,conector-cirurgico
+3,Estetoscópio,Equipamentos e Instrumentos Hospitalares,Saúde e Bem Estar > Equipamentos e Instrumentos Hospitalares > Estetoscópio,https://www.araujo.com.br/saude/estetoscopio,estetoscopio
+3,Gel Condutor,Equipamentos e Instrumentos Hospitalares,Saúde e Bem Estar > Equipamentos e Instrumentos Hospitalares > Gel Condutor,https://www.araujo.com.br/saude/gel-condutor,gel-condutor
+2,Testes e Exames,Saúde e Bem Estar,Saúde e Bem Estar > Testes e Exames,https://www.araujo.com.br/saude/testes,testes
+3,Teste de Gravidez,Testes e Exames,Saúde e Bem Estar > Testes e Exames > Teste de Gravidez,https://www.araujo.com.br/saude/teste-de-gravidez,teste-de-gravidez
+3,Teste de Covid,Testes e Exames,Saúde e Bem Estar > Testes e Exames > Teste de Covid,https://www.araujo.com.br/saude/teste-de-covid-19,teste-de-covid-19
+3,Teste de Menopausa,Testes e Exames,Saúde e Bem Estar > Testes e Exames > Teste de Menopausa,https://www.araujo.com.br/saude/teste-de-menopausa,teste-de-menopausa
+3,Teste de Ovulação,Testes e Exames,Saúde e Bem Estar > Testes e Exames > Teste de Ovulação,https://www.araujo.com.br/saude/teste-de-ovulacao,teste-de-ovulacao
+3,Teste de Fertilidade,Testes e Exames,Saúde e Bem Estar > Testes e Exames > Teste de Fertilidade,https://www.araujo.com.br/saude/teste-de-fertilidade,teste-de-fertilidade
+3,Teste de HIV,Testes e Exames,Saúde e Bem Estar > Testes e Exames > Teste de HIV,https://www.araujo.com.br/saude/teste-de-hiv,teste-de-hiv
+3,Teste Celíaco,Testes e Exames,Saúde e Bem Estar > Testes e Exames > Teste Celíaco,https://www.araujo.com.br/saude/teste-de-gluten,teste-de-gluten
+2,Fisioterapia e Atividade Física,Saúde e Bem Estar,Saúde e Bem Estar > Fisioterapia e Atividade Física,https://www.araujo.com.br/saude/fisioterapia,fisioterapia
+3,Bolsa Térmica Gel,Fisioterapia e Atividade Física,Saúde e Bem Estar > Fisioterapia e Atividade Física > Bolsa Térmica Gel,https://www.araujo.com.br/saude/bolsa-termica-gel,bolsa-termica-gel
+3,Acessórios Fitness,Fisioterapia e Atividade Física,Saúde e Bem Estar > Fisioterapia e Atividade Física > Acessórios Fitness,https://www.araujo.com.br/saude/acessorios-fitness,acessorios-fitness
+3,Acessórios para Fisioterapia,Fisioterapia e Atividade Física,Saúde e Bem Estar > Fisioterapia e Atividade Física > Acessórios para Fisioterapia,https://www.araujo.com.br/saude/acessorios-para-fisioterapia,acessorios-para-fisioterapia
+3,Bandagem Elástica,Fisioterapia e Atividade Física,Saúde e Bem Estar > Fisioterapia e Atividade Física > Bandagem Elástica,https://www.araujo.com.br/saude/bandagem-elastica,bandagem-elastica
+3,Máscara de Gel,Fisioterapia e Atividade Física,Saúde e Bem Estar > Fisioterapia e Atividade Física > Máscara de Gel,https://www.araujo.com.br/saude/mascara-de-gel,mascara-de-gel
+3,Massageador,Fisioterapia e Atividade Física,Saúde e Bem Estar > Fisioterapia e Atividade Física > Massageador,https://www.araujo.com.br/saude/massageador,massageador
+3,Protetor para os Pés,Fisioterapia e Atividade Física,Saúde e Bem Estar > Fisioterapia e Atividade Física > Protetor para os Pés,https://www.araujo.com.br/saude/protetor-para-pes,protetor-para-pes
+2,Primeiros Socorros,Saúde e Bem Estar,Saúde e Bem Estar > Primeiros Socorros,https://www.araujo.com.br/saude/primeiros-socorros,primeiros-socorros
+3,Algodão,Primeiros Socorros,Saúde e Bem Estar > Primeiros Socorros > Algodão,https://www.araujo.com.br/saude/algodao,algodao
+3,Atadura,Primeiros Socorros,Saúde e Bem Estar > Primeiros Socorros > Atadura,https://www.araujo.com.br/saude/atadura,atadura
+3,Curativo com Alginato,Primeiros Socorros,Saúde e Bem Estar > Primeiros Socorros > Curativo com Alginato,https://www.araujo.com.br/saude/curativo-alginato,curativo-alginato
+3,Curativo Hidrocolóide,Primeiros Socorros,Saúde e Bem Estar > Primeiros Socorros > Curativo Hidrocolóide,https://www.araujo.com.br/saude/curativo-hidrocoloide,curativo-hidrocoloide
+3,Curativos,Primeiros Socorros,Saúde e Bem Estar > Primeiros Socorros > Curativos,https://www.araujo.com.br/saude/curativos,curativos
+3,Esparadrapo,Primeiros Socorros,Saúde e Bem Estar > Primeiros Socorros > Esparadrapo,https://www.araujo.com.br/saude/esparadrapo,esparadrapo
+3,Fita Micropore,Primeiros Socorros,Saúde e Bem Estar > Primeiros Socorros > Fita Micropore,https://www.araujo.com.br/saude/fita-micropore,fita-micropore
+3,Gaze,Primeiros Socorros,Saúde e Bem Estar > Primeiros Socorros > Gaze,https://www.araujo.com.br/saude/gaze,gaze
+3,Antissépticos,Primeiros Socorros,Saúde e Bem Estar > Primeiros Socorros > Antissépticos,https://www.araujo.com.br/saude/antissepticos,antissepticos
+3,Álcool em Gel,Primeiros Socorros,Saúde e Bem Estar > Primeiros Socorros > Álcool em Gel,https://www.araujo.com.br/saude/alcool-em-gel,alcool-em-gel
+2,Seringas e Injetores,Saúde e Bem Estar,Saúde e Bem Estar > Seringas e Injetores,https://www.araujo.com.br/saude/seringas-e-injetores,seringas-e-injetores
+3,Acessórios para Aplicação,Seringas e Injetores,Saúde e Bem Estar > Seringas e Injetores > Acessórios para Aplicação,https://www.araujo.com.br/saude/acessorios-para-aplicacao,acessorios-para-aplicacao
+3,Cloreto de Sódio Injetável,Seringas e Injetores,Saúde e Bem Estar > Seringas e Injetores > Cloreto de Sódio Injetável,https://www.araujo.com.br/saude/cloreto-sodio-injetavel,cloreto-sodio-injetavel
+3,Scalps,Seringas e Injetores,Saúde e Bem Estar > Seringas e Injetores > Scalps,https://www.araujo.com.br/saude/scalps,scalps
+3,Seringas,Seringas e Injetores,Saúde e Bem Estar > Seringas e Injetores > Seringas,https://www.araujo.com.br/saude/seringas,seringas
+3,Agulha para Seringa,Seringas e Injetores,Saúde e Bem Estar > Seringas e Injetores > Agulha para Seringa,https://www.araujo.com.br/saude/agulha-seringa,agulha-seringa
+3,Equipos,Seringas e Injetores,Saúde e Bem Estar > Seringas e Injetores > Equipos,https://www.araujo.com.br/saude/equipos,equipos
+2,Balança Corporal,Saúde e Bem Estar,Saúde e Bem Estar > Balança Corporal,https://www.araujo.com.br/saude/balanca,balanca
+2,Vitaminas e Minerais,Saúde e Bem Estar,Saúde e Bem Estar > Vitaminas e Minerais,https://www.araujo.com.br/saude/vitamina,vitamina
+3,Ácido Fólico,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Ácido Fólico,https://www.araujo.com.br/saude/acido-folico,acido-folico
+3,Antienvelhecimento,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Antienvelhecimento,https://www.araujo.com.br/saude/antienvelhecimento,antienvelhecimento
+3,Antioxidante,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Antioxidante,https://www.araujo.com.br/saude/antioxidante,antioxidante
+3,Colágeno,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Colágeno,https://www.araujo.com.br/saude/colageno,colageno
+3,Estimulante,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Estimulante,https://www.araujo.com.br/saude/estimulante,estimulante
+3,Estimulante de Apetite,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Estimulante de Apetite,https://www.araujo.com.br/saude/estimulante-apetite,estimulante-apetite
+3,Estimulante Sexual,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Estimulante Sexual,https://www.araujo.com.br/saude/estimulante-sexual,estimulante-sexual
+3,Óleo de Alho,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Óleo de Alho,https://www.araujo.com.br/saude/oleo-de-alho,oleo-de-alho
+3,Ômega 3,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Ômega 3,https://www.araujo.com.br/saude/omega-3,omega-3
+3,Outras Vitaminas,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Outras Vitaminas,https://www.araujo.com.br/saude/outros-vitaminas,outros-vitaminas
+3,Polivitamínico,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Polivitamínico,https://www.araujo.com.br/saude/polivitaminico,polivitaminico
+3,Vitamina C,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Vitamina C,https://www.araujo.com.br/saude/vitamina-c,vitamina-c
+3,Vitamina Infantil,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Vitamina Infantil,https://www.araujo.com.br/saude/vitamina-infantil,vitamina-infantil
+3,Vitamina D,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Vitamina D,https://www.araujo.com.br/saude/vitamina-d,vitamina-d
+3,Complexo B,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Complexo B,https://www.araujo.com.br/saude/complexo-b,complexo-b
+3,Vitamina E,Vitaminas e Minerais,Saúde e Bem Estar > Vitaminas e Minerais > Vitamina E,https://www.araujo.com.br/saude/vitamina-e,vitamina-e
+2,Serviços de Saúde,Saúde e Bem Estar,Saúde e Bem Estar > Serviços de Saúde,https://www.araujo.com.br/saude/servicos-de-saude,servicos-de-saude
+2,Cuidado Adulto,Saúde e Bem Estar,Saúde e Bem Estar > Cuidado Adulto,https://www.araujo.com.br/saude/cuidados-mais-velhos,cuidados-mais-velhos
+3,Fralda Geriátrica,Cuidado Adulto,Saúde e Bem Estar > Cuidado Adulto > Fralda Geriátrica,https://www.araujo.com.br/saude/fralda-geriatrica,fralda-geriatrica
+3,Pomadas e Óleos para Escaras,Cuidado Adulto,Saúde e Bem Estar > Cuidado Adulto > Pomadas e Óleos para Escaras,https://www.araujo.com.br/saude/pomadas-para-escaras,pomadas-para-escaras
+3,Absorvente Geriátrico,Cuidado Adulto,Saúde e Bem Estar > Cuidado Adulto > Absorvente Geriátrico,https://www.araujo.com.br/saude/absorvente-geriatrico,absorvente-geriatrico
+3,Suplementos,Cuidado Adulto,Saúde e Bem Estar > Cuidado Adulto > Suplementos,https://www.araujo.com.br/saude/suplemento,suplemento
+3,Roupa Íntima Descartável,Cuidado Adulto,Saúde e Bem Estar > Cuidado Adulto > Roupa Íntima Descartável,https://www.araujo.com.br/saude/roupa-intima-descartavel,roupa-intima-descartavel
+3,Lenço Umedecido para Adultos,Cuidado Adulto,Saúde e Bem Estar > Cuidado Adulto > Lenço Umedecido para Adultos,https://www.araujo.com.br/saude/lenco-umedecido-adultos,lenco-umedecido-adultos
+3,Acessórios Geriátricos,Cuidado Adulto,Saúde e Bem Estar > Cuidado Adulto > Acessórios Geriátricos,https://www.araujo.com.br/saude/acessorios-geriatricos,acessorios-geriatricos
+2,Equipamentos de Proteção,Saúde e Bem Estar,Saúde e Bem Estar > Equipamentos de Proteção,https://www.araujo.com.br/saude/equipamentos-de-protecao,equipamentos-de-protecao
+3,Acessórios de Proteção Individual,Equipamentos de Proteção,Saúde e Bem Estar > Equipamentos de Proteção > Acessórios de Proteção Individual,https://www.araujo.com.br/saude/protecao-individual,protecao-individual
+3,Luva Descartável,Equipamentos de Proteção,Saúde e Bem Estar > Equipamentos de Proteção > Luva Descartável,https://www.araujo.com.br/saude/luva-descartavel,luva-descartavel
+3,Máscara de Acrílico,Equipamentos de Proteção,Saúde e Bem Estar > Equipamentos de Proteção > Máscara de Acrílico,https://www.araujo.com.br/saude/mascara-de-acrilico,mascara-de-acrilico
+3,Máscara Descartável,Equipamentos de Proteção,Saúde e Bem Estar > Equipamentos de Proteção > Máscara Descartável,https://www.araujo.com.br/saude/mascara-descartavel,mascara-descartavel
+3,Máscara Lavável,Equipamentos de Proteção,Saúde e Bem Estar > Equipamentos de Proteção > Máscara Lavável,https://www.araujo.com.br/saude/mascara-lavavel,mascara-lavavel
+3,Óculos de Proteção,Equipamentos de Proteção,Saúde e Bem Estar > Equipamentos de Proteção > Óculos de Proteção,https://www.araujo.com.br/saude/oculos-de-protecao,oculos-de-protecao
+3,Touca Descartável,Equipamentos de Proteção,Saúde e Bem Estar > Equipamentos de Proteção > Touca Descartável,https://www.araujo.com.br/saude/touca-descartavel,touca-descartavel
+2,Frascos e Coletores,Saúde e Bem Estar,Saúde e Bem Estar > Frascos e Coletores,https://www.araujo.com.br/saude/frascos-e-coletores,frascos-e-coletores
+3,Bolsa de Urostomia,Frascos e Coletores,Saúde e Bem Estar > Frascos e Coletores > Bolsa de Urostomia,https://www.araujo.com.br/saude/bolsa-de-urostomia,bolsa-de-urostomia
+3,Coletores de Fezes e Urina,Frascos e Coletores,Saúde e Bem Estar > Frascos e Coletores > Coletores de Fezes e Urina,https://www.araujo.com.br/saude/coletor-fezes-urina,coletor-fezes-urina
+3,Bolsa de Colostomia,Frascos e Coletores,Saúde e Bem Estar > Frascos e Coletores > Bolsa de Colostomia,https://www.araujo.com.br/saude/bolsa-de-colostomia,bolsa-de-colostomia
+2,Ortopédicos,Saúde e Bem Estar,Saúde e Bem Estar > Ortopédicos,https://www.araujo.com.br/saude/ortopedicos,ortopedicos
+3,Meia de Compressão,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Meia de Compressão,https://www.araujo.com.br/saude/meia-de-compressao,meia-de-compressao
+3,Cuidados no Leito,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Cuidados no Leito,https://www.araujo.com.br/saude/cuidados-no-leito,cuidados-no-leito
+3,Palmilha Ortopédica,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Palmilha Ortopédica,https://www.araujo.com.br/saude/palmilha-ortopedica,palmilha-ortopedica
+3,Bota Imobilizadora,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Bota Imobilizadora,https://www.araujo.com.br/saude/bota-imobilizadora,bota-imobilizadora
+3,Calcanheira de Silicone,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Calcanheira de Silicone,https://www.araujo.com.br/saude/calcanheira-de-silicone,calcanheira-de-silicone
+3,Cinta Terapêutica,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Cinta Terapêutica,https://www.araujo.com.br/saude/cinta-terapeutica,cinta-terapeutica
+3,Colar Cervical,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Colar Cervical,https://www.araujo.com.br/saude/colar-cervical,colar-cervical
+3,Colete Putti,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Colete Putti,https://www.araujo.com.br/saude/colete-putti,colete-putti
+3,Corretor Postural,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Corretor Postural,https://www.araujo.com.br/saude/corretor-postural,corretor-postural
+3,Faixa Torácica,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Faixa Torácica,https://www.araujo.com.br/saude/faixa-toracica,faixa-toracica
+3,Funda para Hérnia,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Funda para Hérnia,https://www.araujo.com.br/saude/funda-para-hernia,funda-para-hernia
+3,Imobilizador de Ombro e Costas,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Imobilizador de Ombro e Costas,https://www.araujo.com.br/saude/imobilizador-ombro-costas,imobilizador-ombro-costas
+3,Imobilizador de Tornozelo,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Imobilizador de Tornozelo,https://www.araujo.com.br/saude/imobilizador-de-tornozelo,imobilizador-de-tornozelo
+3,Órtese para Cotovelo,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Órtese para Cotovelo,https://www.araujo.com.br/saude/ortese-para-cotovelo,ortese-para-cotovelo
+3,Imobilizador de Punho e Dedos,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Imobilizador de Punho e Dedos,https://www.araujo.com.br/saude/imobilizador-punho-dedos,imobilizador-punho-dedos
+3,Suporte de Panturrilha,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Suporte de Panturrilha,https://www.araujo.com.br/saude/suporte-de-panturrilha,suporte-de-panturrilha
+3,Suspensório Escrotal,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Suspensório Escrotal,https://www.araujo.com.br/saude/suspensorio-escrotal,suspensorio-escrotal
+3,Coxal,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Coxal,https://www.araujo.com.br/saude/coxal,coxal
+3,Imobilizador de Joelho,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Imobilizador de Joelho,https://www.araujo.com.br/saude/imobilizador-de-joelho,imobilizador-de-joelho
+3,Órtese para Umbigo,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Órtese para Umbigo,https://www.araujo.com.br/saude/ortese-para-umbigo,ortese-para-umbigo
+3,Sandália para Gesso,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Sandália para Gesso,https://www.araujo.com.br/saude/sandalia-para-gesso,sandalia-para-gesso
+3,Tipoias,Ortopédicos,Saúde e Bem Estar > Ortopédicos > Tipoias,https://www.araujo.com.br/saude/tipoias,tipoias
+1,Beleza e Cuidados,,Beleza e Cuidados,https://www.araujo.com.br/beleza,beleza
+2,Cuidados com a Pele,Beleza e Cuidados,Beleza e Cuidados > Cuidados com a Pele,https://www.araujo.com.br/beleza/cuidados-com-a-pele,cuidados-com-a-pele
+3,Repelentes,Cuidados com a Pele,Beleza e Cuidados > Cuidados com a Pele > Repelentes,https://www.araujo.com.br/beleza/repelentes,repelentes
+3,Bronzeador,Cuidados com a Pele,Beleza e Cuidados > Cuidados com a Pele > Bronzeador,https://www.araujo.com.br/beleza/bronzeador,bronzeador
+3,Protetor Solar,Cuidados com a Pele,Beleza e Cuidados > Cuidados com a Pele > Protetor Solar,https://www.araujo.com.br/beleza/protecao-solar,protecao-solar
+2,Cuidados com o Rosto,Beleza e Cuidados,Beleza e Cuidados > Cuidados com o Rosto,https://www.araujo.com.br/beleza/cuidados-rosto,cuidados-rosto
+3,Água Micelar e Demaquilante,Cuidados com o Rosto,Beleza e Cuidados > Cuidados com o Rosto > Água Micelar e Demaquilante,https://www.araujo.com.br/beleza/agua-micelar-demaquilante,agua-micelar-demaquilante
+3,Limpeza Facial,Cuidados com o Rosto,Beleza e Cuidados > Cuidados com o Rosto > Limpeza Facial,https://www.araujo.com.br/beleza/limpeza-facial,limpeza-facial
+3,Tônico e Adstringente,Cuidados com o Rosto,Beleza e Cuidados > Cuidados com o Rosto > Tônico e Adstringente,https://www.araujo.com.br/beleza/tonico-e-adstringente,tonico-e-adstringente
+3,Sérum e Anti-Idade,Cuidados com o Rosto,Beleza e Cuidados > Cuidados com o Rosto > Sérum e Anti-Idade,https://www.araujo.com.br/beleza/anti-rugas,anti-rugas
+2,Cuidado com o Corpo,Beleza e Cuidados,Beleza e Cuidados > Cuidado com o Corpo,https://www.araujo.com.br/beleza/cuidado-com-corpo,cuidado-com-corpo
+3,Esfoliante Corporal,Cuidado com o Corpo,Beleza e Cuidados > Cuidado com o Corpo > Esfoliante Corporal,https://www.araujo.com.br/beleza/esfoliante-corporal,esfoliante-corporal
+3,Óleo Corporal,Cuidado com o Corpo,Beleza e Cuidados > Cuidado com o Corpo > Óleo Corporal,https://www.araujo.com.br/beleza/oleo-corporal,oleo-corporal
+3,Anticelulite e Firmadores,Cuidado com o Corpo,Beleza e Cuidados > Cuidado com o Corpo > Anticelulite e Firmadores,https://www.araujo.com.br/beleza/anticelulite-e-firmadores,anticelulite-e-firmadores
+3,Hidratante para o Corpo,Cuidado com o Corpo,Beleza e Cuidados > Cuidado com o Corpo > Hidratante para o Corpo,https://www.araujo.com.br/beleza/hidratacao,hidratacao
+2,Cuidado com as Mãos,Beleza e Cuidados,Beleza e Cuidados > Cuidado com as Mãos,https://www.araujo.com.br/beleza/cuidado-com-maos,cuidado-com-maos
+2,Cuidado com os Pés,Beleza e Cuidados,Beleza e Cuidados > Cuidado com os Pés,https://www.araujo.com.br/beleza/cuidado-com-pes,cuidado-com-pes
+3,Esfoliante para os Pés,Cuidado com os Pés,Beleza e Cuidados > Cuidado com os Pés > Esfoliante para os Pés,https://www.araujo.com.br/beleza/esfoliante-para-pes,esfoliante-para-pes
+2,Nutricosméticos,Beleza e Cuidados,Beleza e Cuidados > Nutricosméticos,https://www.araujo.com.br/beleza/nutricosmetico,nutricosmetico
+2,Perfumes e Colônias,Beleza e Cuidados,Beleza e Cuidados > Perfumes e Colônias,https://www.araujo.com.br/beleza/perfumes-e-colonias,perfumes-e-colonias
+3,Perfumes e Colônias Masculinos,Perfumes e Colônias,Beleza e Cuidados > Perfumes e Colônias > Perfumes e Colônias Masculinos,https://www.araujo.com.br/beleza/perfumes-masculinos,perfumes-masculinos
+3,Perfumes e Colônias Femininos,Perfumes e Colônias,Beleza e Cuidados > Perfumes e Colônias > Perfumes e Colônias Femininos,https://www.araujo.com.br/beleza/perfumes-femininos,perfumes-femininos
+2,Vestuário,Beleza e Cuidados,Beleza e Cuidados > Vestuário,https://www.araujo.com.br/beleza/vestuario,vestuario
+3,Acessórios para Roupas,Vestuário,Beleza e Cuidados > Vestuário > Acessórios para Roupas,https://www.araujo.com.br/beleza/acessorios-para-roupas,acessorios-para-roupas
+3,Roupa Fitness,Vestuário,Beleza e Cuidados > Vestuário > Roupa Fitness,https://www.araujo.com.br/beleza/roupa-fitness,roupa-fitness
+3,Sutiã de Silicone,Vestuário,Beleza e Cuidados > Vestuário > Sutiã de Silicone,https://www.araujo.com.br/beleza/sutia-de-silicone,sutia-de-silicone
+3,Sutiã Descartável,Vestuário,Beleza e Cuidados > Vestuário > Sutiã Descartável,https://www.araujo.com.br/beleza/sutia-descartavel,sutia-descartavel
+2,Unhas,Beleza e Cuidados,Beleza e Cuidados > Unhas,https://www.araujo.com.br/beleza/unhas,unhas
+3,Acessórios para Unhas,Unhas,Beleza e Cuidados > Unhas > Acessórios para Unhas,https://www.araujo.com.br/beleza/acessorios-para-unhas,acessorios-para-unhas
+3,Acetonas e Removedores de Esmalte,Unhas,Beleza e Cuidados > Unhas > Acetonas e Removedores de Esmalte,https://www.araujo.com.br/beleza/removedores-esmalte,removedores-esmalte
+3,Base de Unha,Unhas,Beleza e Cuidados > Unhas > Base de Unha,https://www.araujo.com.br/beleza/base-de-unha,base-de-unha
+3,Espátula de Cutícula,Unhas,Beleza e Cuidados > Unhas > Espátula de Cutícula,https://www.araujo.com.br/beleza/espatula-de-cuticula,espatula-de-cuticula
+3,Fortalecedor de Unhas,Unhas,Beleza e Cuidados > Unhas > Fortalecedor de Unhas,https://www.araujo.com.br/beleza/fortalecedor-de-unhas,fortalecedor-de-unhas
+3,Lixas,Unhas,Beleza e Cuidados > Unhas > Lixas,https://www.araujo.com.br/beleza/lixas,lixas
+3,Secante de Unha,Unhas,Beleza e Cuidados > Unhas > Secante de Unha,https://www.araujo.com.br/beleza/secante-de-unha,secante-de-unha
+3,Tesoura de Cortar Unha,Unhas,Beleza e Cuidados > Unhas > Tesoura de Cortar Unha,https://www.araujo.com.br/beleza/tesoura-de-unha,tesoura-de-unha
+3,Kit Manicure,Unhas,Beleza e Cuidados > Unhas > Kit Manicure,https://www.araujo.com.br/beleza/kit-manicure,kit-manicure
+3,Esmaltes,Unhas,Beleza e Cuidados > Unhas > Esmaltes,https://www.araujo.com.br/beleza/esmalte,esmalte
+1,Higiene Pessoal,,Higiene Pessoal,https://www.araujo.com.br/higiene-pessoal,higiene-pessoal
+2,Desodorante,Higiene Pessoal,Higiene Pessoal > Desodorante,https://www.araujo.com.br/higiene-pessoal/desodorante,desodorante
+3,Desodorante Aerosol,Desodorante,Higiene Pessoal > Desodorante > Desodorante Aerosol,https://www.araujo.com.br/higiene-pessoal/desodorante-aerosol,desodorante-aerosol
+3,Desodorante em Creme,Desodorante,Higiene Pessoal > Desodorante > Desodorante em Creme,https://www.araujo.com.br/higiene-pessoal/desodorante-creme,desodorante-creme
+3,Desodorante Roll-On,Desodorante,Higiene Pessoal > Desodorante > Desodorante Roll-On,https://www.araujo.com.br/higiene-pessoal/desodorante-roll-on,desodorante-roll-on
+3,Desodorante Stick,Desodorante,Higiene Pessoal > Desodorante > Desodorante Stick,https://www.araujo.com.br/higiene-pessoal/desodorante-stick,desodorante-stick
+2,Higiene Bucal,Higiene Pessoal,Higiene Pessoal > Higiene Bucal,https://www.araujo.com.br/higiene-pessoal/higiene-bucal,higiene-bucal
+3,Fio Dental,Higiene Bucal,Higiene Pessoal > Higiene Bucal > Fio Dental,https://www.araujo.com.br/higiene-pessoal/fio-dental,fio-dental
+3,Escova de Dente,Higiene Bucal,Higiene Pessoal > Higiene Bucal > Escova de Dente,https://www.araujo.com.br/higiene-pessoal/escova-de-dente,escova-de-dente
+3,Pasta de Dente,Higiene Bucal,Higiene Pessoal > Higiene Bucal > Pasta de Dente,https://www.araujo.com.br/higiene-pessoal/pasta-de-dente,pasta-de-dente
+3,Enxaguante Bucal,Higiene Bucal,Higiene Pessoal > Higiene Bucal > Enxaguante Bucal,https://www.araujo.com.br/higiene-pessoal/enxaguante-bucal,enxaguante-bucal
+3,Escova de Dente Elétrica,Higiene Bucal,Higiene Pessoal > Higiene Bucal > Escova de Dente Elétrica,https://www.araujo.com.br/higiene-pessoal/escova-de-dente-eletrica,escova-de-dente-eletrica
+3,Limpador de Língua,Higiene Bucal,Higiene Pessoal > Higiene Bucal > Limpador de Língua,https://www.araujo.com.br/higiene-pessoal/limpador-de-lingua,limpador-de-lingua
+3,Irrigador Oral,Higiene Bucal,Higiene Pessoal > Higiene Bucal > Irrigador Oral,https://www.araujo.com.br/higiene-pessoal/irrigador-oral,irrigador-oral
+3,Passa Fio Dental,Higiene Bucal,Higiene Pessoal > Higiene Bucal > Passa Fio Dental,https://www.araujo.com.br/higiene-pessoal/passa-fio-dental,passa-fio-dental
+3,Cera Ortodôntica,Higiene Bucal,Higiene Pessoal > Higiene Bucal > Cera Ortodôntica,https://www.araujo.com.br/higiene-pessoal/cera-ortodontica,cera-ortodontica
+2,Banho,Higiene Pessoal,Higiene Pessoal > Banho,https://www.araujo.com.br/higiene-pessoal/banho,banho
+3,Bucha de Banho,Banho,Higiene Pessoal > Banho > Bucha de Banho,https://www.araujo.com.br/higiene-pessoal/bucha-de-banho,bucha-de-banho
+3,Sabonetes,Banho,Higiene Pessoal > Banho > Sabonetes,https://www.araujo.com.br/higiene-pessoal/sabonetes,sabonetes
+3,Hastes Flexíveis,Banho,Higiene Pessoal > Banho > Hastes Flexíveis,https://www.araujo.com.br/higiene-pessoal/hastes-flexiveis,hastes-flexiveis
+3,Touca de Banho,Banho,Higiene Pessoal > Banho > Touca de Banho,https://www.araujo.com.br/higiene-pessoal/touca-de-banho,touca-de-banho
+2,Cuidados Íntimos,Higiene Pessoal,Higiene Pessoal > Cuidados Íntimos,https://www.araujo.com.br/higiene-pessoal/cuidados-intimos,cuidados-intimos
+3,Absorvente,Cuidados Íntimos,Higiene Pessoal > Cuidados Íntimos > Absorvente,https://www.araujo.com.br/higiene-pessoal/absorvente,absorvente
+3,Sabonete Íntimo,Cuidados Íntimos,Higiene Pessoal > Cuidados Íntimos > Sabonete Íntimo,https://www.araujo.com.br/higiene-pessoal/sabonete-intimo,sabonete-intimo
+3,Lenço Umedecido Íntimo,Cuidados Íntimos,Higiene Pessoal > Cuidados Íntimos > Lenço Umedecido Íntimo,https://www.araujo.com.br/higiene-pessoal/lenco-umedecido-intimo,lenco-umedecido-intimo
+3,Acessórios Íntimos,Cuidados Íntimos,Higiene Pessoal > Cuidados Íntimos > Acessórios Íntimos,https://www.araujo.com.br/higiene-pessoal/acessorios-intimos,acessorios-intimos
+2,Saúde Sexual,Higiene Pessoal,Higiene Pessoal > Saúde Sexual,https://www.araujo.com.br/higiene-pessoal/saude-sexual,saude-sexual
+3,Preservativos,Saúde Sexual,Higiene Pessoal > Saúde Sexual > Preservativos,https://www.araujo.com.br/higiene-pessoal/preservativos,preservativos
+3,Lubrificantes,Saúde Sexual,Higiene Pessoal > Saúde Sexual > Lubrificantes,https://www.araujo.com.br/higiene-pessoal/lubrificantes,lubrificantes
+3,Acessórios Sexuais,Saúde Sexual,Higiene Pessoal > Saúde Sexual > Acessórios Sexuais,https://www.araujo.com.br/higiene-pessoal/acessorios-sexuais,acessorios-sexuais
+2,Cuidados com a Barba,Higiene Pessoal,Higiene Pessoal > Cuidados com a Barba,https://www.araujo.com.br/higiene-pessoal/cuidados-com-a-barba,cuidados-com-a-barba
+3,Aparelhos e Lâminas de Barbear,Cuidados com a Barba,Higiene Pessoal > Cuidados com a Barba > Aparelhos e Lâminas de Barbear,https://www.araujo.com.br/higiene-pessoal/laminas-de-barbear,laminas-de-barbear
+3,Barbeadores e Aparadores de Pelos Elétricos,Cuidados com a Barba,Higiene Pessoal > Cuidados com a Barba > Barbeadores e Aparadores de Pelos Elétricos,https://www.araujo.com.br/higiene-pessoal/aparadores-de-pelos-eletricos,aparadores-de-pelos-eletricos
+3,Pós Barba,Cuidados com a Barba,Higiene Pessoal > Cuidados com a Barba > Pós Barba,https://www.araujo.com.br/higiene-pessoal/pos-barba,pos-barba
+3,Creme e Espuma de Barbear,Cuidados com a Barba,Higiene Pessoal > Cuidados com a Barba > Creme e Espuma de Barbear,https://www.araujo.com.br/higiene-pessoal/espuma-de-barbear,espuma-de-barbear
+3,Acessórios para Barba,Cuidados com a Barba,Higiene Pessoal > Cuidados com a Barba > Acessórios para Barba,https://www.araujo.com.br/higiene-pessoal/acessorios-para-barba,acessorios-para-barba
+2,Depilação,Higiene Pessoal,Higiene Pessoal > Depilação,https://www.araujo.com.br/higiene-pessoal/depilacao,depilacao
+3,Aparelhos e Lâminas de Depilação,Depilação,Higiene Pessoal > Depilação > Aparelhos e Lâminas de Depilação,https://www.araujo.com.br/higiene-pessoal/aparelhos-de-depilacao,aparelhos-de-depilacao
+3,Cera para Depilação,Depilação,Higiene Pessoal > Depilação > Cera para Depilação,https://www.araujo.com.br/higiene-pessoal/cera-para-depilacao,cera-para-depilacao
+3,Creme Depilatório,Depilação,Higiene Pessoal > Depilação > Creme Depilatório,https://www.araujo.com.br/higiene-pessoal/creme-depilatorio,creme-depilatorio
+3,Lenço para Depilação,Depilação,Higiene Pessoal > Depilação > Lenço para Depilação,https://www.araujo.com.br/higiene-pessoal/lenco-para-depilacao,lenco-para-depilacao
+2,Cuidados com os Pés,Higiene Pessoal,Higiene Pessoal > Cuidados com os Pés,https://www.araujo.com.br/higiene-pessoal/cuidados-com-os-pes,cuidados-com-os-pes
+3,Talco para Pés,Cuidados com os Pés,Higiene Pessoal > Cuidados com os Pés > Talco para Pés,https://www.araujo.com.br/higiene-pessoal/talco-para-os-pes,talco-para-os-pes
+3,Desodorante e Antitranspirante para os Pés,Cuidados com os Pés,Higiene Pessoal > Cuidados com os Pés > Desodorante e Antitranspirante para os Pés,https://www.araujo.com.br/higiene-pessoal/desodorante-para-os-pes,desodorante-para-os-pes
+1,Pet Shop,,Pet Shop,https://www.araujo.com.br/pet-shop,pet-shop
+2,Cachorros,Pet Shop,Pet Shop > Cachorros,https://www.araujo.com.br/pet-shop/cachorros,cachorros
+3,Petiscos para Cachorro,Cachorros,Pet Shop > Cachorros > Petiscos para Cachorro,https://www.araujo.com.br/pet-shop/petiscos-para-cachorros,petiscos-para-cachorros
+3,Ração para Cachorro,Cachorros,Pet Shop > Cachorros > Ração para Cachorro,https://www.araujo.com.br/pet-shop/racao-para-cachorro,racao-para-cachorro
+3,Brinquedos para Cachorro,Cachorros,Pet Shop > Cachorros > Brinquedos para Cachorro,https://www.araujo.com.br/pet-shop/brinquedos-para-cachorros,brinquedos-para-cachorros
+3,Coleira para Cachorro,Cachorros,Pet Shop > Cachorros > Coleira para Cachorro,https://www.araujo.com.br/pet-shop/coleira-para-cachorro,coleira-para-cachorro
+3,Guia para Cachorro,Cachorros,Pet Shop > Cachorros > Guia para Cachorro,https://www.araujo.com.br/pet-shop/guia-para-cachorro,guia-para-cachorro
+3,Peitoral para Cachorro,Cachorros,Pet Shop > Cachorros > Peitoral para Cachorro,https://www.araujo.com.br/pet-shop/peitoral-para-cachorro,peitoral-para-cachorro
+3,Focinheira para Cachorro,Cachorros,Pet Shop > Cachorros > Focinheira para Cachorro,https://www.araujo.com.br/pet-shop/focinheira-para-cachorro,focinheira-para-cachorro
+3,Cinto de Segurança para Cachorro,Cachorros,Pet Shop > Cachorros > Cinto de Segurança para Cachorro,https://www.araujo.com.br/pet-shop/cinto-de-seguranca-canino,cinto-de-seguranca-canino
+3,Canguru,Cachorros,Pet Shop > Cachorros > Canguru,https://www.araujo.com.br/pet-shop/canguru-para-cachorros,canguru-para-cachorros
+3,Bebedouro para Cachorro,Cachorros,Pet Shop > Cachorros > Bebedouro para Cachorro,https://www.araujo.com.br/pet-shop/bebedouro-para-cachorro,bebedouro-para-cachorro
+3,Comedouro para Cachorro,Cachorros,Pet Shop > Cachorros > Comedouro para Cachorro,https://www.araujo.com.br/pet-shop/comedouro-para-cachorro,comedouro-para-cachorro
+3,Vermífugo Canino,Cachorros,Pet Shop > Cachorros > Vermífugo Canino,https://www.araujo.com.br/pet-shop/vermifugo-canino,vermifugo-canino
+3,Anti-Inflamatório Canino,Cachorros,Pet Shop > Cachorros > Anti-Inflamatório Canino,https://www.araujo.com.br/pet-shop/anti-inflamatorio-canino,anti-inflamatorio-canino
+3,Suplementos e Vitaminas para Cachorro,Cachorros,Pet Shop > Cachorros > Suplementos e Vitaminas para Cachorro,https://www.araujo.com.br/pet-shop/suplementos-para-cachorro,suplementos-para-cachorro
+3,Antialérgico para Cachorro,Cachorros,Pet Shop > Cachorros > Antialérgico para Cachorro,https://www.araujo.com.br/pet-shop/antialergico-para-cachorro,antialergico-para-cachorro
+3,Repelente para Cachorro,Cachorros,Pet Shop > Cachorros > Repelente para Cachorro,https://www.araujo.com.br/pet-shop/repelente-para-cachorro,repelente-para-cachorro
+3,Colar Elizabetano,Cachorros,Pet Shop > Cachorros > Colar Elizabetano,https://www.araujo.com.br/pet-shop/colar-elizabetano,colar-elizabetano
+3,Probiótico Canino,Cachorros,Pet Shop > Cachorros > Probiótico Canino,https://www.araujo.com.br/pet-shop/probiotico-canino,probiotico-canino
+3,Antibiótico Canino,Cachorros,Pet Shop > Cachorros > Antibiótico Canino,https://www.araujo.com.br/pet-shop/antibiotico-para-cachorros,antibiotico-para-cachorros
+3,Absorvente para Cachorros,Cachorros,Pet Shop > Cachorros > Absorvente para Cachorros,https://www.araujo.com.br/pet-shop/absorvente-para-cachorros,absorvente-para-cachorros
+3,Eliminador de Odores Canino,Cachorros,Pet Shop > Cachorros > Eliminador de Odores Canino,https://www.araujo.com.br/pet-shop/eliminador-de-odores-canino,eliminador-de-odores-canino
+3,Desinfetante para Cachorro,Cachorros,Pet Shop > Cachorros > Desinfetante para Cachorro,https://www.araujo.com.br/pet-shop/desinfetante-para-cachorro,desinfetante-para-cachorro
+3,Educadores Sanitários para Cachorro,Cachorros,Pet Shop > Cachorros > Educadores Sanitários para Cachorro,https://www.araujo.com.br/pet-shop/educadores-sanitarios-caninos,educadores-sanitarios-caninos
+3,Tapete Higiênico para Cachorro,Cachorros,Pet Shop > Cachorros > Tapete Higiênico para Cachorro,https://www.araujo.com.br/pet-shop/tapete-higienico,tapete-higienico
+3,Coletor de Fezes para Cachorro,Cachorros,Pet Shop > Cachorros > Coletor de Fezes para Cachorro,https://www.araujo.com.br/pet-shop/coletor-de-fezes-cachorros,coletor-de-fezes-cachorros
+3,Lenço Umedecido,Cachorros,Pet Shop > Cachorros > Lenço Umedecido,https://www.araujo.com.br/pet-shop/lenco-umedecido,lenco-umedecido
+3,Pentes e Escovas para Cachorro,Cachorros,Pet Shop > Cachorros > Pentes e Escovas para Cachorro,https://www.araujo.com.br/pet-shop/pentes-e-escovas-caninos,pentes-e-escovas-caninos
+3,Antipulgas e Parasitas Canino,Cachorros,Pet Shop > Cachorros > Antipulgas e Parasitas Canino,https://www.araujo.com.br/pet-shop/antipulgas-canino,antipulgas-canino
+3,Camas e Cobertores para Cachorro,Cachorros,Pet Shop > Cachorros > Camas e Cobertores para Cachorro,https://www.araujo.com.br/pet-shop/cachorros-cama,cachorros-cama
+3,Roupa Cirúrgica para Cachorro,Cachorros,Pet Shop > Cachorros > Roupa Cirúrgica para Cachorro,https://www.araujo.com.br/pet-shop/roupa-cirurgica-cachorro,roupa-cirurgica-cachorro
+2,Gatos,Pet Shop,Pet Shop > Gatos,https://www.araujo.com.br/pet-shop/gatos,gatos
+3,Anti-Inflamatório para Gato,Gatos,Pet Shop > Gatos > Anti-Inflamatório para Gato,https://www.araujo.com.br/pet-shop/anti-inflamatorio-gato,anti-inflamatorio-gato
+3,Areia Higiênica para Gato,Gatos,Pet Shop > Gatos > Areia Higiênica para Gato,https://www.araujo.com.br/pet-shop/areia-higienica-gato,areia-higienica-gato
+3,Vermífugo para Gatos,Gatos,Pet Shop > Gatos > Vermífugo para Gatos,https://www.araujo.com.br/pet-shop/vermifugo-para-gatos,vermifugo-para-gatos
+3,Comedouro para Gato,Gatos,Pet Shop > Gatos > Comedouro para Gato,https://www.araujo.com.br/pet-shop/comedouro-para-gato,comedouro-para-gato
+3,Petiscos para Gato,Gatos,Pet Shop > Gatos > Petiscos para Gato,https://www.araujo.com.br/pet-shop/petiscos-para-gato,petiscos-para-gato
+3,Ração para Gato,Gatos,Pet Shop > Gatos > Ração para Gato,https://www.araujo.com.br/pet-shop/racao-para-gato,racao-para-gato
+3,Antipulgas e Parasitas para Gatos,Gatos,Pet Shop > Gatos > Antipulgas e Parasitas para Gatos,https://www.araujo.com.br/pet-shop/antipulgas-para-gatos,antipulgas-para-gatos
+2,Medicamentos Veterinários,Pet Shop,Pet Shop > Medicamentos Veterinários,https://www.araujo.com.br/pet-shop/medicamentos-pet,medicamentos-pet
+2,Outros Pets,Pet Shop,Pet Shop > Outros Pets,https://www.araujo.com.br/pet-shop/outros-pets,outros-pets
+3,Aves e Pássaros,Outros Pets,Pet Shop > Outros Pets > Aves e Pássaros,https://www.araujo.com.br/pet-shop/aves-e-passaros,aves-e-passaros
+3,Peixes,Outros Pets,Pet Shop > Outros Pets > Peixes,https://www.araujo.com.br/pet-shop/peixes,peixes
+3,Roedores,Outros Pets,Pet Shop > Outros Pets > Roedores,https://www.araujo.com.br/pet-shop/roedores,roedores
+1,Nutrição Saudável,,Nutrição Saudável,https://www.araujo.com.br/nutricao-saudavel,nutricao-saudavel
+2,Suplementos Alimentares,Nutrição Saudável,Nutrição Saudável > Suplementos Alimentares,https://www.araujo.com.br/nutricao-saudavel/suplementos-alimentares,suplementos-alimentares
+3,Colágeno,Suplementos Alimentares,Nutrição Saudável > Suplementos Alimentares > Colágeno,https://www.araujo.com.br/nutricao-saudavel/colageno,colageno
+3,Massa Alimentar,Suplementos Alimentares,Nutrição Saudável > Suplementos Alimentares > Massa Alimentar,https://www.araujo.com.br/nutricao-saudavel/massa-alimentar,massa-alimentar
+3,Espessante Alimentar,Suplementos Alimentares,Nutrição Saudável > Suplementos Alimentares > Espessante Alimentar,https://www.araujo.com.br/nutricao-saudavel/espessante-alimentar,espessante-alimentar
+3,Espirulina,Suplementos Alimentares,Nutrição Saudável > Suplementos Alimentares > Espirulina,https://www.araujo.com.br/nutricao-saudavel/espirulina,espirulina
+3,Complementos Alimentares,Suplementos Alimentares,Nutrição Saudável > Suplementos Alimentares > Complementos Alimentares,https://www.araujo.com.br/nutricao-saudavel/complementos-alimentares,complementos-alimentares
+2,Suplementos Esportivos,Nutrição Saudável,Nutrição Saudável > Suplementos Esportivos,https://www.araujo.com.br/nutricao-saudavel/suplementos-esportivos,suplementos-esportivos
+3,L-Carnitina,Suplementos Esportivos,Nutrição Saudável > Suplementos Esportivos > L-Carnitina,https://www.araujo.com.br/nutricao-saudavel/l-carnitina,l-carnitina
+3,Whey Protein,Suplementos Esportivos,Nutrição Saudável > Suplementos Esportivos > Whey Protein,https://www.araujo.com.br/nutricao-saudavel/whey-protein,whey-protein
+3,BCAA,Suplementos Esportivos,Nutrição Saudável > Suplementos Esportivos > BCAA,https://www.araujo.com.br/nutricao-saudavel/bcaa,bcaa
+3,Creatina,Suplementos Esportivos,Nutrição Saudável > Suplementos Esportivos > Creatina,https://www.araujo.com.br/nutricao-saudavel/creatina,creatina
+3,Glutamina,Suplementos Esportivos,Nutrição Saudável > Suplementos Esportivos > Glutamina,https://www.araujo.com.br/nutricao-saudavel/glutamina,glutamina
+3,Pré Treino,Suplementos Esportivos,Nutrição Saudável > Suplementos Esportivos > Pré Treino,https://www.araujo.com.br/nutricao-saudavel/pre-treino,pre-treino
+3,Termogênico,Suplementos Esportivos,Nutrição Saudável > Suplementos Esportivos > Termogênico,https://www.araujo.com.br/nutricao-saudavel/termogenico,termogenico
+3,Albumina,Suplementos Esportivos,Nutrição Saudável > Suplementos Esportivos > Albumina,https://www.araujo.com.br/nutricao-saudavel/albumina,albumina
+3,Hipercalórico,Suplementos Esportivos,Nutrição Saudável > Suplementos Esportivos > Hipercalórico,https://www.araujo.com.br/nutricao-saudavel/hipercalorico,hipercalorico
+3,Maltodextrina,Suplementos Esportivos,Nutrição Saudável > Suplementos Esportivos > Maltodextrina,https://www.araujo.com.br/nutricao-saudavel/maltodextrina,maltodextrina
+3,Coqueteleira,Suplementos Esportivos,Nutrição Saudável > Suplementos Esportivos > Coqueteleira,https://www.araujo.com.br/nutricao-saudavel/coqueteleira,coqueteleira
+3,Suplementos Energéticos,Suplementos Esportivos,Nutrição Saudável > Suplementos Esportivos > Suplementos Energéticos,https://www.araujo.com.br/nutricao-saudavel/suplementos-energeticos,suplementos-energeticos
+3,Emagrecedores,Suplementos Esportivos,Nutrição Saudável > Suplementos Esportivos > Emagrecedores,https://www.araujo.com.br/nutricao-saudavel/emagrecedores,emagrecedores
+3,Shake para Emagrecer,Suplementos Esportivos,Nutrição Saudável > Suplementos Esportivos > Shake para Emagrecer,https://www.araujo.com.br/nutricao-saudavel/shake-para-emagrecer,shake-para-emagrecer
+2,Alimentos Diet,Nutrição Saudável,Nutrição Saudável > Alimentos Diet,https://www.araujo.com.br/nutricao-saudavel/alimentos-diet,alimentos-diet
+3,Gelatinas Diet,Alimentos Diet,Nutrição Saudável > Alimentos Diet > Gelatinas Diet,https://www.araujo.com.br/nutricao-saudavel/gelatinas-diet,gelatinas-diet
+3,Chiclete Diet,Alimentos Diet,Nutrição Saudável > Alimentos Diet > Chiclete Diet,https://www.araujo.com.br/nutricao-saudavel/chiclete-diet,chiclete-diet
+3,Biscoito Diet,Alimentos Diet,Nutrição Saudável > Alimentos Diet > Biscoito Diet,https://www.araujo.com.br/nutricao-saudavel/biscoito-diet,biscoito-diet
+3,Achocolatado Diet,Alimentos Diet,Nutrição Saudável > Alimentos Diet > Achocolatado Diet,https://www.araujo.com.br/nutricao-saudavel/achocolatado-diet,achocolatado-diet
+3,Capuccino Diet,Alimentos Diet,Nutrição Saudável > Alimentos Diet > Capuccino Diet,https://www.araujo.com.br/nutricao-saudavel/capuccino-diet,capuccino-diet
+3,Bolo Diet,Alimentos Diet,Nutrição Saudável > Alimentos Diet > Bolo Diet,https://www.araujo.com.br/nutricao-saudavel/bolo-diet,bolo-diet
+3,Geleias Diet,Alimentos Diet,Nutrição Saudável > Alimentos Diet > Geleias Diet,https://www.araujo.com.br/nutricao-saudavel/geleias-diet,geleias-diet
+3,Adoçantes,Alimentos Diet,Nutrição Saudável > Alimentos Diet > Adoçantes,https://www.araujo.com.br/nutricao-saudavel/adocantes,adocantes
+3,Doces e Sobremesas Diet,Alimentos Diet,Nutrição Saudável > Alimentos Diet > Doces e Sobremesas Diet,https://www.araujo.com.br/nutricao-saudavel/doces-e-sobremesas-diet,doces-e-sobremesas-diet
+3,Chocolate Diet,Alimentos Diet,Nutrição Saudável > Alimentos Diet > Chocolate Diet,https://www.araujo.com.br/nutricao-saudavel/chocolate-diet,chocolate-diet
+3,Bala Diet,Alimentos Diet,Nutrição Saudável > Alimentos Diet > Bala Diet,https://www.araujo.com.br/nutricao-saudavel/bala-diet,bala-diet
+2,Barrinhas,Nutrição Saudável,Nutrição Saudável > Barrinhas,https://www.araujo.com.br/nutricao-saudavel/barrinhas,barrinhas
+3,Barra de Frutas,Barrinhas,Nutrição Saudável > Barrinhas > Barra de Frutas,https://www.araujo.com.br/nutricao-saudavel/barras-de-frutas,barras-de-frutas
+3,Barra de Proteína,Barrinhas,Nutrição Saudável > Barrinhas > Barra de Proteína,https://www.araujo.com.br/nutricao-saudavel/barra-de-proteina,barra-de-proteina
+3,Barra de Cereal,Barrinhas,Nutrição Saudável > Barrinhas > Barra de Cereal,https://www.araujo.com.br/nutricao-saudavel/barras-de-cereal,barras-de-cereal
+2,Alimentos sem Glúten,Nutrição Saudável,Nutrição Saudável > Alimentos sem Glúten,https://www.araujo.com.br/nutricao-saudavel/alimentos-sem-gluten,alimentos-sem-gluten
+3,Pães sem Glúten,Alimentos sem Glúten,Nutrição Saudável > Alimentos sem Glúten > Pães sem Glúten,https://www.araujo.com.br/nutricao-saudavel/paes-sem-gluten,paes-sem-gluten
+3,Biscoitos sem Glúten,Alimentos sem Glúten,Nutrição Saudável > Alimentos sem Glúten > Biscoitos sem Glúten,https://www.araujo.com.br/nutricao-saudavel/biscoitos-sem-gluten,biscoitos-sem-gluten
+3,Tapioca,Alimentos sem Glúten,Nutrição Saudável > Alimentos sem Glúten > Tapioca,https://www.araujo.com.br/nutricao-saudavel/tapioca,tapioca
+3,Flocos de Arroz,Alimentos sem Glúten,Nutrição Saudável > Alimentos sem Glúten > Flocos de Arroz,https://www.araujo.com.br/nutricao-saudavel/flocos-de-arroz,flocos-de-arroz
+3,Salgadinhos sem Glúten,Alimentos sem Glúten,Nutrição Saudável > Alimentos sem Glúten > Salgadinhos sem Glúten,https://www.araujo.com.br/nutricao-saudavel/salgadinhos-sem-gluten,salgadinhos-sem-gluten
+3,Sopas e Caldos Instantâneos,Alimentos sem Glúten,Nutrição Saudável > Alimentos sem Glúten > Sopas e Caldos Instantâneos,https://www.araujo.com.br/nutricao-saudavel/sopas-caldos-instantaneos,sopas-caldos-instantaneos
+2,Lanches Integrais,Nutrição Saudável,Nutrição Saudável > Lanches Integrais,https://www.araujo.com.br/nutricao-saudavel/lanches-integrais,lanches-integrais
+3,Frutas Desidratadas,Lanches Integrais,Nutrição Saudável > Lanches Integrais > Frutas Desidratadas,https://www.araujo.com.br/nutricao-saudavel/frutas-desidratadas,frutas-desidratadas
+3,Castanha de Caju,Lanches Integrais,Nutrição Saudável > Lanches Integrais > Castanha de Caju,https://www.araujo.com.br/nutricao-saudavel/castanha-de-caju,castanha-de-caju
+3,Biscoitos Integrais,Lanches Integrais,Nutrição Saudável > Lanches Integrais > Biscoitos Integrais,https://www.araujo.com.br/nutricao-saudavel/biscoitos-integrais,biscoitos-integrais
+3,Salgadinhos Integrais,Lanches Integrais,Nutrição Saudável > Lanches Integrais > Salgadinhos Integrais,https://www.araujo.com.br/nutricao-saudavel/salgadinhos-integrais,salgadinhos-integrais
+2,Condimentos Naturais,Nutrição Saudável,Nutrição Saudável > Condimentos Naturais,https://www.araujo.com.br/nutricao-saudavel/condimentos-naturais,condimentos-naturais
+3,Óleo de Coco,Condimentos Naturais,Nutrição Saudável > Condimentos Naturais > Óleo de Coco,https://www.araujo.com.br/nutricao-saudavel/oleo-de-coco,oleo-de-coco
+3,Sal,Condimentos Naturais,Nutrição Saudável > Condimentos Naturais > Sal,https://www.araujo.com.br/nutricao-saudavel/sal,sal
+3,Vinagre,Condimentos Naturais,Nutrição Saudável > Condimentos Naturais > Vinagre,https://www.araujo.com.br/nutricao-saudavel/vinagre,vinagre
+2,Vegetarianos e Veganos,Nutrição Saudável,Nutrição Saudável > Vegetarianos e Veganos,https://www.araujo.com.br/nutricao-saudavel/vegetarianos-e-veganos,vegetarianos-e-veganos
+3,Leite de Soja,Vegetarianos e Veganos,Nutrição Saudável > Vegetarianos e Veganos > Leite de Soja,https://www.araujo.com.br/nutricao-saudavel/leite-de-soja,leite-de-soja
+3,Leite de Coco,Vegetarianos e Veganos,Nutrição Saudável > Vegetarianos e Veganos > Leite de Coco,https://www.araujo.com.br/nutricao-saudavel/leite-de-coco,leite-de-coco
+3,Proteína Vegana e Vegetal,Vegetarianos e Veganos,Nutrição Saudável > Vegetarianos e Veganos > Proteína Vegana e Vegetal,https://www.araujo.com.br/nutricao-saudavel/proteina-vegana-vegetal,proteina-vegana-vegetal
+2,Alimentos Naturais,Nutrição Saudável,Nutrição Saudável > Alimentos Naturais,https://www.araujo.com.br/nutricao-saudavel/alimentos-naturais,alimentos-naturais
+3,Açúcares Funcionais e Orgânicos,Alimentos Naturais,Nutrição Saudável > Alimentos Naturais > Açúcares Funcionais e Orgânicos,https://www.araujo.com.br/nutricao-saudavel/acucar-organico,acucar-organico
+3,Pasta de Amendoim Integral,Alimentos Naturais,Nutrição Saudável > Alimentos Naturais > Pasta de Amendoim Integral,https://www.araujo.com.br/nutricao-saudavel/pasta-de-amendoim-integral,pasta-de-amendoim-integral
+3,Granola,Alimentos Naturais,Nutrição Saudável > Alimentos Naturais > Granola,https://www.araujo.com.br/nutricao-saudavel/granola,granola
+3,Chia,Alimentos Naturais,Nutrição Saudável > Alimentos Naturais > Chia,https://www.araujo.com.br/nutricao-saudavel/chia,chia
+3,Linhaça,Alimentos Naturais,Nutrição Saudável > Alimentos Naturais > Linhaça,https://www.araujo.com.br/nutricao-saudavel/linhaca,linhaca
+3,Aveia,Alimentos Naturais,Nutrição Saudável > Alimentos Naturais > Aveia,https://www.araujo.com.br/nutricao-saudavel/aveia,aveia
+3,Sementes,Alimentos Naturais,Nutrição Saudável > Alimentos Naturais > Sementes,https://www.araujo.com.br/nutricao-saudavel/sementes,sementes
+3,Farinha Orgânica,Alimentos Naturais,Nutrição Saudável > Alimentos Naturais > Farinha Orgânica,https://www.araujo.com.br/nutricao-saudavel/farinha-organica,farinha-organica
+3,Alimentos em Pó,Alimentos Naturais,Nutrição Saudável > Alimentos Naturais > Alimentos em Pó,https://www.araujo.com.br/nutricao-saudavel/alimentos-em-po,alimentos-em-po
+1,Mercado,,Mercado,https://www.araujo.com.br/mercado,mercado
+2,Chocolates,Mercado,Mercado > Chocolates,https://www.araujo.com.br/mercado/chocolates,chocolates
+3,Barras de Chocolate,Chocolates,Mercado > Chocolates > Barras de Chocolate,https://www.araujo.com.br/mercado/barras-de-chocolate,barras-de-chocolate
+3,Confeitos de Chocolate,Chocolates,Mercado > Chocolates > Confeitos de Chocolate,https://www.araujo.com.br/mercado/confeitos-de-chocolate,confeitos-de-chocolate
+3,Tablete de Chocolate,Chocolates,Mercado > Chocolates > Tablete de Chocolate,https://www.araujo.com.br/mercado/tablete-de-chocolate,tablete-de-chocolate
+3,Bombons,Chocolates,Mercado > Chocolates > Bombons,https://www.araujo.com.br/mercado/bombons,bombons
+3,Ovos de Páscoa,Chocolates,Mercado > Chocolates > Ovos de Páscoa,https://www.araujo.com.br/mercado/ovos-de-pascoa,ovos-de-pascoa
+2,Bebidas,Mercado,Mercado > Bebidas,https://www.araujo.com.br/mercado/bebidas,bebidas
+3,Chás,Bebidas,Mercado > Bebidas > Chás,https://www.araujo.com.br/mercado/chas,chas
+3,Energéticos,Bebidas,Mercado > Bebidas > Energéticos,https://www.araujo.com.br/mercado/energeticos,energeticos
+3,Refrigerante,Bebidas,Mercado > Bebidas > Refrigerante,https://www.araujo.com.br/mercado/refrigerantes,refrigerantes
+3,Sucos,Bebidas,Mercado > Bebidas > Sucos,https://www.araujo.com.br/mercado/sucos,sucos
+3,Kombuchas,Bebidas,Mercado > Bebidas > Kombuchas,https://www.araujo.com.br/mercado/kombucha,kombucha
+3,Isotônicos,Bebidas,Mercado > Bebidas > Isotônicos,https://www.araujo.com.br/mercado/isotonicos,isotonicos
+3,Cerveja sem Álcool,Bebidas,Mercado > Bebidas > Cerveja sem Álcool,https://www.araujo.com.br/mercado/cerveja-sem-alcool,cerveja-sem-alcool
+3,Água Mineral,Bebidas,Mercado > Bebidas > Água Mineral,https://www.araujo.com.br/mercado/agua-mineral,agua-mineral
+3,Água de Coco,Bebidas,Mercado > Bebidas > Água de Coco,https://www.araujo.com.br/mercado/agua-de-coco,agua-de-coco
+2,Salgadinhos e Snacks,Mercado,Mercado > Salgadinhos e Snacks,https://www.araujo.com.br/mercado/salgadinhos-e-snacks,salgadinhos-e-snacks
+3,Batata Chips,Salgadinhos e Snacks,Mercado > Salgadinhos e Snacks > Batata Chips,https://www.araujo.com.br/mercado/batata-chips,batata-chips
+3,Snacks,Salgadinhos e Snacks,Mercado > Salgadinhos e Snacks > Snacks,https://www.araujo.com.br/mercado/snacks,snacks
+3,Salgadinhos,Salgadinhos e Snacks,Mercado > Salgadinhos e Snacks > Salgadinhos,https://www.araujo.com.br/mercado/salgadinhos,salgadinhos
+3,Batata Palha,Salgadinhos e Snacks,Mercado > Salgadinhos e Snacks > Batata Palha,https://www.araujo.com.br/mercado/batata-palha,batata-palha
+3,Torresmo Pronto,Salgadinhos e Snacks,Mercado > Salgadinhos e Snacks > Torresmo Pronto,https://www.araujo.com.br/mercado/torresmo,torresmo
+3,Amendoim,Salgadinhos e Snacks,Mercado > Salgadinhos e Snacks > Amendoim,https://www.araujo.com.br/mercado/amemdoim,amemdoim
+2,Biscoitos e Bolachas,Mercado,Mercado > Biscoitos e Bolachas,https://www.araujo.com.br/mercado/biscoitos-e-bolachas,biscoitos-e-bolachas
+3,Biscoito e Bolacha Doce,Biscoitos e Bolachas,Mercado > Biscoitos e Bolachas > Biscoito e Bolacha Doce,https://www.araujo.com.br/mercado/biscoito-bolacha-doce,biscoito-bolacha-doce
+3,Cookies,Biscoitos e Bolachas,Mercado > Biscoitos e Bolachas > Cookies,https://www.araujo.com.br/mercado/cookies,cookies
+3,Biscoito Cream Cracker,Biscoitos e Bolachas,Mercado > Biscoitos e Bolachas > Biscoito Cream Cracker,https://www.araujo.com.br/mercado/biscoito-cream-cracker,biscoito-cream-cracker
+3,Biscoito de Polvilho,Biscoitos e Bolachas,Mercado > Biscoitos e Bolachas > Biscoito de Polvilho,https://www.araujo.com.br/mercado/biscoito-polvilho,biscoito-polvilho
+3,Biscoito e Bolacha Salgada,Biscoitos e Bolachas,Mercado > Biscoitos e Bolachas > Biscoito e Bolacha Salgada,https://www.araujo.com.br/mercado/biscoito-bolacha-salgada,biscoito-bolacha-salgada
+3,Biscoito e Bolacha Amanteigado,Biscoitos e Bolachas,Mercado > Biscoitos e Bolachas > Biscoito e Bolacha Amanteigado,https://www.araujo.com.br/mercado/biscoito-bolacha-amanteigado,biscoito-bolacha-amanteigado
+3,Biscoito e Bolacha de Maizena,Biscoitos e Bolachas,Mercado > Biscoitos e Bolachas > Biscoito e Bolacha de Maizena,https://www.araujo.com.br/mercado/biscoito-bolacha-maizena,biscoito-bolacha-maizena
+3,Biscoito e Bolacha Recheada,Biscoitos e Bolachas,Mercado > Biscoitos e Bolachas > Biscoito e Bolacha Recheada,https://www.araujo.com.br/mercado/biscoito-bolacha-recheada,biscoito-bolacha-recheada
+3,Biscoito e Bolacha Waffer,Biscoitos e Bolachas,Mercado > Biscoitos e Bolachas > Biscoito e Bolacha Waffer,https://www.araujo.com.br/mercado/waffer,waffer
+3,Bolos e Bolinhos,Biscoitos e Bolachas,Mercado > Biscoitos e Bolachas > Bolos e Bolinhos,https://www.araujo.com.br/mercado/bolos-e-bolinhos,bolos-e-bolinhos
+2,Alimentos Congelados e de Geladeira,Mercado,Mercado > Alimentos Congelados e de Geladeira,https://www.araujo.com.br/mercado/alimento-refrigerado,alimento-refrigerado
+3,Sorvetes,Alimentos Congelados e de Geladeira,Mercado > Alimentos Congelados e de Geladeira > Sorvetes,https://www.araujo.com.br/mercado/sorvetes,sorvetes
+3,Salgados Congelados,Alimentos Congelados e de Geladeira,Mercado > Alimentos Congelados e de Geladeira > Salgados Congelados,https://www.araujo.com.br/mercado/salgados-congelados,salgados-congelados
+3,Lasanha Congelada,Alimentos Congelados e de Geladeira,Mercado > Alimentos Congelados e de Geladeira > Lasanha Congelada,https://www.araujo.com.br/mercado/lasanha-congelada,lasanha-congelada
+3,Pizza Congelada,Alimentos Congelados e de Geladeira,Mercado > Alimentos Congelados e de Geladeira > Pizza Congelada,https://www.araujo.com.br/mercado/pizza-congelada,pizza-congelada
+3,Batata Frita Congelada,Alimentos Congelados e de Geladeira,Mercado > Alimentos Congelados e de Geladeira > Batata Frita Congelada,https://www.araujo.com.br/mercado/batata-frita-congelada,batata-frita-congelada
+3,Marmitas e Refeições Congeladas,Alimentos Congelados e de Geladeira,Mercado > Alimentos Congelados e de Geladeira > Marmitas e Refeições Congeladas,https://www.araujo.com.br/mercado/refeicoes-congeladas,refeicoes-congeladas
+3,Hambúrguer Congelado,Alimentos Congelados e de Geladeira,Mercado > Alimentos Congelados e de Geladeira > Hambúrguer Congelado,https://www.araujo.com.br/mercado/hamburguer-congelado,hamburguer-congelado
+3,Sanduíche Congelado,Alimentos Congelados e de Geladeira,Mercado > Alimentos Congelados e de Geladeira > Sanduíche Congelado,https://www.araujo.com.br/mercado/sanduiche-congelado,sanduiche-congelado
+3,Picolés,Alimentos Congelados e de Geladeira,Mercado > Alimentos Congelados e de Geladeira > Picolés,https://www.araujo.com.br/mercado/picoles,picoles
+3,Açaí,Alimentos Congelados e de Geladeira,Mercado > Alimentos Congelados e de Geladeira > Açaí,https://www.araujo.com.br/mercado/acai,acai
+3,Sanduíche Natural,Alimentos Congelados e de Geladeira,Mercado > Alimentos Congelados e de Geladeira > Sanduíche Natural,https://www.araujo.com.br/mercado/sanduiche-natural,sanduiche-natural
+3,Sobremesas e Doces Congeladas,Alimentos Congelados e de Geladeira,Mercado > Alimentos Congelados e de Geladeira > Sobremesas e Doces Congeladas,https://www.araujo.com.br/mercado/doces-congelados,doces-congelados
+2,Doces e Bombonieres,Mercado,Mercado > Doces e Bombonieres,https://www.araujo.com.br/mercado/doces-e-bombonieres,doces-e-bombonieres
+3,Balas,Doces e Bombonieres,Mercado > Doces e Bombonieres > Balas,https://www.araujo.com.br/mercado/balas,balas
+3,Chicletes,Doces e Bombonieres,Mercado > Doces e Bombonieres > Chicletes,https://www.araujo.com.br/mercado/chicletes,chicletes
+3,Pirulitos,Doces e Bombonieres,Mercado > Doces e Bombonieres > Pirulitos,https://www.araujo.com.br/mercado/pirulitos,pirulitos
+3,Paçoca,Doces e Bombonieres,Mercado > Doces e Bombonieres > Paçoca,https://www.araujo.com.br/mercado/pacoca,pacoca
+3,Pipoca,Doces e Bombonieres,Mercado > Doces e Bombonieres > Pipoca,https://www.araujo.com.br/mercado/pipoca,pipoca
+3,Colomba Pascal,Doces e Bombonieres,Mercado > Doces e Bombonieres > Colomba Pascal,https://www.araujo.com.br/mercado/colomba-pascal,colomba-pascal
+3,Panettone,Doces e Bombonieres,Mercado > Doces e Bombonieres > Panettone,https://www.araujo.com.br/mercado/panettone,panettone
+3,Torrone,Doces e Bombonieres,Mercado > Doces e Bombonieres > Torrone,https://www.araujo.com.br/mercado/torrone,torrone
+3,Gelatinas,Doces e Bombonieres,Mercado > Doces e Bombonieres > Gelatinas,https://www.araujo.com.br/mercado/gelatinas,gelatinas
+3,Doce de Leite,Doces e Bombonieres,Mercado > Doces e Bombonieres > Doce de Leite,https://www.araujo.com.br/mercado/doce-de-leite,doce-de-leite
+3,Pão de Mel,Doces e Bombonieres,Mercado > Doces e Bombonieres > Pão de Mel,https://www.araujo.com.br/mercado/pao-de-mel,pao-de-mel
+2,Embutidos,Mercado,Mercado > Embutidos,https://www.araujo.com.br/mercado/embutidos,embutidos
+2,Laticínios,Mercado,Mercado > Laticínios,https://www.araujo.com.br/mercado/laticinios,laticinios
+2,Padaria e Café da Manhã,Mercado,Mercado > Padaria e Café da Manhã,https://www.araujo.com.br/mercado/mercearia,mercearia
+3,Pães,Padaria e Café da Manhã,Mercado > Padaria e Café da Manhã > Pães,https://www.araujo.com.br/mercado/paes,paes
+3,Achocolatados,Padaria e Café da Manhã,Mercado > Padaria e Café da Manhã > Achocolatados,https://www.araujo.com.br/mercado/achocolatado,achocolatado
+3,Café,Padaria e Café da Manhã,Mercado > Padaria e Café da Manhã > Café,https://www.araujo.com.br/mercado/cafe,cafe
+3,Leite,Padaria e Café da Manhã,Mercado > Padaria e Café da Manhã > Leite,https://www.araujo.com.br/mercado/leite,leite
+3,Torradas,Padaria e Café da Manhã,Mercado > Padaria e Café da Manhã > Torradas,https://www.araujo.com.br/mercado/torradas,torradas
+3,Cereais Matinais,Padaria e Café da Manhã,Mercado > Padaria e Café da Manhã > Cereais Matinais,https://www.araujo.com.br/mercado/cereais-matinais,cereais-matinais
+3,Cappuccino,Padaria e Café da Manhã,Mercado > Padaria e Café da Manhã > Cappuccino,https://www.araujo.com.br/mercado/cappuccino,cappuccino
+3,Creme de Avelã,Padaria e Café da Manhã,Mercado > Padaria e Café da Manhã > Creme de Avelã,https://www.araujo.com.br/mercado/creme-de-avela,creme-de-avela
+2,Molhos,Mercado,Mercado > Molhos,https://www.araujo.com.br/mercado/molhos,molhos
+2,Temperos e Condimentos,Mercado,Mercado > Temperos e Condimentos,https://www.araujo.com.br/mercado/temperos-e-condimentos,temperos-e-condimentos
+2,Massas,Mercado,Mercado > Massas,https://www.araujo.com.br/mercado/massas,massas
+2,Conservas e Enlatados,Mercado,Mercado > Conservas e Enlatados,https://www.araujo.com.br/mercado/conservas-e-enlatados,conservas-e-enlatados
+2,Casa e Utilidades,Mercado,Mercado > Casa e Utilidades,https://www.araujo.com.br/mercado/casa-e-utilidades,casa-e-utilidades
+3,Não comercializado,Casa e Utilidades,Mercado > Casa e Utilidades > Não comercializado,https://www.araujo.com.br/mercado/nao-comercializado,nao-comercializado
+3,Eletrônicos e Acessórios,Casa e Utilidades,Mercado > Casa e Utilidades > Eletrônicos e Acessórios,https://www.araujo.com.br/mercado/eletronicos-e-acessorios,eletronicos-e-acessorios
+3,Comemorações e Eventos,Casa e Utilidades,Mercado > Casa e Utilidades > Comemorações e Eventos,https://www.araujo.com.br/mercado/comemoracoes-e-eventos,comemoracoes-e-eventos
+3,Manutenção e Reparo,Casa e Utilidades,Mercado > Casa e Utilidades > Manutenção e Reparo,https://www.araujo.com.br/mercado/manutencao-e-reparo,manutencao-e-reparo
+3,Cozinha,Casa e Utilidades,Mercado > Casa e Utilidades > Cozinha,https://www.araujo.com.br/mercado/cozinha,cozinha
+3,Inseticidas e Repelentes,Casa e Utilidades,Mercado > Casa e Utilidades > Inseticidas e Repelentes,https://www.araujo.com.br/mercado/inseticidas-e-repelentes,inseticidas-e-repelentes
+3,Guarda Chuva e Sombrinhas,Casa e Utilidades,Mercado > Casa e Utilidades > Guarda Chuva e Sombrinhas,https://www.araujo.com.br/mercado/guarda-chuva-e-sombrinhas,guarda-chuva-e-sombrinhas
+3,Recipientes para Bebidas,Casa e Utilidades,Mercado > Casa e Utilidades > Recipientes para Bebidas,https://www.araujo.com.br/mercado/recipientes-para-bebidas,recipientes-para-bebidas
+3,Jardinagem,Casa e Utilidades,Mercado > Casa e Utilidades > Jardinagem,https://www.araujo.com.br/mercado/jardinagem,jardinagem
+3,Automotivo,Casa e Utilidades,Mercado > Casa e Utilidades > Automotivo,https://www.araujo.com.br/mercado/automotivo,automotivo
+3,Pilhas e Baterias,Casa e Utilidades,Mercado > Casa e Utilidades > Pilhas e Baterias,https://www.araujo.com.br/mercado/pilhas-e-baterias,pilhas-e-baterias
+3,Calçados e Vestuário,Casa e Utilidades,Mercado > Casa e Utilidades > Calçados e Vestuário,https://www.araujo.com.br/mercado/calcados-e-vestuario,calcados-e-vestuario
+2,Livraria,Mercado,Mercado > Livraria,https://www.araujo.com.br/mercado/livraria,livraria
+3,Livros,Livraria,Mercado > Livraria > Livros,https://www.araujo.com.br/mercado/livros,livros
+3,Revistas,Livraria,Mercado > Livraria > Revistas,https://www.araujo.com.br/mercado/revistas,revistas
+3,Papelaria,Livraria,Mercado > Livraria > Papelaria,https://www.araujo.com.br/mercado/papelaria,papelaria
+3,Material de Escritório,Livraria,Mercado > Livraria > Material de Escritório,https://www.araujo.com.br/mercado/escritorio,escritorio
+3,Jornais,Livraria,Mercado > Livraria > Jornais,https://www.araujo.com.br/mercado/jornais,jornais
+3,Material Escolar,Livraria,Mercado > Livraria > Material Escolar,https://www.araujo.com.br/mercado/material-escolar,material-escolar
+3,Acessórios para Leitura,Livraria,Mercado > Livraria > Acessórios para Leitura,https://www.araujo.com.br/mercado/acessorios-para-leitura,acessorios-para-leitura
+2,Produtos de Limpeza,Mercado,Mercado > Produtos de Limpeza,https://www.araujo.com.br/mercado/produtos-de-limpeza,produtos-de-limpeza
+3,Limpeza em Geral,Produtos de Limpeza,Mercado > Produtos de Limpeza > Limpeza em Geral,https://www.araujo.com.br/mercado/limpeza-em-geral,limpeza-em-geral
+3,Lavanderia,Produtos de Limpeza,Mercado > Produtos de Limpeza > Lavanderia,https://www.araujo.com.br/mercado/lavanderia,lavanderia
+3,Banheiro,Produtos de Limpeza,Mercado > Produtos de Limpeza > Banheiro,https://www.araujo.com.br/mercado/banheiro,banheiro
+3,Cozinha,Produtos de Limpeza,Mercado > Produtos de Limpeza > Cozinha,https://www.araujo.com.br/mercado/limpeza-cozinha,limpeza-cozinha
+1,Maquiagem,,Maquiagem,https://www.araujo.com.br/maquiagem,maquiagem
+2,Olhos,Maquiagem,Maquiagem > Olhos,https://www.araujo.com.br/maquiagem/olhos,olhos
+3,Máscara de Cílios,Olhos,Maquiagem > Olhos > Máscara de Cílios,https://www.araujo.com.br/maquiagem/mascara-de-cilios,mascara-de-cilios
+3,Delineador,Olhos,Maquiagem > Olhos > Delineador,https://www.araujo.com.br/maquiagem/delineador,delineador
+3,Lápis de Olho,Olhos,Maquiagem > Olhos > Lápis de Olho,https://www.araujo.com.br/maquiagem/lapis-de-olho,lapis-de-olho
+3,Sombra,Olhos,Maquiagem > Olhos > Sombra,https://www.araujo.com.br/maquiagem/sombra,sombra
+3,Sobrancelha,Olhos,Maquiagem > Olhos > Sobrancelha,https://www.araujo.com.br/maquiagem/sobrancelha,sobrancelha
+3,Cola para Cílios,Olhos,Maquiagem > Olhos > Cola para Cílios,https://www.araujo.com.br/maquiagem/cola-para-cilios,cola-para-cilios
+3,Curvador de Cílios,Olhos,Maquiagem > Olhos > Curvador de Cílios,https://www.araujo.com.br/maquiagem/curvador-de-cilios,curvador-de-cilios
+3,Cílios Postiços,Olhos,Maquiagem > Olhos > Cílios Postiços,https://www.araujo.com.br/maquiagem/cilios-posticos,cilios-posticos
+2,Rosto,Maquiagem,Maquiagem > Rosto,https://www.araujo.com.br/maquiagem/rosto,rosto
+3,Base,Rosto,Maquiagem > Rosto > Base,https://www.araujo.com.br/maquiagem/base,base
+3,BB Cream,Rosto,Maquiagem > Rosto > BB Cream,https://www.araujo.com.br/maquiagem/bb-cream,bb-cream
+3,Blush,Rosto,Maquiagem > Rosto > Blush,https://www.araujo.com.br/maquiagem/blush,blush
+3,Iluminador Facial,Rosto,Maquiagem > Rosto > Iluminador Facial,https://www.araujo.com.br/maquiagem/iluminador,iluminador
+3,Corretivo Facial,Rosto,Maquiagem > Rosto > Corretivo Facial,https://www.araujo.com.br/maquiagem/corretivo,corretivo
+3,Pó Facial,Rosto,Maquiagem > Rosto > Pó Facial,https://www.araujo.com.br/maquiagem/po-facial,po-facial
+3,Contorno Facial,Rosto,Maquiagem > Rosto > Contorno Facial,https://www.araujo.com.br/maquiagem/contorno-facial,contorno-facial
+2,Lábios,Maquiagem,Maquiagem > Lábios,https://www.araujo.com.br/maquiagem/labios,labios
+3,Batom,Lábios,Maquiagem > Lábios > Batom,https://www.araujo.com.br/maquiagem/batom,batom
+3,Gloss Labial,Lábios,Maquiagem > Lábios > Gloss Labial,https://www.araujo.com.br/maquiagem/gloss-labial,gloss-labial
+2,Acessórios para Maquiagem,Maquiagem,Maquiagem > Acessórios para Maquiagem,https://www.araujo.com.br/maquiagem/acessorios-para-maquiagem,acessorios-para-maquiagem
+3,Algodão,Acessórios para Maquiagem,Maquiagem > Acessórios para Maquiagem > Algodão,https://www.araujo.com.br/maquiagem/algodao,algodao
+3,Esponja de Maquiagem,Acessórios para Maquiagem,Maquiagem > Acessórios para Maquiagem > Esponja de Maquiagem,https://www.araujo.com.br/maquiagem/esponja-de-maquiagem,esponja-de-maquiagem
+3,Pincel para Maquiagem,Acessórios para Maquiagem,Maquiagem > Acessórios para Maquiagem > Pincel para Maquiagem,https://www.araujo.com.br/maquiagem/pincel-para-maquiagem,pincel-para-maquiagem
+3,Espelho para Maquiagem,Acessórios para Maquiagem,Maquiagem > Acessórios para Maquiagem > Espelho para Maquiagem,https://www.araujo.com.br/maquiagem/espelho-para-maquiagem,espelho-para-maquiagem
+3,Limpador de Pincel,Acessórios para Maquiagem,Maquiagem > Acessórios para Maquiagem > Limpador de Pincel,https://www.araujo.com.br/maquiagem/limpador-de-pincel,limpador-de-pincel
+3,Fixador de Maquiagem,Acessórios para Maquiagem,Maquiagem > Acessórios para Maquiagem > Fixador de Maquiagem,https://www.araujo.com.br/maquiagem/fixador-de-maquiagem,fixador-de-maquiagem
+3,Pinça,Acessórios para Maquiagem,Maquiagem > Acessórios para Maquiagem > Pinça,https://www.araujo.com.br/maquiagem/pinca,pinca
+3,Apontador de Lápis para Maquiagem,Acessórios para Maquiagem,Maquiagem > Acessórios para Maquiagem > Apontador de Lápis para Maquiagem,https://www.araujo.com.br/maquiagem/apontador-de-lapis-maquiagem,apontador-de-lapis-maquiagem
+3,Removedor de Cravos,Acessórios para Maquiagem,Maquiagem > Acessórios para Maquiagem > Removedor de Cravos,https://www.araujo.com.br/maquiagem/removedor-de-cravos,removedor-de-cravos
+1,Cabelo,,Cabelo,https://www.araujo.com.br/cabelo,cabelo
+2,Shampoos,Cabelo,Cabelo > Shampoos,https://www.araujo.com.br/cabelo/shampoos,shampoos
+3,Cabelos Cacheados,Shampoos,Cabelo > Shampoos > Cabelos Cacheados,https://www.araujo.com.br/cabelo/shampoos-cabelos-cacheados,shampoos-cabelos-cacheados
+3,Cabelos Danificados ou Opacos,Shampoos,Cabelo > Shampoos > Cabelos Danificados ou Opacos,https://www.araujo.com.br/cabelo/shampoos-cabelos-danificados,shampoos-cabelos-danificados
+3,Cabelos Ressecados ou Secos,Shampoos,Cabelo > Shampoos > Cabelos Ressecados ou Secos,https://www.araujo.com.br/cabelo/shampoos-cabelos-ressecados,shampoos-cabelos-ressecados
+3,Cabelos com Caspa,Shampoos,Cabelo > Shampoos > Cabelos com Caspa,https://www.araujo.com.br/cabelo/shampoos-cabelos-com-caspa,shampoos-cabelos-com-caspa
+3,Cabelos de Todos os Tipos,Shampoos,Cabelo > Shampoos > Cabelos de Todos os Tipos,https://www.araujo.com.br/cabelo/shampoos-todos-os-tipos,shampoos-todos-os-tipos
+2,Tratamento e Hidratação,Cabelo,Cabelo > Tratamento e Hidratação,https://www.araujo.com.br/cabelo/tratamento-e-hidratacao,tratamento-e-hidratacao
+3,Máscaras Capilares,Tratamento e Hidratação,Cabelo > Tratamento e Hidratação > Máscaras Capilares,https://www.araujo.com.br/cabelo/mascaras,mascaras
+3,Creme de Tratamento,Tratamento e Hidratação,Cabelo > Tratamento e Hidratação > Creme de Tratamento,https://www.araujo.com.br/cabelo/creme-de-tratamento,creme-de-tratamento
+3,Ampolas de Tratamento,Tratamento e Hidratação,Cabelo > Tratamento e Hidratação > Ampolas de Tratamento,https://www.araujo.com.br/cabelo/ampolas-de-tratamento,ampolas-de-tratamento
+3,Tratamento Contra Caspa,Tratamento e Hidratação,Cabelo > Tratamento e Hidratação > Tratamento Contra Caspa,https://www.araujo.com.br/cabelo/tratamento-contra-caspa,tratamento-contra-caspa
+3,Tratamento Contra Queda,Tratamento e Hidratação,Cabelo > Tratamento e Hidratação > Tratamento Contra Queda,https://www.araujo.com.br/cabelo/tratamento-contra-queda,tratamento-contra-queda
+3,Creme de Limpeza,Tratamento e Hidratação,Cabelo > Tratamento e Hidratação > Creme de Limpeza,https://www.araujo.com.br/cabelo/creme-de-limpeza,creme-de-limpeza
+3,Tratamento Contra Piolho,Tratamento e Hidratação,Cabelo > Tratamento e Hidratação > Tratamento Contra Piolho,https://www.araujo.com.br/cabelo/tratamento-contra-piolho,tratamento-contra-piolho
+2,Tintura e Coloração,Cabelo,Cabelo > Tintura e Coloração,https://www.araujo.com.br/cabelo/tintura-e-coloracao,tintura-e-coloracao
+3,Coloração Permanente,Tintura e Coloração,Cabelo > Tintura e Coloração > Coloração Permanente,https://www.araujo.com.br/cabelo/coloracao-permanente,coloracao-permanente
+3,Coloração Temporária,Tintura e Coloração,Cabelo > Tintura e Coloração > Coloração Temporária,https://www.araujo.com.br/cabelo/coloracao-temporaria,coloracao-temporaria
+3,Coloração Natural,Tintura e Coloração,Cabelo > Tintura e Coloração > Coloração Natural,https://www.araujo.com.br/cabelo/coloracao-natural,coloracao-natural
+3,Tonalizantes,Tintura e Coloração,Cabelo > Tintura e Coloração > Tonalizantes,https://www.araujo.com.br/cabelo/tonalizantes,tonalizantes
+3,Retoque de Raiz,Tintura e Coloração,Cabelo > Tintura e Coloração > Retoque de Raiz,https://www.araujo.com.br/cabelo/retoque-de-raiz,retoque-de-raiz
+3,Descolorantes,Tintura e Coloração,Cabelo > Tintura e Coloração > Descolorantes,https://www.araujo.com.br/cabelo/descolorantes,descolorantes
+3,Pincel e Acessórios para Tintura,Tintura e Coloração,Cabelo > Tintura e Coloração > Pincel e Acessórios para Tintura,https://www.araujo.com.br/cabelo/pincel-e-acessorios-para-tintura,pincel-e-acessorios-para-tintura
+3,Clareador de Cabelos,Tintura e Coloração,Cabelo > Tintura e Coloração > Clareador de Cabelos,https://www.araujo.com.br/cabelo/clareador-de-cabelos,clareador-de-cabelos
+3,Matizador,Tintura e Coloração,Cabelo > Tintura e Coloração > Matizador,https://www.araujo.com.br/cabelo/matizador,matizador
+2,Finalizadores,Cabelo,Cabelo > Finalizadores,https://www.araujo.com.br/cabelo/finalizadores,finalizadores
+3,Óleo Capilar,Finalizadores,Cabelo > Finalizadores > Óleo Capilar,https://www.araujo.com.br/cabelo/oleo-capilar,oleo-capilar
+3,Sérum Finalizador,Finalizadores,Cabelo > Finalizadores > Sérum Finalizador,https://www.araujo.com.br/cabelo/serum-finalizador,serum-finalizador
+3,Antifrizz,Finalizadores,Cabelo > Finalizadores > Antifrizz,https://www.araujo.com.br/cabelo/antifrizz,antifrizz
+3,Ativador de Cachos,Finalizadores,Cabelo > Finalizadores > Ativador de Cachos,https://www.araujo.com.br/cabelo/ativador-de-cachos,ativador-de-cachos
+3,Creme para Pentear,Finalizadores,Cabelo > Finalizadores > Creme para Pentear,https://www.araujo.com.br/cabelo/creme-para-pentear,creme-para-pentear
+3,Leave-in,Finalizadores,Cabelo > Finalizadores > Leave-in,https://www.araujo.com.br/cabelo/leave-in,leave-in
+2,Condicionador,Cabelo,Cabelo > Condicionador,https://www.araujo.com.br/cabelo/condicionador,condicionador
+3,Cabelos Cacheados,Condicionador,Cabelo > Condicionador > Cabelos Cacheados,https://www.araujo.com.br/cabelo/condicionador-cabelos-cacheados,condicionador-cabelos-cacheados
+3,Cabelos Oleosos ou Mistos,Condicionador,Cabelo > Condicionador > Cabelos Oleosos ou Mistos,https://www.araujo.com.br/cabelo/condicionador-cabelos-oleosos,condicionador-cabelos-oleosos
+3,Cabelos Crespos,Condicionador,Cabelo > Condicionador > Cabelos Crespos,https://www.araujo.com.br/cabelo/condicionador-cabelos-crespos,condicionador-cabelos-crespos
+3,Cabelos Danificados e Opacos,Condicionador,Cabelo > Condicionador > Cabelos Danificados e Opacos,https://www.araujo.com.br/cabelo/condicionador-cabelos-danificados,condicionador-cabelos-danificados
+3,Cabelos Quimicamente Tratados,Condicionador,Cabelo > Condicionador > Cabelos Quimicamente Tratados,https://www.araujo.com.br/cabelo/condicionador-cabelos-quimicamente,condicionador-cabelos-quimicamente
+3,Cabelos Ressecados ou Secos,Condicionador,Cabelo > Condicionador > Cabelos Ressecados ou Secos,https://www.araujo.com.br/cabelo/condicionador-cabelos-secos,condicionador-cabelos-secos
+3,Cabelos Coloridos ou Com Mechas,Condicionador,Cabelo > Condicionador > Cabelos Coloridos ou Com Mechas,https://www.araujo.com.br/cabelo/condicionador-cabelos-coloridos,condicionador-cabelos-coloridos
+3,Cabelos Loiros ou Descoloridos,Condicionador,Cabelo > Condicionador > Cabelos Loiros ou Descoloridos,https://www.araujo.com.br/cabelo/condicionador-cabelos-loiros,condicionador-cabelos-loiros
+3,Cabelos com Queda,Condicionador,Cabelo > Condicionador > Cabelos com Queda,https://www.araujo.com.br/cabelo/condicionador-cabelos-com-queda,condicionador-cabelos-com-queda
+3,Cabelos com Caspa,Condicionador,Cabelo > Condicionador > Cabelos com Caspa,https://www.araujo.com.br/cabelo/condicionador-cabelos-com-caspa,condicionador-cabelos-com-caspa
+3,Cabelos de Todos os Tipos,Condicionador,Cabelo > Condicionador > Cabelos de Todos os Tipos,https://www.araujo.com.br/cabelo/condicionador-cabelos,condicionador-cabelos
+3,Cabelos Lisos ou com Frizz,Condicionador,Cabelo > Condicionador > Cabelos Lisos ou com Frizz,https://www.araujo.com.br/cabelo/condicionador-cabelos-lisos,condicionador-cabelos-lisos
+2,Modeladores,Cabelo,Cabelo > Modeladores,https://www.araujo.com.br/cabelo/modeladores,modeladores
+3,Gel e Gelatina,Modeladores,Cabelo > Modeladores > Gel e Gelatina,https://www.araujo.com.br/cabelo/gel-e-gelatina,gel-e-gelatina
+3,Mousse,Modeladores,Cabelo > Modeladores > Mousse,https://www.araujo.com.br/cabelo/mousse,mousse
+3,Pomadas e Pastas,Modeladores,Cabelo > Modeladores > Pomadas e Pastas,https://www.araujo.com.br/cabelo/pomadas-e-pastas,pomadas-e-pastas
+3,Spray Fixador,Modeladores,Cabelo > Modeladores > Spray Fixador,https://www.araujo.com.br/cabelo/spray-fixador,spray-fixador
+2,Relaxamento Capilar,Cabelo,Cabelo > Relaxamento Capilar,https://www.araujo.com.br/cabelo/relaxamento,relaxamento
+2,Linha Profissional e de Salão,Cabelo,Cabelo > Linha Profissional e de Salão,https://www.araujo.com.br/cabelo/linha-profissional-e-de-salao,linha-profissional-e-de-salao
+3,Shampoo Profissional,Linha Profissional e de Salão,Cabelo > Linha Profissional e de Salão > Shampoo Profissional,https://www.araujo.com.br/cabelo/shampoo-profissional,shampoo-profissional
+3,Tratamento Profissional,Linha Profissional e de Salão,Cabelo > Linha Profissional e de Salão > Tratamento Profissional,https://www.araujo.com.br/cabelo/tratamento-profissional,tratamento-profissional
+3,Finalizador Profissional,Linha Profissional e de Salão,Cabelo > Linha Profissional e de Salão > Finalizador Profissional,https://www.araujo.com.br/cabelo/finalizador-profissional,finalizador-profissional
+3,Modelador Profissional,Linha Profissional e de Salão,Cabelo > Linha Profissional e de Salão > Modelador Profissional,https://www.araujo.com.br/cabelo/modelador-profissional,modelador-profissional
+3,Kits Profissionais,Linha Profissional e de Salão,Cabelo > Linha Profissional e de Salão > Kits Profissionais,https://www.araujo.com.br/cabelo/kits-profissionais,kits-profissionais
+3,Acessórios para Salão,Linha Profissional e de Salão,Cabelo > Linha Profissional e de Salão > Acessórios para Salão,https://www.araujo.com.br/cabelo/acessorios-para-salao-profissional,acessorios-para-salao-profissional
+2,Produtos Veganos e Naturais,Cabelo,Cabelo > Produtos Veganos e Naturais,https://www.araujo.com.br/cabelo/produtos-veganos-e-naturais,produtos-veganos-e-naturais
+3,Shampoo Vegano,Produtos Veganos e Naturais,Cabelo > Produtos Veganos e Naturais > Shampoo Vegano,https://www.araujo.com.br/cabelo/shampoo-vegano,shampoo-vegano
+3,Condicionador Vegano,Produtos Veganos e Naturais,Cabelo > Produtos Veganos e Naturais > Condicionador Vegano,https://www.araujo.com.br/cabelo/condicionador-vegano,condicionador-vegano
+3,Tratamento Vegano,Produtos Veganos e Naturais,Cabelo > Produtos Veganos e Naturais > Tratamento Vegano,https://www.araujo.com.br/cabelo/tratamento-vegano,tratamento-vegano
+3,Creme para Pentear Vegano,Produtos Veganos e Naturais,Cabelo > Produtos Veganos e Naturais > Creme para Pentear Vegano,https://www.araujo.com.br/cabelo/creme-para-pentear-vegano,creme-para-pentear-vegano
+2,Acessórios para Cabelos,Cabelo,Cabelo > Acessórios para Cabelos,https://www.araujo.com.br/cabelo/acessorios-para-cabelos,acessorios-para-cabelos
+3,Prendedores e Presilhas,Acessórios para Cabelos,Cabelo > Acessórios para Cabelos > Prendedores e Presilhas,https://www.araujo.com.br/cabelo/prendedores-e-presilhas,prendedores-e-presilhas
+3,Tesouras,Acessórios para Cabelos,Cabelo > Acessórios para Cabelos > Tesouras,https://www.araujo.com.br/cabelo/tesouras,tesouras
+3,Escovas e Pentes,Acessórios para Cabelos,Cabelo > Acessórios para Cabelos > Escovas e Pentes,https://www.araujo.com.br/cabelo/escovas-e-pentes,escovas-e-pentes
+3,Toucas,Acessórios para Cabelos,Cabelo > Acessórios para Cabelos > Toucas,https://www.araujo.com.br/cabelo/toucas,toucas
+3,Secadores de Cabelo,Acessórios para Cabelos,Cabelo > Acessórios para Cabelos > Secadores de Cabelo,https://www.araujo.com.br/cabelo/secadores-de-cabelo,secadores-de-cabelo
+3,Chapinhas e Pranchas,Acessórios para Cabelos,Cabelo > Acessórios para Cabelos > Chapinhas e Pranchas,https://www.araujo.com.br/cabelo/chapinhas-e-pranchas,chapinhas-e-pranchas
+3,Máquina de Cortar Cabelo,Acessórios para Cabelos,Cabelo > Acessórios para Cabelos > Máquina de Cortar Cabelo,https://www.araujo.com.br/cabelo/maquina-de-cortar-cabelo,maquina-de-cortar-cabelo
+2,Produtos para os Homens,Cabelo,Cabelo > Produtos para os Homens,https://www.araujo.com.br/cabelo/produtos-para-os-homens,produtos-para-os-homens
+3,Shampoo Masculino,Produtos para os Homens,Cabelo > Produtos para os Homens > Shampoo Masculino,https://www.araujo.com.br/cabelo/shampoo-masculino,shampoo-masculino
+3,Coloração e Tintura,Produtos para os Homens,Cabelo > Produtos para os Homens > Coloração e Tintura,https://www.araujo.com.br/cabelo/coloracao-e-tintura-masculinos,coloracao-e-tintura-masculinos
+3,Naturais e Veganos,Produtos para os Homens,Cabelo > Produtos para os Homens > Naturais e Veganos,https://www.araujo.com.br/cabelo/naturais-e-veganos-masculinos,naturais-e-veganos-masculinos
